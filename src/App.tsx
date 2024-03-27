@@ -1,14 +1,18 @@
-import './App.css'
+//  App.tsx
+import React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import themes from './components/themes'; 
+import ResponsiveAppBar from './components/AppBar';
+// import Navbar from './components/Navbar';
 
 
 function App() {
-
-
-  return (
-    <>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, aut ducimus officiis id hic vitae quaerat earum, cumque nobis reprehenderit perferendis cupiditate mollitia, iure minus rerum natus quia commodi esse!
-    </>
-  )
+ return (
+    <ThemeProvider theme={themes}>
+      <ResponsiveAppBar />
+      {/* Other components */}
+    </ThemeProvider>
+ );
 }
 
-export default App
+export default App;
