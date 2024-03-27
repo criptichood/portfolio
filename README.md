@@ -1,9 +1,9 @@
 ```markdown
-#App Portfolio App
+# App Portfolio App
 
 Welcome to my app, a stunning portfolio application designed to showcase your talents and projects in the most elegant and captivating way possible. Built with Vite, React, and Material-UI, the app offers a seamless user experience coupled with breathtaking design elements.
 
-##Features
+## Features
 
 - **Beautiful UI**: Experience a visually stunning interface crafted with Material-UI components, offering both elegance and functionality.
 - **Responsive Design**: App is optimized for various screen sizes, ensuring your portfolio looks impeccable on any device.
@@ -11,7 +11,7 @@ Welcome to my app, a stunning portfolio application designed to showcase your ta
 - **Customizable**: Easily customize your portfolio with personalized details, images, and project descriptions.
 - **Easy Deployment**: Deploy your portfolio effortlessly with Vite's fast build process.
 
-##Startup Guide
+## Startup Guide
 
 Follow these steps to get started with App:
 
