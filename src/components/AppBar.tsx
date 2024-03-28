@@ -37,7 +37,7 @@ function ResponsiveAppBar() {
 
   const theme = useMemo(() => createTheme({
      palette: {
-       mode: darkMode ? 'dark' : 'light',
+       mode: darkMode ? 'light' : 'dark',
      },
   }), [darkMode]);
  
@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
   return (
     <ThemeProvider theme={theme}>
     <CssBaseline />
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

@@ -1,15 +1,15 @@
 //  App.tsx
-import React from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import themes from './components/themes'; 
 import ResponsiveAppBar from './components/AppBar';
-// import Navbar from './components/Navbar';
-
+import Homepage from './components/HomePage';
 
 function App() {
+  
  return (
     <ThemeProvider theme={themes}>
       <ResponsiveAppBar />
+      <Homepage />
       {/* Other components */}
     </ThemeProvider>
  );
