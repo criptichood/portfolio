@@ -4,7 +4,7 @@ import { GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 
 const Footer: React.FC = () => {
   return (
-    <footer style={{ backgroundColor: '#f0f0f0', padding: '20px 0' }}>
+    <footer style={{ backgroundColor: '#f0f0f0', padding: '20px 0' }} >
       <Container maxWidth="md" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         {/* Social Icons */}
         <div>

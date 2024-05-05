@@ -20,9 +20,11 @@ function AboutMe() {
             About Me
           </Typography>
           <Typography variant="body1" paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis risus non mollis scelerisque.
-            Nulla facilisi. Curabitur nec est et est facilisis ullamcorper vel vitae mi.
-            Morbi rutrum, urna ut tincidunt vestibulum, risus mi imperdiet nunc, et dictum velit eros sit amet enim.
+          Hello, I am Emmanuel, a graduate of Computer Science from
+              the University of Science and Technology Aliero. Throughout my
+              academic journey, I have acquired comprehensive theoretical
+              knowledge in various key areas of computer science.
+
           </Typography>
           <Typography variant="body1" paragraph>
             Fusce congue, mauris a scelerisque vestibulum, velit leo convallis justo, ut convallis risus tortor sed nunc.
