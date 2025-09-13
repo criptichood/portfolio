@@ -1,0 +1,162 @@
+
+{
+  "metadata": {
+    "title": "Criptic Digital - AI 与 Web 开发",
+    "description": "帮助企业和公司建立和升级网站，维护系统，并采用人工智能驱动的解决方案以实现增长。"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "services": "服务",
+    "projects": "项目",
+    "blog": "博客",
+    "contact": "联系方式"
+  },
+  "hero": {
+    "headlines": [
+      {
+        "line1": "更智能的网站。现代化的系统。",
+        "line2": "人工智能驱动的解决方案。"
+      },
+      {
+        "line1": "创新的 Web 和 AI 解决方案。",
+        "line2": "为增长而生。"
+      },
+      {
+        "line1": "从概念到代码。",
+        "line2": "实现您的愿景。"
+      }
+    ],
+    "description": "帮助企业和公司建立和升级网站，维护系统，并采用人工智能驱动的解决方案以实现增长。",
+    "cta1": "获取现代化网站",
+    "cta2": "查看我的作品"
+  },
+  "about": {
+    "title": "关于我",
+    "subtitle": "区块链研究员、AI Web 开发人员和技术顾问。",
+    "description": "我的使命是通过帮助本地企业拥抱技术的未来来为其赋能。我专注于构建集成人工智能的网站，现代化应用程序，并提供可靠的系统维护，以确保无缝运营和可持续增长。"
+  },
+  "services": {
+    "title": "我的服务",
+    "description": "提供全面的解决方案，以提升您的数字形象和运营效率。",
+    "servicesData": [
+      {
+        "title": "AI 驱动的网站开发",
+        "description": "根据您的业务需求量身定制的快速、响应迅速且智能的网站。",
+        "icon": "Cpu"
+      },
+      {
+        "title": "网站和 WebApp 升级",
+        "description": "使用最新技术对您过时的系统进行现代化改造，以获得更好的性能。",
+        "icon": "ArrowUpToLine"
+      },
+      {
+        "title": "系统和服务器维护",
+        "description": "可靠的软件升级、服务器支持和性能监控。",
+        "icon": "Server"
+      },
+      {
+        "title": "独立技术咨询",
+        "description": "量身定制的技术建议和策略，帮助您的业务增长。",
+        "icon": "Briefcase"
+      },
+      {
+        "title": "区块链和 Web3 咨询",
+        "description": "为进入 Web3 领域的前瞻性公司提供专家指导。",
+        "icon": "Blocks"
+      }
+    ]
+  },
+  "projects": {
+    "title": "我的作品",
+    "description": "精选项目，展示了我在构建现代数字解决方案方面的技能和热情。",
+    "projectsData": [
+      {
+        "id": "cryptodahausa",
+        "title": "CryptoDaHausa",
+        "description": "一个提供本地化区块链教育内容的平台，使复杂的主题易于理解。",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      },
+      {
+        "id": "ai-tools",
+        "title": "AI 生产力工具",
+        "description": "一套托管在 GitHub 上的 AI 驱动的应用程序，旨在提高生产力和工作流程。",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      },
+      {
+        "id": "company-website",
+        "title": "公司网站部署",
+        "description": "为一个企业客户提供的现代化、专业的网站，作为一个自由职业者项目交付。",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      },
+      {
+        "id": "open-source",
+        "title": "开源项目",
+        "description": "对各种开源项目的贡献，展示了协作开发技能。",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      }
+    ],
+    "liveDemo": "现场演示",
+    "viewMore": "在 GitHub 上查看更多"
+  },
+  "whyChooseMe": {
+    "title": "为什么选择我？",
+    "description": "通过经验、创新和对您成功的承诺来交付价值。",
+    "items": [
+      { "title": "经济实惠的解决方案", "icon": "BadgeDollarSign" },
+      { "title": "集成 AI 的网站", "icon": "Bot" },
+      { "title": "5年以上经验", "icon": "Medal" },
+      { "title": "良好的往绩", "icon": "TrendingUp" }
+    ]
+  },
+  "blog": {
+    "title": "博客与资源",
+    "description": "关于人工智能、数字化转型、区块链和商业技术的见解。",
+    "posts": [
+      {
+        "title": "AI 在 Web 开发中的兴起",
+        "excerpt": "了解人工智能如何彻底改变我们构建和与网站互动的方式。"
+      },
+      {
+        "title": "本地企业的数字化转型",
+        "excerpt": "为中小型企业利用技术实现增长的指南。"
+      },
+      {
+        "title": "了解加密货币之外的区块链",
+        "excerpt": "探索区块链技术在金融以外的各个行业中的潜力。"
+      }
+    ],
+    "readMore": "阅读更多"
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "有项目想法或只是想打个招呼？我很乐意收到您的来信。",
+    "form": {
+      "name": { "label": "姓名", "placeholder": "您的姓名" },
+      "email": { "label": "电子邮件", "placeholder": "your.email@example.com" },
+      "message": { "label": "信息", "placeholder": "我能为您做些什么？" },
+      "button": "发送信息"
+    },
+    "details": {
+      "title": "联系方式"
+    },
+    "social": {
+      "title": "在社交媒体上联系"
+    },
+    "whatsapp": "在 WhatsApp 上聊天",
+    "toast": {
+      "title": "信息已发送！",
+      "description": "感谢您的联系。我会尽快回复您。"
+    }
+  },
+  "footer": {
+    "tagline": "更智能的网站。现代化的系统。人工智能驱动的解决方案。",
+    "quickLinks": "快速链接",
+    "connect": "联系",
+    "rights": "版权所有。"
+  }
+}
