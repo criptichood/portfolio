@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-picture",
+      "description": "Professional profile picture of Emmanuel Galadima",
+      "imageUrl": "https://picsum.photos/seed/profile/400/400",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "project-cryptodahausa",
+      "description": "Thumbnail for CryptoDaHausa project",
+      "imageUrl": "https://picsum.photos/seed/crypto/600/400",
+      "imageHint": "blockchain technology"
+    },
+    {
+      "id": "project-ai-tools",
+      "description": "Thumbnail for AI Productivity Tools project",
+      "imageUrl": "https://picsum.photos/seed/aitools/600/400",
+      "imageHint": "ai productivity"
+    },
+    {
+      "id": "project-company-website",
+      "description": "Thumbnail for company website deployment project",
+      "imageUrl": "https://picsum.photos/seed/company/600/400",
+      "imageHint": "corporate website"
+    },
+    {
+      "id": "project-open-source",
+      "description": "Thumbnail for open-source projects",
+      "imageUrl": "https://picsum.photos/seed/opensource/600/400",
+      "imageHint": "source code"
+    },
+    {
+      "id": "blog-post-1",
+      "description": "Blog post image about AI in web development",
+      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageHint": "artificial intelligence"
+    },
+    {
+      "id": "blog-post-2",
+      "description": "Blog post image about digital transformation",
+      "imageUrl": "https://picsum.photos/seed/blog2/600/400",
+      "imageHint": "business technology"
+    },
+    {
+      "id": "blog-post-3",
+      "description": "Blog post image about blockchain technology",
+      "imageUrl": "https://picsum.photos/seed/blog3/600/400",
+      "imageHint": "blockchain abstract"
+    }
+  ]
 }
