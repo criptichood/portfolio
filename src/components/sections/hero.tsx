@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -6,24 +7,11 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/motion/fade-in";
 
-const headlines = [
-  {
-    line1: "Smarter Websites. Modern Systems.",
-    line2: "AI-Powered Solutions.",
-  },
-  {
-    line1: "Innovative Web & AI Solutions.",
-    line2: "Built for Growth.",
-  },
-  {
-    line1: "From Concept to Code.",
-    line2: "Your Vision, Realized.",
-  },
-];
-
-export function Hero() {
+export function Hero({ dictionary, lang }: { dictionary: any, lang: string }) {
   const [currentHeadlineIndex, setCurrentHeadlineIndex] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const headlines = dictionary.headlines;
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
@@ -40,7 +28,7 @@ export function Hero() {
       setCurrentHeadlineIndex((prevIndex) => (prevIndex + 1) % headlines.length);
     }, 5000); // Change headline every 5 seconds
     return () => clearInterval(interval);
-  }, []);
+  }, [headlines.length]);
 
   const currentHeadline = headlines[currentHeadlineIndex];
 
@@ -70,14 +58,14 @@ export function Hero() {
           </motion.div>
         </h1>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-10">
-          Helping businesses and companies build and upgrade websites, maintain systems, and adopt AI-driven solutions for growth.
+          {dictionary.description}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            <Link href="#contact">Get a Modern Website</Link>
+            <Link href={`/${lang}#contact`}>{dictionary.cta1}</Link>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link href="#projects">See My Work</Link>
+            <Link href={`/${lang}#projects`}>{dictionary.cta2}</Link>
           </Button>
         </div>
       </FadeIn>

@@ -1,0 +1,162 @@
+
+{
+  "metadata": {
+    "title": "Criptic Digital - AI & Web Development",
+    "description": "Helping businesses and companies build and upgrade websites, maintain systems, and adopt AI-driven solutions for growth."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headlines": [
+      {
+        "line1": "Smarter Websites. Modern Systems.",
+        "line2": "AI-Powered Solutions."
+      },
+      {
+        "line1": "Innovative Web & AI Solutions.",
+        "line2": "Built for Growth."
+      },
+      {
+        "line1": "From Concept to Code.",
+        "line2": "Your Vision, Realized."
+      }
+    ],
+    "description": "Helping businesses and companies build and upgrade websites, maintain systems, and adopt AI-driven solutions for growth.",
+    "cta1": "Get a Modern Website",
+    "cta2": "See My Work"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Blockchain Researcher, AI Web Developer, and Technical Consultant.",
+    "description": "My mission is to empower local businesses by helping them embrace the future of technology. I specialize in building AI-integrated websites, modernizing applications, and providing reliable system maintenance to ensure seamless operations and sustainable growth."
+  },
+  "services": {
+    "title": "My Services",
+    "description": "Providing comprehensive solutions to elevate your digital presence and operational efficiency.",
+    "servicesData": [
+      {
+        "title": "AI-Powered Website Development",
+        "description": "Fast, responsive, and intelligent websites tailored to your business needs.",
+        "icon": "Cpu"
+      },
+      {
+        "title": "Website & WebApp Upgrades",
+        "description": "Modernize your outdated systems with the latest technologies for better performance.",
+        "icon": "ArrowUpToLine"
+      },
+      {
+        "title": "System & Server Maintenance",
+        "description": "Reliable software upgrades, server support, and performance monitoring.",
+        "icon": "Server"
+      },
+      {
+        "title": "Independent Technical Consulting",
+        "description": "Tailored technical recommendations and strategies to help your business grow.",
+        "icon": "Briefcase"
+      },
+      {
+        "title": "Blockchain & Web3 Consulting",
+        "description": "Expert guidance for forward-looking companies stepping into the Web3 space.",
+        "icon": "Blocks"
+      }
+    ]
+  },
+  "projects": {
+    "title": "My Work",
+    "description": "A selection of projects that showcase my skills and passion for building modern digital solutions.",
+    "projectsData": [
+      {
+        "id": "cryptodahausa",
+        "title": "CryptoDaHausa",
+        "description": "A platform for localized blockchain education content, making complex topics accessible.",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      },
+      {
+        "id": "ai-tools",
+        "title": "AI Productivity Tools",
+        "description": "A suite of AI-powered applications hosted on GitHub to boost productivity and workflow.",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      },
+      {
+        "id": "company-website",
+        "title": "Company Website Deployment",
+        "description": "Modern and professional website for a corporate client, delivered as a freelance project.",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      },
+      {
+        "id": "open-source",
+        "title": "Open-source Projects",
+        "description": "Contributions to various open-source projects, showcasing collaborative development skills.",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      }
+    ],
+    "liveDemo": "Live Demo",
+    "viewMore": "View More on GitHub"
+  },
+  "whyChooseMe": {
+    "title": "Why Choose Me?",
+    "description": "Delivering value through experience, innovation, and a commitment to your success.",
+    "items": [
+      { "title": "Affordable Solutions", "icon": "BadgeDollarSign" },
+      { "title": "AI-Integrated Websites", "icon": "Bot" },
+      { "title": "5+ Years Experience", "icon": "Medal" },
+      { "title": "Proven Track Record", "icon": "TrendingUp" }
+    ]
+  },
+  "blog": {
+    "title": "Blog & Resources",
+    "description": "Insights on AI, digital transformation, blockchain, and business technology.",
+    "posts": [
+      {
+        "title": "The Rise of AI in Web Development",
+        "excerpt": "Discover how Artificial Intelligence is revolutionizing the way we build and interact with websites."
+      },
+      {
+        "title": "Digital Transformation for Local Businesses",
+        "excerpt": "A guide for small and medium-sized businesses on leveraging technology for growth."
+      },
+      {
+        "title": "Understanding Blockchain Beyond Cryptocurrency",
+        "excerpt": "Exploring the potential of blockchain technology in various industries beyond finance."
+      }
+    ],
+    "readMore": "Read More"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Have a project in mind or just want to say hello? I'd love to hear from you.",
+    "form": {
+      "name": { "label": "Name", "placeholder": "Your Name" },
+      "email": { "label": "Email", "placeholder": "your.email@example.com" },
+      "message": { "label": "Message", "placeholder": "How can I help you?" },
+      "button": "Send Message"
+    },
+    "details": {
+      "title": "Contact Details"
+    },
+    "social": {
+      "title": "Connect on Social"
+    },
+    "whatsapp": "Chat on WhatsApp",
+    "toast": {
+      "title": "Message Sent!",
+      "description": "Thank you for reaching out. I'll get back to you soon."
+    }
+  },
+  "footer": {
+    "tagline": "Smarter Websites. Modern Systems. AI-Powered Solutions.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,21 +1,6 @@
-import { About } from "@/components/sections/about";
-import { Blog } from "@/components/sections/blog";
-import { Contact } from "@/components/sections/contact";
-import { Hero } from "@/components/sections/hero";
-import { Projects } from "@/components/sections/projects";
-import { Services } from "@/components/sections/services";
-import { WhyChooseMe } from "@/components/sections/why-choose-me";
 
+// This is the root page. It does not contain any markup.
+// The markup has been moved to app/[lang]/page.tsx
 export default function Home() {
-  return (
-    <>
-      <Hero />
-      <About />
-      <Services />
-      <Projects />
-      <WhyChooseMe />
-      <Blog />
-      <Contact />
-    </>
-  );
+  return null;
 }
