@@ -1,0 +1,162 @@
+
+{
+  "metadata": {
+    "title": "Criptic Digital - IA & Développement Web",
+    "description": "Aider les entreprises à créer et à mettre à niveau des sites web, à maintenir des systèmes et à adopter des solutions basées sur l'IA pour leur croissance."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headlines": [
+      {
+        "line1": "Sites Web Plus Intelligents. Systèmes Modernes.",
+        "line2": "Solutions Alimentées par l'IA."
+      },
+      {
+        "line1": "Solutions Web & IA Innovantes.",
+        "line2": "Conçues pour la Croissance."
+      },
+      {
+        "line1": "Du Concept au Code.",
+        "line2": "Votre Vision, Réalisée."
+      }
+    ],
+    "description": "Aider les entreprises à créer et à mettre à niveau des sites web, à maintenir des systèmes et à adopter des solutions basées sur l'IA pour leur croissance.",
+    "cta1": "Obtenir un site web moderne",
+    "cta2": "Voir mon travail"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "subtitle": "Chercheur Blockchain, Développeur Web IA et Consultant Technique.",
+    "description": "Ma mission est de donner aux entreprises locales les moyens d'adopter l'avenir de la technologie. Je me spécialise dans la création de sites web intégrés à l'IA, la modernisation d'applications et la maintenance fiable des systèmes pour garantir des opérations fluides et une croissance durable."
+  },
+  "services": {
+    "title": "Mes Services",
+    "description": "Fournir des solutions complètes pour rehausser votre présence numérique et votre efficacité opérationnelle.",
+    "servicesData": [
+      {
+        "title": "Développement de Sites Web avec IA",
+        "description": "Sites web rapides, réactifs et intelligents adaptés aux besoins de votre entreprise.",
+        "icon": "Cpu"
+      },
+      {
+        "title": "Mises à Niveau de Sites & Applications Web",
+        "description": "Modernisez vos systèmes obsolètes avec les dernières technologies pour de meilleures performances.",
+        "icon": "ArrowUpToLine"
+      },
+      {
+        "title": "Maintenance des Systèmes & Serveurs",
+        "description": "Mises à jour logicielles fiables, support serveur et surveillance des performances.",
+        "icon": "Server"
+      },
+      {
+        "title": "Conseil Technique Indépendant",
+        "description": "Recommandations et stratégies techniques sur mesure pour aider votre entreprise à se développer.",
+        "icon": "Briefcase"
+      },
+      {
+        "title": "Conseil Blockchain & Web3",
+        "description": "Conseils d'experts pour les entreprises tournées vers l'avenir qui entrent dans l'espace Web3.",
+        "icon": "Blocks"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Mes Réalisations",
+    "description": "Une sélection de projets qui mettent en valeur mes compétences et ma passion pour la création de solutions numériques modernes.",
+    "projectsData": [
+      {
+        "id": "cryptodahausa",
+        "title": "CryptoDaHausa",
+        "description": "Une plateforme de contenu éducatif sur la blockchain localisé, rendant les sujets complexes accessibles.",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      },
+      {
+        "id": "ai-tools",
+        "title": "Outils de Productivité IA",
+        "description": "Une suite d'applications basées sur l'IA hébergées sur GitHub pour augmenter la productivité et le flux de travail.",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      },
+      {
+        "id": "company-website",
+        "title": "Déploiement de Site Web d'Entreprise",
+        "description": "Site web moderne et professionnel pour un client d'entreprise, livré en tant que projet freelance.",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      },
+      {
+        "id": "open-source",
+        "title": "Projets Open-source",
+        "description": "Contributions à divers projets open-source, démontrant des compétences en développement collaboratif.",
+        "liveUrl": "#",
+        "githubUrl": "https://github.com/criptichood"
+      }
+    ],
+    "liveDemo": "Démo en direct",
+    "viewMore": "Voir plus sur GitHub"
+  },
+  "whyChooseMe": {
+    "title": "Pourquoi me choisir ?",
+    "description": "Apporter de la valeur grâce à l'expérience, l'innovation et un engagement envers votre succès.",
+    "items": [
+      { "title": "Solutions Abordables", "icon": "BadgeDollarSign" },
+      { "title": "Sites Web Intégrés à l'IA", "icon": "Bot" },
+      { "title": "5+ Ans d'Expérience", "icon": "Medal" },
+      { "title": "Résultats Éprouvés", "icon": "TrendingUp" }
+    ]
+  },
+  "blog": {
+    "title": "Blog & Ressources",
+    "description": "Perspectives sur l'IA, la transformation numérique, la blockchain et la technologie d'entreprise.",
+    "posts": [
+      {
+        "title": "L'essor de l'IA dans le Développement Web",
+        "excerpt": "Découvrez comment l'Intelligence Artificielle révolutionne la façon dont nous construisons et interagissons avec les sites web."
+      },
+      {
+        "title": "Transformation Numérique pour les Entreprises Locales",
+        "excerpt": "Un guide pour les petites et moyennes entreprises sur l'exploitation de la technologie pour la croissance."
+      },
+      {
+        "title": "Comprendre la Blockchain au-delà de la Cryptomonnaie",
+        "excerpt": "Explorer le potentiel de la technologie blockchain dans diverses industries au-delà de la finance."
+      }
+    ],
+    "readMore": "Lire la suite"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "description": "Vous avez un projet en tête ou vous voulez simplement dire bonjour ? J'adorerais avoir de vos nouvelles.",
+    "form": {
+      "name": { "label": "Nom", "placeholder": "Votre Nom" },
+      "email": { "label": "Email", "placeholder": "votre.email@example.com" },
+      "message": { "label": "Message", "placeholder": "Comment puis-je vous aider ?" },
+      "button": "Envoyer le Message"
+    },
+    "details": {
+      "title": "Coordonnées"
+    },
+    "social": {
+      "title": "Suivez-moi sur les réseaux"
+    },
+    "whatsapp": "Discuter sur WhatsApp",
+    "toast": {
+      "title": "Message Envoyé !",
+      "description": "Merci de m'avoir contacté. Je vous répondrai bientôt."
+    }
+  },
+  "footer": {
+    "tagline": "Sites Web Plus Intelligents. Systèmes Modernes. Solutions Alimentées par l'IA.",
+    "quickLinks": "Liens rapides",
+    "connect": "Connecter",
+    "rights": "Tous droits réservés."
+  }
+}
