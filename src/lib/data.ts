@@ -3,7 +3,7 @@ import {
   ArrowUpToLine,
   Server,
   Briefcase,
-  Cube,
+  Blocks,
   BadgeDollarSign,
   Bot,
   Medal,
@@ -77,7 +77,7 @@ export const SERVICES_DATA = [
   {
     title: "Blockchain & Web3 Consulting",
     description: "Expert guidance for forward-looking companies stepping into the Web3 space.",
-    Icon: Cube,
+    Icon: Blocks,
   },
 ];
 
