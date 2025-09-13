@@ -20,7 +20,7 @@ import {
 const locales = [
   { code: 'en', name: 'English' },
   { code: 'ha', name: 'Hausa' },
-  { code: 'fr', name: 'French' },
+  { code: 'fr', name: 'Français' },
 ];
 
 export function Header({ lang }: { lang: string }) {
