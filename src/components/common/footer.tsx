@@ -50,7 +50,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-muted-foreground text-sm">
-          <p>&copy; {currentYear} Emmanuel Galadima (CripticHood). All rights reserved.</p>
+          <p>&copy; {currentYear} Criptic Digital. All rights reserved.</p>
         </div>
       </div>
     </footer>
