@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -22,6 +21,7 @@ const locales = [
   { code: 'ha', name: 'Hausa' },
   { code: 'fr', name: 'Français' },
   { code: 'zh', name: '中文' },
+  { code: 'es', name: 'Español' },
 ];
 
 export function Header({ lang }: { lang: string }) {
