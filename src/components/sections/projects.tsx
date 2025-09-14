@@ -49,7 +49,7 @@ export function Projects({ dictionary }: { dictionary: any }) {
                     )}
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
                       <ExternalLink className="h-5 w-5" />
-                      {dictionary.liveDemo}
+                      {project.id === 'cryptodahausa' ? 'YouTube' : dictionary.liveDemo}
                     </a>
                   </div>
                 </CardFooter>
