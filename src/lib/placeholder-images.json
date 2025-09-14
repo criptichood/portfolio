@@ -22,7 +22,7 @@
     {
       "id": "project-company-website",
       "description": "Thumbnail for company website deployment project",
-      "imageUrl": "https://picsum.photos/seed/company/600/400",
+      "imageUrl": "https://res.cloudinary.com/dlbcsvcys/image/upload/v1757888451/MSaga_nvfo7a.png",
       "imageHint": "corporate website"
     },
     {
