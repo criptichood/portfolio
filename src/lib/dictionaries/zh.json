@@ -80,9 +80,9 @@
       },
       {
         "id": "ai-tools",
-        "title": "AI 生产力工具",
-        "description": "一套托管在 GitHub 上的 AI 驱动的应用程序，旨在提高生产力和工作流程。",
-        "liveUrl": "#",
+        "title": "ScribSyntax",
+        "description": "您的人工智能驱动的视听叙事工作室。",
+        "liveUrl": "https://scrib-syntax.vercel.app/",
         "githubUrl": "https://github.com/criptichood"
       },
       {

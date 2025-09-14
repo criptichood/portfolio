@@ -80,9 +80,9 @@
       },
       {
         "id": "ai-tools",
-        "title": "AI Productivity Tools",
-        "description": "A suite of AI-powered applications hosted on GitHub to boost productivity and workflow.",
-        "liveUrl": "#",
+        "title": "ScribSyntax",
+        "description": "Your AI-powered studio for audiovisual narratives.",
+        "liveUrl": "https://scrib-syntax.vercel.app/",
         "githubUrl": "https://github.com/criptichood"
       },
       {

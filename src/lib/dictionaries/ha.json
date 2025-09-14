@@ -80,9 +80,9 @@
       },
       {
         "id": "ai-tools",
-        "title": "Kayan Aikin AI na Haɓaka Aiki",
-        "description": "Jerin aikace-aikacen da AI ke tafiyar da su da aka shirya akan GitHub don haɓaka aiki da tsarin aiki.",
-        "liveUrl": "#",
+        "title": "ScribSyntax",
+        "description": "Sitidiyon ku mai amfani da AI don labarun sauti da bidiyo.",
+        "liveUrl": "https://scrib-syntax.vercel.app/",
         "githubUrl": "https://github.com/criptichood"
       },
       {

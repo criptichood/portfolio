@@ -80,9 +80,9 @@
       },
       {
         "id": "ai-tools",
-        "title": "Outils de Productivité IA",
-        "description": "Une suite d'applications basées sur l'IA hébergées sur GitHub pour augmenter la productivité et le flux de travail.",
-        "liveUrl": "#",
+        "title": "ScribSyntax",
+        "description": "Votre studio alimenté par l'IA pour les récits audiovisuels.",
+        "liveUrl": "https://scrib-syntax.vercel.app/",
         "githubUrl": "https://github.com/criptichood"
       },
       {

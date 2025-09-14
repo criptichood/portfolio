@@ -80,9 +80,9 @@
       },
       {
         "id": "ai-tools",
-        "title": "أدوات إنتاجية الذكاء الاصطناعي",
-        "description": "مجموعة من التطبيقات المدعومة بالذكاء الاصطناعي المستضافة على GitHub لتعزيز الإنتاجية وسير العمل.",
-        "liveUrl": "#",
+        "title": "ScribSyntax",
+        "description": "الاستوديو الخاص بك المدعوم بالذكاء الاصطناعي للروايات السمعية والبصرية.",
+        "liveUrl": "https://scrib-syntax.vercel.app/",
         "githubUrl": "https://github.com/criptichood"
       },
       {

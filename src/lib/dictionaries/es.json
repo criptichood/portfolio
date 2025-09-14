@@ -80,9 +80,9 @@
       },
       {
         "id": "ai-tools",
-        "title": "Herramientas de Productividad de IA",
-        "description": "Un conjunto de aplicaciones impulsadas por IA alojadas en GitHub para aumentar la productividad y el flujo de trabajo.",
-        "liveUrl": "#",
+        "title": "ScribSyntax",
+        "description": "Su estudio impulsado por IA para narrativas audiovisuales.",
+        "liveUrl": "https://scrib-syntax.vercel.app/",
         "githubUrl": "https://github.com/criptichood"
       },
       {
