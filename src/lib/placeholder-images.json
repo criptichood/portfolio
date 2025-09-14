@@ -4,7 +4,7 @@
     {
       "id": "profile-picture",
       "description": "Professional profile picture of Emmanuel Galadima",
-      "imageUrl": "https://picsum.photos/seed/profile/400/400",
+      "imageUrl": "https://res.cloudinary.com/dlbcsvcys/image/upload/v1757885748/m3_q3yrqs.png",
       "imageHint": "professional portrait"
     },
     {
