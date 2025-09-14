@@ -14,7 +14,7 @@ export async function Footer({ lang }: { lang: string }) {
       <div className="container mx-auto py-12 px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-4">
-            <Link href={`/${lang}#home`} className="flex items-center gap-2 font-bold text-xl font-headline">
+            <Link href={`/${lang}/home`} className="flex items-center gap-2 font-bold text-xl font-headline">
               <Code className="h-7 w-7 text-primary" />
               Criptic Digital
             </Link>
@@ -27,7 +27,7 @@ export async function Footer({ lang }: { lang: string }) {
             <ul className="space-y-2">
               {NAV_LINKS(dictionary.nav).map((link) => (
                 <li key={link.href}>
-                  <Link href={`/${lang}${link.href}`} className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link href={`/${lang}${link.href.replace('#', '/home#')}`} className="text-muted-foreground hover:text-primary transition-colors">
                     {link.label}
                   </Link>
                 </li>

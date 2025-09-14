@@ -17,7 +17,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: s
 
 const rtlLocales = ['ar'];
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: Readonly<{
@@ -25,6 +25,8 @@ export default function RootLayout({
   params: { lang: string };
 }>) {
   const isRtl = rtlLocales.includes(params.lang);
+  const dictionary = await getDictionary(params.lang);
+
   return (
     <html lang={params.lang} dir={isRtl ? 'rtl' : 'ltr'} className="!scroll-smooth" suppressHydrationWarning>
       <head>
@@ -39,7 +41,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header lang={params.lang} />
+          <Header lang={params.lang} dictionary={dictionary.nav} />
           <main className="overflow-x-hidden">{children}</main>
           <Footer lang={params.lang} />
           <Toaster />

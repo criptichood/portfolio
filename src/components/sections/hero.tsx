@@ -62,10 +62,10 @@ export function Hero({ dictionary, lang }: { dictionary: any, lang: string }) {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            <Link href={`/${lang}#contact`}>{dictionary.cta1}</Link>
+            <Link href={`/${lang}/home#contact`}>{dictionary.cta1}</Link>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link href={`/${lang}#projects`}>{dictionary.cta2}</Link>
+            <Link href={`/${lang}/home#projects`}>{dictionary.cta2}</Link>
           </Button>
         </div>
       </FadeIn>

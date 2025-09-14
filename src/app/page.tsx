@@ -1,4 +1,3 @@
-
 import { redirect } from 'next/navigation';
 import { headers } from 'next/headers';
 import { match } from '@formatjs/intl-localematcher';

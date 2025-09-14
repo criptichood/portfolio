@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -25,7 +26,7 @@ const locales = [
   { code: 'ar', name: 'العربية' },
 ];
 
-export function Header({ lang }: { lang: string }) {
+export function Header({ lang, dictionary }: { lang: string, dictionary: any }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -38,21 +39,14 @@ export function Header({ lang }: { lang: string }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const DUMMY_DICTIONARY = {
-    home: "Home",
-    about: "About",
-    services: "Services",
-    projects: "Projects",
-    blog: "Blog",
-    contact: "Contact",
-  };
-  const navLinks = NAV_LINKS(DUMMY_DICTIONARY);
+  const navLinks = NAV_LINKS(dictionary);
 
   function getRedirectedPath(locale: string) {
     if (!pathname) return '/';
     const segments = pathname.split('/');
     segments[1] = locale;
-    return segments.join('/');
+    // Always redirect to the base home page for the new locale
+    return segments.slice(0, 2).concat('home').join('/');
   }
 
   return (
@@ -65,7 +59,7 @@ export function Header({ lang }: { lang: string }) {
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href={`/${lang}#home`} className="flex items-center gap-2 font-bold text-lg font-headline">
+        <Link href={`/${lang}/home`} className="flex items-center gap-2 font-bold text-lg font-headline">
           <Code className="h-6 w-6 text-primary" />
           Criptic Digital
         </Link>
@@ -73,7 +67,7 @@ export function Header({ lang }: { lang: string }) {
           {navLinks.map((link) => (
             <Link
               key={link.href}
-              href={`/${lang}${link.href}`}
+              href={`/${lang}${link.href.replace('#', '/home#')}`}
               className="hover:text-primary transition-colors"
             >
               {link.label}
@@ -107,7 +101,7 @@ export function Header({ lang }: { lang: string }) {
               </SheetTrigger>
               <SheetContent side="left">
                 <div className="flex flex-col p-6">
-                  <Link href={`/${lang}#home`} className="flex items-center gap-2 font-bold text-lg font-headline mb-8" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link href={`/${lang}/home`} className="flex items-center gap-2 font-bold text-lg font-headline mb-8" onClick={() => setIsMobileMenuOpen(false)}>
                     <Code className="h-6 w-6 text-primary" />
                     Criptic Digital
                   </Link>
@@ -115,7 +109,7 @@ export function Header({ lang }: { lang: string }) {
                     {navLinks.map((link) => (
                       <Link
                         key={link.href}
-                        href={`/${lang}${link.href}`}
+                        href={`/${lang}${link.href.replace('#', '/home#')}`}
                         className="hover:text-primary transition-colors"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
