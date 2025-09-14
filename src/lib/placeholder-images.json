@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -25,10 +26,10 @@
       "imageHint": "corporate website"
     },
     {
-      "id": "project-open-source",
-      "description": "Thumbnail for open-source projects",
-      "imageUrl": "https://picsum.photos/seed/opensource/600/400",
-      "imageHint": "source code"
+      "id": "project-personalized-website",
+      "description": "Thumbnail for a personalized business website project",
+      "imageUrl": "https://res.cloudinary.com/dlbcsvcys/image/upload/v1757852626/MTouch_uu1n2u.png",
+      "imageHint": "ecommerce website"
     },
     {
       "id": "blog-post-1",
@@ -50,3 +51,5 @@
     }
   ]
 }
+
+    

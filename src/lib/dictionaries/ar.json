@@ -93,10 +93,10 @@
         "githubUrl": "https://github.com/criptichood"
       },
       {
-        "id": "open-source",
+        "id": "personalized-website",
         "title": "موقع شخصي لعملك",
         "description": "موقع ويب مخصص مصمم خصيصًا لتلبية الاحتياجات المحددة لعميل تجاري، مع عرض العلامة التجارية والوظائف.",
-        "liveUrl": "#",
+        "liveUrl": "https://maryams-touch-client.vercel.app/",
         "githubUrl": ""
       }
     ],
@@ -181,3 +181,5 @@
     "rights": "جميع الحقوق محفوظة."
   }
 }
+
+    

@@ -93,10 +93,10 @@
         "githubUrl": "https://github.com/criptichood"
       },
       {
-        "id": "open-source",
+        "id": "personalized-website",
         "title": "Shafin yanar gizo na musamman don kasuwancin ku",
         "description": "Shafin yanar gizo na musamman wanda aka keɓe don takamaiman bukatun abokin ciniki na kasuwanci, yana nuna alama da aiki.",
-        "liveUrl": "#",
+        "liveUrl": "https://maryams-touch-client.vercel.app/",
         "githubUrl": ""
       }
     ],
@@ -181,3 +181,5 @@
     "rights": "Duk haƙƙoƙi an kiyaye su."
   }
 }
+
+    
