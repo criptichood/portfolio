@@ -22,6 +22,7 @@ const locales = [
   { code: 'fr', name: 'Français' },
   { code: 'zh', name: '中文' },
   { code: 'es', name: 'Español' },
+  { code: 'ar', name: 'العربية' },
 ];
 
 export function Header({ lang }: { lang: string }) {

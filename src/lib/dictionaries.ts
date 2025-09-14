@@ -7,6 +7,7 @@ const dictionaries: { [key: string]: () => Promise<any> } = {
   fr: () => import('@/lib/dictionaries/fr.json').then((module) => module.default),
   zh: () => import('@/lib/dictionaries/zh.json').then((module) => module.default),
   es: () => import('@/lib/dictionaries/es.json').then((module) => module.default),
+  ar: () => import('@/lib/dictionaries/ar.json').then((module) => module.default),
 };
 
 export const getDictionary = async (locale: string) => {

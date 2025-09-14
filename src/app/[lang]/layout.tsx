@@ -15,6 +15,8 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: s
   };
 }
 
+const rtlLocales = ['ar'];
+
 export default function RootLayout({
   children,
   params,
@@ -22,8 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { lang: string };
 }>) {
+  const isRtl = rtlLocales.includes(params.lang);
   return (
-    <html lang={params.lang} className="!scroll-smooth" suppressHydrationWarning>
+    <html lang={params.lang} dir={isRtl ? 'rtl' : 'ltr'} className="!scroll-smooth" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
