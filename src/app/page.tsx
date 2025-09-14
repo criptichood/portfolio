@@ -21,5 +21,5 @@ function getLocale(): string {
 
 export default function Home() {
   const locale = getLocale();
-  redirect(`/${locale}/home`);
+  redirect(`/${locale}`);
 }

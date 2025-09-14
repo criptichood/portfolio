@@ -8,7 +8,7 @@ import { NAV_LINKS } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ThemeToggle } from "../theme-toggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { usePathname } from "next/navigation";
 import {
   DropdownMenu,
@@ -45,8 +45,7 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
     if (!pathname) return '/';
     const segments = pathname.split('/');
     segments[1] = locale;
-    // Always redirect to the base home page for the new locale
-    return segments.slice(0, 2).concat('home').join('/');
+    return segments.join('/');
   }
 
   return (
@@ -59,7 +58,7 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
       )}
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href={`/${lang}/home`} className="flex items-center gap-2 font-bold text-lg font-headline">
+        <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-lg font-headline">
           <Code className="h-6 w-6 text-primary" />
           Criptic Digital
         </Link>
@@ -67,7 +66,7 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
           {navLinks.map((link) => (
             <Link
               key={link.href}
-              href={`/${lang}${link.href.replace('#', '/home#')}`}
+              href={`/${lang}${link.href}`}
               className="hover:text-primary transition-colors"
             >
               {link.label}
@@ -101,7 +100,7 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
               </SheetTrigger>
               <SheetContent side="left">
                 <div className="flex flex-col p-6">
-                  <Link href={`/${lang}/home`} className="flex items-center gap-2 font-bold text-lg font-headline mb-8" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-lg font-headline mb-8" onClick={() => setIsMobileMenuOpen(false)}>
                     <Code className="h-6 w-6 text-primary" />
                     Criptic Digital
                   </Link>
@@ -109,7 +108,7 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
                     {navLinks.map((link) => (
                       <Link
                         key={link.href}
-                        href={`/${lang}${link.href.replace('#', '/home#')}`}
+                        href={`/${lang}${link.href}`}
                         className="hover:text-primary transition-colors"
                         onClick={() => setIsMobileMenuOpen(false)}
                       >
