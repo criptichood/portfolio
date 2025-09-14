@@ -113,6 +113,24 @@
       { "title": "Résultats Éprouvés", "icon": "TrendingUp" }
     ]
   },
+  "faq": {
+    "title": "Foire Aux Questions",
+    "description": "Trouvez les réponses aux questions courantes sur nos services et l'importance de la technologie dans les affaires.",
+    "items": [
+      {
+        "question": "Pourquoi mon entreprise a-t-elle besoin d'un site web professionnel ?",
+        "answer": "Un site web professionnel agit comme votre vitrine numérique, disponible 24h/24 et 7j/7. Il renforce la crédibilité, présente vos produits ou services et vous permet d'atteindre un public plus large qu'un emplacement physique ne le pourrait jamais. C'est un outil fondamental pour la croissance et l'engagement client dans le monde numérique d'aujourd'hui."
+      },
+      {
+        "question": "Quelle est l'importance de l'entretien régulier des ordinateurs pour mon entreprise ?",
+        "answer": "L'entretien régulier est crucial pour la sécurité et l'efficacité. Il prévient la perte de données, protège contre les cybermenaces et garantit le bon fonctionnement de vos systèmes, minimisant les temps d'arrêt. L'entretien proactif permet d'économiser de l'argent à long terme en évitant les réparations d'urgence coûteuses et la récupération de données."
+      },
+      {
+        "question": "Quels sont les avantages de l'intégration de l'IA dans mon site web ?",
+        "answer": "L'IA peut transformer votre site web d'une brochure statique en un outil dynamique. Elle peut alimenter des expériences client personnalisées, automatiser le support avec des chatbots, fournir des informations précieuses sur les données et rationaliser la création de contenu, vous offrant ainsi un avantage concurrentiel significatif."
+      }
+    ]
+  },
   "blog": {
     "title": "Blog & Ressources",
     "description": "Perspectives sur l'IA, la transformation numérique, la blockchain et la technologie d'entreprise.",

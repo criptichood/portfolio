@@ -113,6 +113,24 @@
       { "title": "Tabbataccen Tarihin Aiki", "icon": "TrendingUp" }
     ]
   },
+  "faq": {
+    "title": "Tambayoyi da Amsoshi",
+    "description": "Nemo amsoshin tambayoyin da aka saba yi game da ayyukanmu da mahimmancin fasaha a cikin kasuwanci.",
+    "items": [
+      {
+        "question": "Me yasa kasuwancina ke buƙatar shafin yanar gizo na ƙwararru?",
+        "answer": "Shafin yanar gizo na ƙwararru yana aiki a matsayin shagon ku na dijital, wanda ke samuwa 24/7. Yana gina sahihanci, yana nuna samfuran ku ko ayyukan ku, kuma yana ba ku damar isa ga mafi yawan masu sauraro fiye da yadda wurin zahiri zai iya. Kayan aiki ne na asali don haɓaka da haɗin gwiwar abokin ciniki a duniyar dijital ta yau."
+      },
+      {
+        "question": "Menene mahimmancin kula da kwamfuta na yau da kullun ga kasuwancina?",
+        "answer": "Kulawa na yau da kullun yana da mahimmanci ga tsaro da inganci. Yana hana asarar bayanai, yana karewa daga barazanar yanar gizo, kuma yana tabbatar da tsarin ku yana aiki lami lafiya, yana rage lokacin aiki. Kulawa mai himma yana adana kuɗi a cikin dogon lokaci ta hanyar guje wa gyare-gyare na gaggawa masu tsada da dawo da bayanai."
+      },
+      {
+        "question": "Mene ne amfanin haɗa AI a cikin shafin yanar gizo na?",
+        "answer": "AI na iya canza shafin yanar gizon ku daga ƙasida maras motsi zuwa kayan aiki mai ƙarfi. Zai iya ƙarfafa ƙwarewar abokin ciniki na keɓaɓɓen, sarrafa tallafi tare da chatbots, samar da fa'idodin bayanai masu mahimmanci, da daidaita ƙirƙirar abun ciki, yana ba ku babbar fa'ida ta gasa."
+      }
+    ]
+  },
   "blog": {
     "title": "Shafin & Albarkatu",
     "description": "Fahimta kan AI, sauye-sauyen dijital, blockchain, da fasahar kasuwanci.",

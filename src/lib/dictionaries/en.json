@@ -113,6 +113,24 @@
       { "title": "Proven Track Record", "icon": "TrendingUp" }
     ]
   },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our services and the importance of technology in business.",
+    "items": [
+      {
+        "question": "Why does my business need a professional website?",
+        "answer": "A professional website acts as your digital storefront, available 24/7. It builds credibility, showcases your products or services, and allows you to reach a wider audience than a physical location ever could. It's a fundamental tool for growth and customer engagement in today's digital world."
+      },
+      {
+        "question": "How important is regular computer maintenance for my business?",
+        "answer": "Regular maintenance is crucial for both security and efficiency. It prevents data loss, protects against cyber threats, and ensures your systems run smoothly, minimizing downtime. Proactive maintenance saves money in the long run by avoiding costly emergency repairs and data recovery."
+      },
+      {
+        "question": "What are the benefits of integrating AI into my website?",
+        "answer": "AI can transform your website from a static brochure into a dynamic tool. It can power personalized customer experiences, automate support with chatbots, provide valuable data insights, and streamline content creation, giving you a significant competitive advantage."
+      }
+    ]
+  },
   "blog": {
     "title": "Blog & Resources",
     "description": "Insights on AI, digital transformation, blockchain, and business technology.",

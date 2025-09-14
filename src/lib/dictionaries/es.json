@@ -113,6 +113,24 @@
       { "title": "Historial Comprobado", "icon": "TrendingUp" }
     ]
   },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Encuentre respuestas a preguntas comunes sobre nuestros servicios y la importancia de la tecnología en los negocios.",
+    "items": [
+      {
+        "question": "¿Por qué mi negocio necesita un sitio web profesional?",
+        "answer": "Un sitio web profesional actúa como su escaparate digital, disponible 24/7. Genera credibilidad, muestra sus productos o servicios y le permite llegar a una audiencia más amplia de lo que una ubicación física podría jamás. Es una herramienta fundamental para el crecimiento y la participación del cliente en el mundo digital actual."
+      },
+      {
+        "question": "¿Qué tan importante es el mantenimiento regular de las computadoras para mi negocio?",
+        "answer": "El mantenimiento regular es crucial tanto para la seguridad como para la eficiencia. Previene la pérdida de datos, protege contra las amenazas cibernéticas y garantiza que sus sistemas funcionen sin problemas, minimizando el tiempo de inactividad. El mantenimiento proactivo ahorra dinero a largo plazo al evitar costosas reparaciones de emergencia y recuperación de datos."
+      },
+      {
+        "question": "¿Cuáles son los beneficios de integrar la IA en mi sitio web?",
+        "answer": "La IA puede transformar su sitio web de un folleto estático a una herramienta dinámica. Puede potenciar experiencias de cliente personalizadas, automatizar el soporte con chatbots, proporcionar información valiosa de datos y agilizar la creación de contenido, lo que le brinda una ventaja competitiva significativa."
+      }
+    ]
+  },
   "blog": {
     "title": "Blog y Recursos",
     "description": "Perspectivas sobre IA, transformación digital, blockchain y tecnología empresarial.",
