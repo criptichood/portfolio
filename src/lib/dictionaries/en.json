@@ -34,7 +34,7 @@
   "about": {
     "title": "About Me",
     "subtitle": "Blockchain Researcher, AI Web Developer, and Technical Consultant.",
-    "description": "My mission is to empower businesses by helping them embrace the future of technology. I specialize in building AI-integrated websites, modernizing applications, and providing reliable system maintenance to ensure seamless operations and sustainable growth."
+    "description": "Empowering businesses by helping them embrace the future of technology. I specialize in building AI-integrated websites, modernizing applications, and providing reliable system maintenance to ensure seamless operations and sustainable growth."
   },
   "services": {
     "title": "My Services",
@@ -119,15 +119,18 @@
     "posts": [
       {
         "title": "The Rise of AI in Web Development",
-        "excerpt": "Discover how Artificial Intelligence is revolutionizing the way we build and interact with websites."
+        "excerpt": "Discover how Artificial Intelligence is revolutionizing the way we build and interact with websites.",
+        "url": "https://www.smashingmagazine.com/2023/06/ai-powered-web-development-tools/"
       },
       {
         "title": "Digital Transformation for Local Businesses",
-        "excerpt": "A guide for small and medium-sized businesses on leveraging technology for growth."
+        "excerpt": "A guide for small and medium-sized businesses on leveraging technology for growth.",
+        "url": "https://www.forbes.com/sites/forbestechcouncil/2022/10/20/digital-transformation-for-small-and-medium-businesses-a-how-to-guide/"
       },
       {
         "title": "Understanding Blockchain Beyond Cryptocurrency",
-        "excerpt": "Exploring the potential of blockchain technology in various industries beyond finance."
+        "excerpt": "Exploring the potential of blockchain technology in various industries beyond finance.",
+        "url": "https://hbr.org/2017/01/the-truth-about-blockchain"
       }
     ],
     "readMore": "Read More"

@@ -34,7 +34,7 @@
   "about": {
     "title": "Game da Ni",
     "subtitle": "Mai Binciken Blockchain, Mai Haɓaka Yanar Gizo na AI, da kuma Mai Ba da Shawara kan Fasaha.",
-    "description": "Manufata ita ce in ƙarfafa kasuwanci ta hanyar taimaka musu su rungumi makomar fasaha. Na kware wajen gina shafukan yanar gizo da aka haɗa da AI, sabunta aikace-aikace, da kuma ba da ingantaccen kulawa ga tsarin don tabbatar da ayyuka marasa matsala da ci gaba mai dorewa."
+    "description": "Taimakawa kasuwanci ta hanyar taimaka musu su rungumi makomar fasaha. Na kware wajen gina shafukan yanar gizo da aka haɗa da AI, sabunta aikace-aikace, da kuma ba da ingantaccen kulawa ga tsarin don tabbatar da ayyuka marasa matsala da ci gaba mai dorewa."
   },
   "services": {
     "title": "Ayyukana",
@@ -119,15 +119,18 @@
     "posts": [
       {
         "title": "Haɓakar AI a Ci gaban Yanar Gizo",
-        "excerpt": "Gano yadda Hankalin Ƙirƙira ke kawo sauyi ga yadda muke ginawa da hulɗa da shafukan yanar gizo."
+        "excerpt": "Gano yadda Hankalin Ƙirƙira ke kawo sauyi ga yadda muke ginawa da hulɗa da shafukan yanar gizo.",
+        "url": "https://www.smashingmagazine.com/2023/06/ai-powered-web-development-tools/"
       },
       {
         "title": "Sauye-sauyen Dijital ga Kasuwancin Gida",
-        "excerpt": "Jagora ga ƙanana da matsakaitan kasuwanci kan yadda za su yi amfani da fasaha don haɓaka."
+        "excerpt": "Jagora ga ƙanana da matsakaitan kasuwanci kan yadda za su yi amfani da fasaha don haɓaka.",
+        "url": "https://www.forbes.com/sites/forbestechcouncil/2022/10/20/digital-transformation-for-small-and-medium-businesses-a-how-to-guide/"
       },
       {
         "title": "Fahimtar Blockchain Fiye da Kuɗin Intanet",
-        "excerpt": "Binciko yiwuwar fasahar blockchain a masana'antu daban-daban fiye da harkokin kuɗi."
+        "excerpt": "Binciko yiwuwar fasahar blockchain a masana'antu daban-daban fiye da harkokin kuɗi.",
+        "url": "https://hbr.org/2017/01/the-truth-about-blockchain"
       }
     ],
     "readMore": "Kara Karatu"

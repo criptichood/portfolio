@@ -34,7 +34,7 @@
   "about": {
     "title": "Sobre Mí",
     "subtitle": "Investigador de Blockchain, Desarrollador Web de IA y Consultor Técnico.",
-    "description": "Mi misión es empoderar a las empresas ayudándolas a abrazar el futuro de la tecnología. Me especializo en la construcción de sitios web integrados con IA, la modernización de aplicaciones y la provisión de un mantenimiento de sistemas fiable para garantizar operaciones fluidas y un crecimiento sostenible."
+    "description": "Empoderar a las empresas ayudándolas a abrazar el futuro de la tecnología. Me especializo en la construcción de sitios web integrados con IA, la modernización de aplicaciones y la provisión de un mantenimiento de sistemas fiable para garantizar operaciones fluidas y un crecimiento sostenible."
   },
   "services": {
     "title": "Mis Servicios",
@@ -119,15 +119,18 @@
     "posts": [
       {
         "title": "El Auge de la IA en el Desarrollo Web",
-        "excerpt": "Descubra cómo la Inteligencia Artificial está revolucionando la forma en que construimos e interactuamos con los sitios web."
+        "excerpt": "Descubra cómo la Inteligencia Artificial está revolucionando la forma en que construimos e interactuamos con los sitios web.",
+        "url": "https://www.smashingmagazine.com/2023/06/ai-powered-web-development-tools/"
       },
       {
         "title": "Transformación Digital para Empresas Locales",
-        "excerpt": "Una guía para pequeñas y medianas empresas sobre cómo aprovechar la tecnología para el crecimiento."
+        "excerpt": "Una guía para pequeñas y medianas empresas sobre cómo aprovechar la tecnología para el crecimiento.",
+        "url": "https://www.forbes.com/sites/forbestechcouncil/2022/10/20/digital-transformation-for-small-and-medium-businesses-a-how-to-guide/"
       },
       {
         "title": "Entendiendo Blockchain Más Allá de las Criptomonedas",
-        "excerpt": "Explorando el potencial de la tecnología blockchain en diversas industrias más allá de las finanzas."
+        "excerpt": "Explorando el potencial de la tecnología blockchain en diversas industrias más allá de las finanzas.",
+        "url": "https://hbr.org/2017/01/the-truth-about-blockchain"
       }
     ],
     "readMore": "Leer Más"

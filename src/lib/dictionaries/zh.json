@@ -34,7 +34,7 @@
   "about": {
     "title": "关于我",
     "subtitle": "区块链研究员、AI Web 开发人员和技术顾问。",
-    "description": "我的使命是通过帮助企业拥抱技术的未来来为其赋能。我专注于构建集成人工智能的网站，现代化应用程序，并提供可靠的系统维护，以确保无缝运营和可持续增长。"
+    "description": "通过帮助企业拥抱技术的未来来为其赋能。我专注于构建集成人工智能的网站，现代化应用程序，并提供可靠的系统维护，以确保无缝运营和可持续增长。"
   },
   "services": {
     "title": "我的服务",
@@ -119,15 +119,18 @@
     "posts": [
       {
         "title": "AI 在 Web 开发中的兴起",
-        "excerpt": "了解人工智能如何彻底改变我们构建和与网站互动的方式。"
+        "excerpt": "了解人工智能如何彻底改变我们构建和与网站互动的方式。",
+        "url": "https://www.smashingmagazine.com/2023/06/ai-powered-web-development-tools/"
       },
       {
         "title": "本地企业的数字化转型",
-        "excerpt": "为中小型企业利用技术实现增长的指南。"
+        "excerpt": "为中小型企业利用技术实现增长的指南。",
+        "url": "https://www.forbes.com/sites/forbestechcouncil/2022/10/20/digital-transformation-for-small-and-medium-businesses-a-how-to-guide/"
       },
       {
         "title": "了解加密货币之外的区块链",
-        "excerpt": "探索区块链技术在金融以外的各个行业中的潜力。"
+        "excerpt": "探索区块链技术在金融以外的各个行业中的潜力。",
+        "url": "https://hbr.org/2017/01/the-truth-about-blockchain"
       }
     ],
     "readMore": "阅读更多"

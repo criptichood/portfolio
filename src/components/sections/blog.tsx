@@ -41,7 +41,7 @@ export function Blog({ dictionary }: { dictionary: any }) {
                         </CardContent>
                         <CardFooter>
                             <Button variant="link" asChild className="p-0">
-                                <Link href="#">{dictionary.readMore}</Link>
+                                <Link href={post.url} target="_blank" rel="noopener noreferrer">{dictionary.readMore}</Link>
                             </Button>
                         </CardFooter>
                     </Card>
