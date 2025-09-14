@@ -94,10 +94,10 @@
       },
       {
         "id": "open-source",
-        "title": "Projets Open-source",
-        "description": "Contributions à divers projets open-source, démontrant des compétences en développement collaboratif.",
+        "title": "Site web personnalisé pour votre entreprise",
+        "description": "Un site web sur mesure adapté aux besoins spécifiques d'un client professionnel, mettant en valeur l'image de marque et les fonctionnalités.",
         "liveUrl": "#",
-        "githubUrl": "https://github.com/criptichood"
+        "githubUrl": ""
       }
     ],
     "liveDemo": "Démo en direct",

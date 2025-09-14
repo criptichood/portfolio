@@ -41,10 +41,12 @@ export function Projects({ dictionary }: { dictionary: any }) {
                 </CardContent>
                 <CardFooter className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
-                      <Github className="h-5 w-5" />
-                      GitHub
-                    </a>
+                    {project.githubUrl && (
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
+                        <Github className="h-5 w-5" />
+                        GitHub
+                      </a>
+                    )}
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
                       <ExternalLink className="h-5 w-5" />
                       {dictionary.liveDemo}
