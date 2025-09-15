@@ -19,29 +19,22 @@ function initializeFirebaseAdmin() {
     return;
   }
 
-  // In a deployed environment (like App Hosting), credentials are automatically discovered.
-  if (process.env.FIREBASE_CONFIG) {
-    admin.initializeApp();
-    return;
-  }
-
-  // For local development, use the service account key.
   try {
+    // For local development, try to load the service account key.
     // The service-account.json file is not checked in, so this will fail in deployed environments.
-    // That is okay, because the automatic credentials above will be used instead.
+    // That is okay, because the automatic credentials will be used instead.
     const serviceAccount = require('../../../service-account.json');
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
     });
   } catch (error: any) {
-    // If the service account file is not found, we log a warning and continue.
-    // This allows the app to run locally without a service account, although Firestore will not work.
+    // If the service account file is not found, we assume we are in a deployed environment
+    // where credentials will be automatically discovered.
     if (error.code === 'MODULE_NOT_FOUND') {
-      console.warn(
-        'Service account key not found at `service-account.json`. Firebase Admin SDK initialization skipped for local development. Form submissions will not be saved to Firestore.'
-      );
+      console.log('Service account key not found, attempting to initialize with default credentials for deployed environment.');
+      admin.initializeApp();
     } else {
-      console.error('Error initializing Firebase Admin SDK locally:', error);
+      console.error('Error initializing Firebase Admin SDK:', error);
     }
   }
 }
@@ -50,10 +43,10 @@ function initializeFirebaseAdmin() {
 async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
   initializeFirebaseAdmin();
   
-  // Exit if the SDK could not be initialized (e.g., in local dev without a service account key).
+  // Exit if the SDK could not be initialized.
   if (admin.apps.length === 0) {
-    console.log('Firebase Admin not initialized. Skipping database write.');
-    return;
+    console.error('Firebase Admin not initialized. Skipping database write.');
+    throw new Error('Firebase Admin SDK could not be initialized.');
   }
 
   const db = admin.firestore();
@@ -64,6 +57,7 @@ async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
       ...input,
       submittedAt: new Date(),
     });
+    console.log('Message saved to Firestore successfully.');
   } catch (error) {
     console.error('Error saving to Firestore:', error);
     throw new Error('Could not save message to the database.');
