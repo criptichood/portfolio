@@ -8,6 +8,7 @@
 
 import { z } from 'zod';
 import { ai } from '@/ai/genkit';
+import * as admin from 'firebase-admin';
 
 export const ContactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
@@ -17,22 +18,28 @@ export const ContactFormSchema = z.object({
 
 export type ContactFormInput = z.infer<typeof ContactFormSchema>;
 
-// This is a placeholder function for saving data to a database like Firestore.
-// In a real application, you would replace this with your actual database logic.
-async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
-  // Example Firestore logic (requires setup):
-  //
-  // import { getFirestore } from 'firebase-admin/firestore';
-  // const db = getFirestore();
-  // await db.collection('contactSubmissions').add({
-  //   ...input,
-  //   submittedAt: new Date(),
-  // });
-  
-  // For now, we'll just simulate a successful save.
-  return Promise.resolve();
+// Initialize Firebase Admin SDK if it hasn't been already.
+if (admin.apps.length === 0) {
+  admin.initializeApp();
 }
 
+const db = admin.firestore();
+
+// Function to save the contact message to Firestore.
+async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
+  try {
+    const submissionsCollection = db.collection('contactSubmissions');
+    await submissionsCollection.add({
+      ...input,
+      submittedAt: new Date(),
+    });
+    console.log('Contact form submission saved to Firestore.');
+  } catch (error) {
+    console.error('Error saving to Firestore:', error);
+    // Re-throw the error to be caught by the calling function
+    throw new Error('Could not save message to the database.');
+  }
+}
 
 export async function sendContactMessage(input: ContactFormInput): Promise<void> {
   await contactFlow(input);
@@ -45,8 +52,7 @@ const contactFlow = ai.defineFlow(
     outputSchema: z.void(),
   },
   async (input) => {
-    // Here we call the function to save the message.
-    // Replace the placeholder with your actual database service.
+    // Call the function to save the message to Firestore.
     await saveMessageToDatabase(input);
   }
 );
