@@ -34,19 +34,19 @@
     {
       "id": "blog-post-1",
       "description": "Blog post image about AI in web development",
-      "imageUrl": "https://picsum.photos/seed/blog1/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "artificial intelligence"
     },
     {
       "id": "blog-post-2",
       "description": "Blog post image about digital transformation",
-      "imageUrl": "https://picsum.photos/seed/blog2/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
       "imageHint": "business technology"
     },
     {
       "id": "blog-post-3",
       "description": "Blog post image about blockchain technology",
-      "imageUrl": "https://picsum.photos/seed/blog3/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1639322537504-6427a16b0a28?q=80&w=1932&auto=format&fit=crop",
       "imageHint": "blockchain abstract"
     }
   ]
