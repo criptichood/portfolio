@@ -17,6 +17,29 @@ export const ContactFormSchema = z.object({
 
 export type ContactFormInput = z.infer<typeof ContactFormSchema>;
 
+// This is a placeholder function for saving data to a database like Firestore.
+// In a real application, you would replace this with your actual database logic.
+async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
+  console.log('--- Database Simulation ---');
+  console.log('Saving message to the database:');
+  console.log('Name:', input.name);
+  console.log('Email:', input.email);
+  console.log('Message:', input.message);
+  console.log('---------------------------');
+  // Example Firestore logic (requires setup):
+  //
+  // import { getFirestore } from 'firebase-admin/firestore';
+  // const db = getFirestore();
+  // await db.collection('contactSubmissions').add({
+  //   ...input,
+  //   submittedAt: new Date(),
+  // });
+  
+  // For now, we'll just simulate a successful save.
+  return Promise.resolve();
+}
+
+
 export async function sendContactMessage(input: ContactFormInput): Promise<void> {
   await contactFlow(input);
 }
@@ -28,11 +51,8 @@ const contactFlow = ai.defineFlow(
     outputSchema: z.void(),
   },
   async (input) => {
-    // In a real application, you would use a service to send an email here.
-    // For this example, we'll just log the message to the server console.
-    console.log('New contact form submission:');
-    console.log('Name:', input.name);
-    console.log('Email:', input.email);
-    console.log('Message:', input.message);
+    // Here we call the function to save the message.
+    // Replace the placeholder with your actual database service.
+    await saveMessageToDatabase(input);
   }
 );
