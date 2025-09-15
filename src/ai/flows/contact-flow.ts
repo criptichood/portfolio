@@ -10,32 +10,37 @@ import { z } from 'zod';
 import { ai } from '@/ai/genkit';
 import * as admin from 'firebase-admin';
 import { ContactFormSchema } from '@/lib/schemas';
+import path from 'path';
+import fs from 'fs';
 
 export type ContactFormInput = z.infer<typeof ContactFormSchema>;
 
-// Initialize Firebase Admin SDK only if it hasn't been already.
+// Function to safely initialize Firebase Admin SDK.
 function initializeFirebaseAdmin() {
   if (admin.apps.length > 0) {
     return;
   }
 
+  // In a deployed environment, GOOGLE_APPLICATION_CREDENTIALS will be set.
+  if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
+    admin.initializeApp();
+    return;
+  }
+
+  // For local development, look for the service account file in the project root.
   try {
-    // For local development, try to load the service account key.
-    // The service-account.json file is not checked in, so this will fail in deployed environments.
-    // That is okay, because the automatic credentials will be used instead.
-    const serviceAccount = require('../../../service-account.json');
-    admin.initializeApp({
-      credential: admin.credential.cert(serviceAccount),
-    });
-  } catch (error: any) {
-    // If the service account file is not found, we assume we are in a deployed environment
-    // where credentials will be automatically discovered.
-    if (error.code === 'MODULE_NOT_FOUND') {
-      console.log('Service account key not found, attempting to initialize with default credentials for deployed environment.');
-      admin.initializeApp();
+    const serviceAccountPath = path.resolve(process.cwd(), 'service-account.json');
+    if (fs.existsSync(serviceAccountPath)) {
+      const serviceAccount = require(serviceAccountPath);
+      admin.initializeApp({
+        credential: admin.credential.cert(serviceAccount),
+      });
+      console.log('Firebase Admin SDK initialized locally.');
     } else {
-      console.error('Error initializing Firebase Admin SDK:', error);
+      console.warn('service-account.json not found. Firebase Admin SDK not initialized for local development.');
     }
+  } catch (error) {
+    console.error('Error initializing Firebase Admin SDK locally:', error);
   }
 }
 
@@ -43,10 +48,9 @@ function initializeFirebaseAdmin() {
 async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
   initializeFirebaseAdmin();
   
-  // Exit if the SDK could not be initialized.
   if (admin.apps.length === 0) {
     console.error('Firebase Admin not initialized. Skipping database write.');
-    throw new Error('Firebase Admin SDK could not be initialized.');
+    throw new Error('Firebase Admin SDK could not be initialized. Ensure service-account.json is in the project root for local development.');
   }
 
   const db = admin.firestore();
