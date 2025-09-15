@@ -10,8 +10,6 @@ import { z } from 'zod';
 import { ai } from '@/ai/genkit';
 import * as admin from 'firebase-admin';
 import { ContactFormSchema } from '@/lib/schemas';
-import fs from 'fs';
-import path from 'path';
 
 export type ContactFormInput = z.infer<typeof ContactFormSchema>;
 
@@ -22,24 +20,29 @@ function initializeFirebaseAdmin() {
   }
 
   // In a deployed environment (like App Hosting), credentials are automatically discovered.
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.FIREBASE_CONFIG) {
     admin.initializeApp();
     return;
   }
 
   // For local development, use the service account key.
   try {
-    const serviceAccountPath = path.resolve(process.cwd(), 'service-account.json');
-    if (fs.existsSync(serviceAccountPath)) {
-      const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
-      admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount),
-      });
+    // The service-account.json file is not checked in, so this will fail in deployed environments.
+    // That is okay, because the automatic credentials above will be used instead.
+    const serviceAccount = require('../../../service-account.json');
+    admin.initializeApp({
+      credential: admin.credential.cert(serviceAccount),
+    });
+  } catch (error: any) {
+    // If the service account file is not found, we log a warning and continue.
+    // This allows the app to run locally without a service account, although Firestore will not work.
+    if (error.code === 'MODULE_NOT_FOUND') {
+      console.warn(
+        'Service account key not found at `service-account.json`. Firebase Admin SDK initialization skipped for local development. Form submissions will not be saved to Firestore.'
+      );
     } else {
-      console.warn("Service account key not found. Skipping Firebase Admin initialization for local development. Form submissions will not be saved to Firestore.");
+      console.error('Error initializing Firebase Admin SDK locally:', error);
     }
-  } catch (error) {
-    console.error('Error initializing Firebase Admin SDK locally:', error);
   }
 }
 
