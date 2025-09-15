@@ -13,18 +13,15 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { SOCIAL_LINKS } from "@/lib/data";
-
-const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters."),
-  email: z.string().email("Invalid email address."),
-  message: z.string().min(10, "Message must be at least 10 characters."),
-});
+import { ContactFormSchema, sendContactMessage } from "@/ai/flows/contact-flow";
+import { useState } from "react";
 
 export function Contact({ dictionary }: { dictionary: any }) {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof ContactFormSchema>>({
+    resolver: zodResolver(ContactFormSchema),
     defaultValues: {
       name: "",
       email: "",
@@ -32,13 +29,24 @@ export function Contact({ dictionary }: { dictionary: any }) {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast({
-      title: dictionary.toast.title,
-      description: dictionary.toast.description,
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof ContactFormSchema>) {
+    setIsSubmitting(true);
+    try {
+      await sendContactMessage(values);
+      toast({
+        title: dictionary.toast.title,
+        description: dictionary.toast.description,
+      });
+      form.reset();
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Something went wrong.",
+        description: "There was a problem with your request.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -92,7 +100,9 @@ export function Contact({ dictionary }: { dictionary: any }) {
                   </FormItem>
                 )}
               />
-              <Button type="submit" size="lg" className="w-full">{dictionary.form.button}</Button>
+              <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : dictionary.form.button}
+              </Button>
             </form>
           </Form>
           <div className="space-y-8">

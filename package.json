@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",
+    "@genkit-ai/googleai": "^1.1.0",
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
     "@radix-ui/react-alert-dialog": "^1.1.1",
@@ -38,6 +39,7 @@
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.1.7",
     "framer-motion": "^11.3.19",
+    "genkit": "^1.1.0",
     "lucide-react": "^0.417.0",
     "negotiator": "^0.6.3",
     "next": "14.2.5",
