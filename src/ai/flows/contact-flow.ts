@@ -13,15 +13,25 @@ import { ContactFormSchema } from '@/lib/schemas';
 
 export type ContactFormInput = z.infer<typeof ContactFormSchema>;
 
-// Initialize Firebase Admin SDK if it hasn't been already.
-if (admin.apps.length === 0) {
-  admin.initializeApp();
+// Initialize Firebase Admin SDK only if it hasn't been already and credentials are provided.
+function initializeFirebaseAdmin() {
+  if (admin.apps.length === 0 && process.env.NODE_ENV === 'production') {
+    admin.initializeApp();
+  }
 }
-
-const db = admin.firestore();
 
 // Function to save the contact message to Firestore.
 async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
+  // Only attempt to save if in a production environment where services are available.
+  if (process.env.NODE_ENV !== 'production') {
+    console.log('Skipping database write in local development environment.');
+    console.log('Received data:', input);
+    return;
+  }
+  
+  initializeFirebaseAdmin();
+  const db = admin.firestore();
+
   try {
     const submissionsCollection = db.collection('contactSubmissions');
     await submissionsCollection.add({
