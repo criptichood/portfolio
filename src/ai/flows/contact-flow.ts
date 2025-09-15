@@ -10,26 +10,49 @@ import { z } from 'zod';
 import { ai } from '@/ai/genkit';
 import * as admin from 'firebase-admin';
 import { ContactFormSchema } from '@/lib/schemas';
+import fs from 'fs';
+import path from 'path';
 
 export type ContactFormInput = z.infer<typeof ContactFormSchema>;
 
-// Initialize Firebase Admin SDK only if it hasn't been already and credentials are provided.
+// Initialize Firebase Admin SDK only if it hasn't been already.
 function initializeFirebaseAdmin() {
-  if (admin.apps.length === 0 && process.env.NODE_ENV === 'production') {
+  if (admin.apps.length > 0) {
+    return;
+  }
+
+  // In a deployed environment (like App Hosting), credentials are automatically discovered.
+  if (process.env.NODE_ENV === 'production') {
     admin.initializeApp();
+    return;
+  }
+
+  // For local development, use the service account key.
+  try {
+    const serviceAccountPath = path.resolve(process.cwd(), 'service-account.json');
+    if (fs.existsSync(serviceAccountPath)) {
+      const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
+      admin.initializeApp({
+        credential: admin.credential.cert(serviceAccount),
+      });
+    } else {
+      console.warn("Service account key not found. Skipping Firebase Admin initialization for local development. Form submissions will not be saved to Firestore.");
+    }
+  } catch (error) {
+    console.error('Error initializing Firebase Admin SDK locally:', error);
   }
 }
 
 // Function to save the contact message to Firestore.
 async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
-  // Only attempt to save if in a production environment where services are available.
-  if (process.env.NODE_ENV !== 'production') {
-    console.log('Skipping database write in local development environment.');
-    console.log('Received data:', input);
+  initializeFirebaseAdmin();
+  
+  // Exit if the SDK could not be initialized (e.g., in local dev without a service account key).
+  if (admin.apps.length === 0) {
+    console.log('Firebase Admin not initialized. Skipping database write.');
     return;
   }
-  
-  initializeFirebaseAdmin();
+
   const db = admin.firestore();
 
   try {
@@ -40,7 +63,6 @@ async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
     });
   } catch (error) {
     console.error('Error saving to Firestore:', error);
-    // Re-throw the error to be caught by the calling function
     throw new Error('Could not save message to the database.');
   }
 }
@@ -56,7 +78,6 @@ const contactFlow = ai.defineFlow(
     outputSchema: z.void(),
   },
   async (input) => {
-    // Call the function to save the message to Firestore.
     await saveMessageToDatabase(input);
   }
 );
