@@ -13,8 +13,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { SOCIAL_LINKS } from "@/lib/data";
-import { ContactFormSchema, sendContactMessage } from "@/ai/flows/contact-flow";
+import { sendContactMessage } from "@/ai/flows/contact-flow";
 import { useState } from "react";
+import { ContactFormSchema } from "@/lib/schemas";
 
 export function Contact({ dictionary }: { dictionary: any }) {
   const { toast } = useToast();

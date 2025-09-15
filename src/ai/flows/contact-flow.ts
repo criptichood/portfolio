@@ -9,12 +9,7 @@
 import { z } from 'zod';
 import { ai } from '@/ai/genkit';
 import * as admin from 'firebase-admin';
-
-export const ContactFormSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters."),
-  email: z.string().email("Invalid email address."),
-  message: z.string().min(10, "Message must be at least 10 characters."),
-});
+import { ContactFormSchema } from '@/lib/schemas';
 
 export type ContactFormInput = z.infer<typeof ContactFormSchema>;
 
@@ -33,7 +28,6 @@ async function saveMessageToDatabase(input: ContactFormInput): Promise<void> {
       ...input,
       submittedAt: new Date(),
     });
-    console.log('Contact form submission saved to Firestore.');
   } catch (error) {
     console.error('Error saving to Firestore:', error);
     // Re-throw the error to be caught by the calling function
