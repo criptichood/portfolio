@@ -16,6 +16,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { usePathname } from 'next/navigation';
 
 type Message = {
   role: 'user' | 'model';
@@ -31,6 +32,10 @@ export function ChatInterface({ dictionary }: { dictionary: any }) {
   const [isCopied, setIsCopied] = useState(false);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const pathname = usePathname();
+
+  // Extract lang from pathname, default to 'en'
+  const lang = pathname.split('/')[1] || 'en';
 
   // Load messages from session storage on initial render
   useEffect(() => {
@@ -92,7 +97,7 @@ export function ChatInterface({ dictionary }: { dictionary: any }) {
 
     try {
       const history = newMessages.slice(1, -1); // Exclude initial greeting and current user message
-      const response = await askChatbot({ history, message: input });
+      const response = await askChatbot({ history, message: input, lang });
       const modelMessage: Message = { role: 'model', content: response };
       setMessages((prev) => [...prev, modelMessage]);
     } catch (error) {

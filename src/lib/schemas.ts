@@ -14,5 +14,6 @@ const MessageSchema = z.object({
 export const ChatbotInputSchema = z.object({
   history: z.array(MessageSchema),
   message: z.string(),
+  lang: z.string(),
 });
 export type ChatbotInput = z.infer<typeof ChatbotInputSchema>;
