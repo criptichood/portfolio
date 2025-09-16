@@ -180,7 +180,7 @@
   "chatbot": {
     "title": "AI 助手",
     "subtitle": "在线 - 随时为您服务",
-    "greeting": "您好！我是 Criptic Digital 的 AI 助手。今天我能为您提供有关 Web 开发、AI 或其他服务的哪些帮助？",
+    "greeting": "欢迎。我是 Criptic Digital 的 AI 助手。欢迎随时咨询有关 Emmanuel 的服务、项目或在 Web 开发和 AI 方面的专业知识。",
     "placeholder": "询问有关服务、项目的问题..."
   }
 }

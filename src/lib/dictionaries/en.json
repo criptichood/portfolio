@@ -180,7 +180,7 @@
   "chatbot": {
     "title": "AI Assistant",
     "subtitle": "Online - Ready to help",
-    "greeting": "Hello! I'm the AI assistant for Criptic Digital. How can I help you with web development, AI, or other services today?",
+    "greeting": "Welcome. I'm the AI assistant for Criptic Digital. Feel free to ask about Emmanuel's services, projects, or expertise in web development and AI.",
     "placeholder": "Ask about services, projects..."
   }
 }

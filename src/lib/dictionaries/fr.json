@@ -180,7 +180,7 @@
   "chatbot": {
     "title": "Assistant IA",
     "subtitle": "En ligne - Prêt à aider",
-    "greeting": "Bonjour ! Je suis l'assistant IA de Criptic Digital. Comment puis-je vous aider aujourd'hui avec le développement web, l'IA ou d'autres services ?",
+    "greeting": "Bienvenue. Je suis l'assistant IA de Criptic Digital. N'hésitez pas à poser des questions sur les services, les projets ou l'expertise d'Emmanuel en matière de développement web et d'IA.",
     "placeholder": "Posez des questions sur les services..."
   }
 }
