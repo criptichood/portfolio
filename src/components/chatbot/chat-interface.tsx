@@ -3,11 +3,11 @@
 
 import { useState, useRef, useEffect, type FormEvent } from 'react';
 import { motion } from 'framer-motion';
-import { Bot, Send, User, CornerDownLeft, Loader2 } from 'lucide-react';
+import { Bot, Send, User, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
 import { askChatbot } from '@/ai/flows/chatbot-flow';
 
@@ -16,14 +16,36 @@ type Message = {
   content: string;
 };
 
-export function ChatInterface({ dictionary, closeChat }: { dictionary: any, closeChat: () => void }) {
-  const [messages, setMessages] = useState<Message[]>([
-    { role: 'model', content: dictionary.greeting },
-  ]);
+const SESSION_STORAGE_KEY = 'chat_history';
+
+export function ChatInterface({ dictionary }: { dictionary: any }) {
+  const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Load messages from session storage on initial render
+  useEffect(() => {
+    try {
+      const storedMessages = sessionStorage.getItem(SESSION_STORAGE_KEY);
+      if (storedMessages) {
+        setMessages(JSON.parse(storedMessages));
+      } else {
+        setMessages([{ role: 'model', content: dictionary.greeting }]);
+      }
+    } catch (error) {
+        // If parsing fails, start with a fresh greeting
+        setMessages([{ role: 'model', content: dictionary.greeting }]);
+    }
+  }, [dictionary.greeting]);
+
+  // Save messages to session storage whenever they change
+  useEffect(() => {
+    if (messages.length > 0) {
+      sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(messages));
+    }
+  }, [messages]);
 
   const scrollToBottom = () => {
     if (scrollAreaRef.current) {
@@ -36,7 +58,7 @@ export function ChatInterface({ dictionary, closeChat }: { dictionary: any, clos
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+  }, [messages, isLoading]);
 
   useEffect(() => {
     inputRef.current?.focus();
@@ -47,12 +69,13 @@ export function ChatInterface({ dictionary, closeChat }: { dictionary: any, clos
     if (!input.trim() || isLoading) return;
 
     const userMessage: Message = { role: 'user', content: input };
-    setMessages((prev) => [...prev, userMessage]);
+    const newMessages = [...messages, userMessage];
+    setMessages(newMessages);
     setInput('');
     setIsLoading(true);
 
     try {
-      const history = messages.slice(1); // Exclude initial greeting
+      const history = newMessages.slice(1, -1); // Exclude initial greeting and current user message
       const response = await askChatbot({ history, message: input });
       const modelMessage: Message = { role: 'model', content: response };
       setMessages((prev) => [...prev, modelMessage]);

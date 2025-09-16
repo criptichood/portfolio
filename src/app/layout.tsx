@@ -68,7 +68,9 @@ export default async function RootLayout({
           <main className="overflow-x-hidden">{children}</main>
           <Footer lang={lang} />
           <Toaster />
-          <ScrollToTop />
+          <div className="fixed bottom-4 right-4 z-40">
+            <ScrollToTop />
+          </div>
           <ChatbotWidget dictionary={dictionary.chatbot} />
         </ThemeProvider>
       </body>

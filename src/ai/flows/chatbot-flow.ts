@@ -10,20 +10,10 @@
 import { ai } from '@/ai/genkit';
 import { z } from 'zod';
 import englishDictionary from '@/lib/dictionaries/en.json';
+import { type ChatbotInput, ChatbotInputSchema } from '@/lib/schemas';
 
-const MessageSchema = z.object({
-  role: z.enum(['user', 'model']),
-  content: z.string(),
-});
-
-export const ChatbotInputSchema = z.object({
-  history: z.array(MessageSchema),
-  message: z.string(),
-});
-export type ChatbotInput = z.infer<typeof ChatbotInputSchema>;
-
-export const ChatbotOutputSchema = z.string();
-export type ChatbotOutput = z.infer<typeof ChatbotOutputSchema>;
+export type ChatbotOutput = string;
+const ChatbotOutputSchema = z.string();
 
 const portfolioData = JSON.stringify(englishDictionary, null, 2);
 

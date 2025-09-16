@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Bot, X, MessageSquare } from 'lucide-react';
+import { X, MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ChatInterface } from './chat-interface';
 
@@ -12,9 +12,9 @@ export function ChatbotWidget({ dictionary }: { dictionary: any }) {
 
   return (
     <>
-      <div className="fixed bottom-4 right-4 z-50">
+      <div className="fixed bottom-20 right-4 z-50">
         <AnimatePresence>
-          {isOpen && <ChatInterface dictionary={dictionary} closeChat={() => setIsOpen(false)} />}
+          {isOpen && <ChatInterface dictionary={dictionary} />}
         </AnimatePresence>
         <motion.div
           whileHover={{ scale: 1.1 }}

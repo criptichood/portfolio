@@ -31,18 +31,16 @@ export function ScrollToTop() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
-      <Button
-        size="icon"
-        onClick={scrollToTop}
-        className={cn(
-            "rounded-full transition-opacity duration-300",
-            isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
-        )}
-        aria-label="Scroll to top"
-      >
-        <ChevronUp className="h-6 w-6" />
-      </Button>
-    </div>
+    <Button
+      size="icon"
+      onClick={scrollToTop}
+      className={cn(
+          "rounded-full transition-opacity duration-300",
+          isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
+      )}
+      aria-label="Scroll to top"
+    >
+      <ChevronUp className="h-6 w-6" />
+    </Button>
   );
 }
