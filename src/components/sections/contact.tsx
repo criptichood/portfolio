@@ -69,7 +69,7 @@ export function Contact({ dictionary }: { dictionary: any }) {
                   <FormItem>
                     <FormLabel>{dictionary.form.name.label}</FormLabel>
                     <FormControl>
-                      <Input placeholder={dictionary.form.name.placeholder} {...field} />
+                      <Input placeholder={dictionary.form.name.placeholder} {...field} disabled />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -82,7 +82,7 @@ export function Contact({ dictionary }: { dictionary: any }) {
                   <FormItem>
                     <FormLabel>{dictionary.form.email.label}</FormLabel>
                     <FormControl>
-                      <Input placeholder={dictionary.form.email.placeholder} {...field} />
+                      <Input placeholder={dictionary.form.email.placeholder} {...field} disabled />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -95,14 +95,14 @@ export function Contact({ dictionary }: { dictionary: any }) {
                   <FormItem>
                     <FormLabel>{dictionary.form.message.label}</FormLabel>
                     <FormControl>
-                      <Textarea placeholder={dictionary.form.message.placeholder} {...field} rows={5} />
+                      <Textarea placeholder={dictionary.form.message.placeholder} {...field} rows={5} disabled />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : dictionary.form.button}
+              <Button type="submit" size="lg" className="w-full" disabled>
+                {dictionary.form.button}
               </Button>
             </form>
           </Form>
