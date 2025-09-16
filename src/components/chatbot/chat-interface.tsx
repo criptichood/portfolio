@@ -3,13 +3,19 @@
 
 import { useState, useRef, useEffect, type FormEvent } from 'react';
 import { motion } from 'framer-motion';
-import { Bot, Send, User, Loader2 } from 'lucide-react';
+import { Bot, Send, User, Loader2, Copy, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
 import { askChatbot } from '@/ai/flows/chatbot-flow';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 type Message = {
   role: 'user' | 'model';
@@ -22,6 +28,7 @@ export function ChatInterface({ dictionary }: { dictionary: any }) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -64,6 +71,15 @@ export function ChatInterface({ dictionary }: { dictionary: any }) {
     inputRef.current?.focus();
   }, []);
 
+  const handleCopy = () => {
+    const chatText = messages
+      .map((m) => `${m.role === 'model' ? 'AI' : 'User'}: ${m.content}`)
+      .join('\n');
+    navigator.clipboard.writeText(chatText);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000); // Reset icon after 2 seconds
+  };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
@@ -99,16 +115,31 @@ export function ChatInterface({ dictionary }: { dictionary: any }) {
       transition={{ duration: 0.2 }}
       className="absolute bottom-20 right-0 w-[calc(100vw-2rem)] sm:w-96 h-[60vh] bg-card border rounded-lg shadow-xl flex flex-col"
     >
-      <header className="p-4 border-b flex items-center gap-3">
-        <Avatar>
-          <AvatarFallback>
-            <Bot />
-          </AvatarFallback>
-        </Avatar>
-        <div>
-          <h3 className="font-semibold font-headline">{dictionary.title}</h3>
-          <p className="text-sm text-muted-foreground">{dictionary.subtitle}</p>
+      <header className="p-4 border-b flex items-center justify-between gap-3">
+        <div className="flex items-center gap-3">
+          <Avatar>
+            <AvatarFallback>
+              <Bot />
+            </AvatarFallback>
+          </Avatar>
+          <div>
+            <h3 className="font-semibold font-headline">{dictionary.title}</h3>
+            <p className="text-sm text-muted-foreground">{dictionary.subtitle}</p>
+          </div>
         </div>
+        <TooltipProvider>
+            <Tooltip>
+                <TooltipTrigger asChild>
+                    <Button variant="ghost" size="icon" onClick={handleCopy} className="h-8 w-8">
+                        {isCopied ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
+                        <span className="sr-only">Copy chat</span>
+                    </Button>
+                </TooltipTrigger>
+                <TooltipContent>
+                    <p>Copy chat</p>
+                </TooltipContent>
+            </Tooltip>
+        </TooltipProvider>
       </header>
       <ScrollArea className="flex-1" ref={scrollAreaRef}>
         <div className="p-4 space-y-4">
