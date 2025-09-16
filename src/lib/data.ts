@@ -14,6 +14,7 @@ import {
   Twitter,
   Link as LinkIcon,
   MessageSquare,
+  Send,
   type LucideIcon,
 } from "lucide-react";
 
@@ -46,6 +47,11 @@ export const SOCIAL_LINKS = [
     name: "Linktree",
     url: "https://linktr.ee/CripticHood",
     Icon: LinkIcon,
+  },
+  {
+    name: "Telegram",
+    url: "https://t.me/criptichood",
+    Icon: Send,
   },
   {
     name: "WhatsApp",
