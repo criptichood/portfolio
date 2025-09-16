@@ -9,6 +9,7 @@ import { getDictionary } from '@/lib/dictionaries';
 import { headers } from 'next/headers';
 import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
+import { ScrollToTop } from '@/components/common/scroll-to-top';
 
 // This function is now part of the root layout to avoid duplication
 function getLocale(): string {
@@ -66,6 +67,7 @@ export default async function RootLayout({
           <main className="overflow-x-hidden">{children}</main>
           <Footer lang={lang} />
           <Toaster />
+          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
