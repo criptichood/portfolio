@@ -1,3 +1,4 @@
+
 'use server';
 /**
  * @fileOverview A portfolio chatbot AI flow.
@@ -11,6 +12,7 @@ import { ai } from '@/ai/genkit';
 import { z } from 'zod';
 import englishDictionary from '@/lib/dictionaries/en.json';
 import { type ChatbotInput, ChatbotInputSchema } from '@/lib/schemas';
+import { googleAI } from '@genkit-ai/googleai';
 
 export type ChatbotOutput = string;
 const ChatbotOutputSchema = z.string();
@@ -19,6 +21,7 @@ const portfolioData = JSON.stringify(englishDictionary, null, 2);
 
 const chatbotPrompt = ai.definePrompt({
   name: 'chatbotPrompt',
+  model: googleAI.model('gemini-1.5-flash-latest'),
   input: { schema: ChatbotInputSchema },
   output: { format: 'text' },
   prompt: `You are a helpful and friendly AI assistant for Emmanuel Galadima (Criptic Digital), a Blockchain Researcher and AI Web Developer.
