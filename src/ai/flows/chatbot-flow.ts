@@ -68,5 +68,6 @@ const chatbotFlow = ai.defineFlow(
 );
 
 export async function askChatbot(input: ChatbotInput): Promise<ChatbotOutput> {
-  return chatbotFlow(input);
+  const result = await chatbotFlow(input);
+  return result;
 }
