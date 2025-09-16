@@ -176,5 +176,11 @@
     "quickLinks": "快速链接",
     "connect": "联系",
     "rights": "版权所有。"
+  },
+  "chatbot": {
+    "title": "AI 助手",
+    "subtitle": "在线 - 随时为您服务",
+    "greeting": "您好！我是 Criptic Digital 的 AI 助手。今天我能为您提供有关 Web 开发、AI 或其他服务的哪些帮助？",
+    "placeholder": "询问有关服务、项目的问题..."
   }
 }

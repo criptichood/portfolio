@@ -176,5 +176,11 @@
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "rights": "All rights reserved."
+  },
+  "chatbot": {
+    "title": "AI Assistant",
+    "subtitle": "Online - Ready to help",
+    "greeting": "Hello! I'm the AI assistant for Criptic Digital. How can I help you with web development, AI, or other services today?",
+    "placeholder": "Ask about services, projects..."
   }
 }

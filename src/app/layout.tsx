@@ -10,6 +10,7 @@ import { headers } from 'next/headers';
 import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
 import { ScrollToTop } from '@/components/common/scroll-to-top';
+import { ChatbotWidget } from '@/components/chatbot/chatbot-widget';
 
 // This function is now part of the root layout to avoid duplication
 function getLocale(): string {
@@ -68,6 +69,7 @@ export default async function RootLayout({
           <Footer lang={lang} />
           <Toaster />
           <ScrollToTop />
+          <ChatbotWidget dictionary={dictionary.chatbot} />
         </ThemeProvider>
       </body>
     </html>

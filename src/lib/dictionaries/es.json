@@ -176,5 +176,11 @@
     "quickLinks": "Enlaces Rápidos",
     "connect": "Conectar",
     "rights": "Todos los derechos reservados."
+  },
+  "chatbot": {
+    "title": "Asistente de IA",
+    "subtitle": "En línea - Listo para ayudar",
+    "greeting": "¡Hola! Soy el asistente de IA de Criptic Digital. ¿Cómo puedo ayudarte hoy con el desarrollo web, la IA u otros servicios?",
+    "placeholder": "Pregunta sobre servicios, proyectos..."
   }
 }

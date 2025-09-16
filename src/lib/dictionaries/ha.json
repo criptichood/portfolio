@@ -176,5 +176,11 @@
     "quickLinks": "Hanyoyin Sauri",
     "connect": "Haɗa",
     "rights": "Duk haƙƙoƙi an kiyaye su."
+  },
+  "chatbot": {
+    "title": "Mataimakin AI",
+    "subtitle": "A kan layi - A shirye don taimakawa",
+    "greeting": "Sannu! Ni ne mataimakin AI na Criptic Digital. Ta yaya zan iya taimaka muku da ci gaban yanar gizo, AI, ko wasu ayyuka a yau?",
+    "placeholder": "Yi tambaya game da ayyuka, ayyuka..."
   }
 }

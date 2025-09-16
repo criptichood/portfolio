@@ -152,7 +152,7 @@
   },
   "contact": {
     "title": "Contactez-moi",
-    "description": "Vous avez un projet en tête ou vous voulez simplement dire bonjour ? J'adorerais avoir de vos nouvelles.",
+    "description": "Vous avez un projet en tête ou vous voulez simplemente dire bonjour ? J'adorerais avoir de vos nouvelles.",
     "form": {
       "name": { "label": "Nom", "placeholder": "Votre Nom" },
       "email": { "label": "Email", "placeholder": "votre.email@example.com" },
@@ -176,5 +176,11 @@
     "quickLinks": "Liens rapides",
     "connect": "Connecter",
     "rights": "Tous droits réservés."
+  },
+  "chatbot": {
+    "title": "Assistant IA",
+    "subtitle": "En ligne - Prêt à aider",
+    "greeting": "Bonjour ! Je suis l'assistant IA de Criptic Digital. Comment puis-je vous aider aujourd'hui avec le développement web, l'IA ou d'autres services ?",
+    "placeholder": "Posez des questions sur les services..."
   }
 }
