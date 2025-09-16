@@ -28,6 +28,7 @@ export function Projects({ dictionary }: { dictionary: any }) {
                       src={projectImage.imageUrl}
                       alt={projectImage.description}
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover transition-transform duration-300 hover:scale-105"
                       data-ai-hint={projectImage.imageHint}
                     />
