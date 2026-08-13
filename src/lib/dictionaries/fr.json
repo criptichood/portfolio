@@ -9,13 +9,14 @@
     "capabilities": "Compétences",
     "work": "Réalisations",
     "github": "GitHub",
-    "contact": "Contact"
+    "contact": "Contact",
+    "getInTouch": "Me contacter"
   },
   "hero": {
-    "eyebrow": "Emmanuel Galadima",
-    "titleLine1": "Ingénieur Logiciel",
-    "titleLine2": "Full-Stack IA",
-    "description": "Je conçois et construis des systèmes logiciels intelligents et prêts pour la production — ingénierie full-stack, IA et architecture soucieuse de la sécurité.",
+    "eyebrow": "Ingénieur Full-Stack IA",
+    "titleLine1": "Bâtir la prochaine génération de",
+    "titleLine2": "logiciels intelligents.",
+    "description": "Spécialisé dans les applications pilotées par l'IA évolutives, les backends robustes et les interfaces intuitives. Transformons des problèmes complexes en expériences fluides.",
     "badgesTitle": "Compétences",
     "badges": [
       "Ingénierie Logicielle",
@@ -24,6 +25,28 @@
       "Sécurité Applicative",
       "Web3 / Blockchain"
     ],
+    "stats": [
+      {
+        "icon": "Clock",
+        "value": "5+",
+        "label": "Ans d'expérience"
+      },
+      {
+        "icon": "FolderOpen",
+        "value": "40+",
+        "label": "Projets"
+      },
+      {
+        "icon": "Code",
+        "value": "12+",
+        "label": "Langages"
+      },
+      {
+        "icon": "Brain",
+        "value": "LLM",
+        "label": "Spécialiste"
+      }
+    ],
     "cta1": "Voir mes réalisations",
     "cta2": "Me contacter",
     "scroll": "Faites défiler pour explorer"
@@ -31,7 +54,30 @@
   "about": {
     "title": "À Propos de Moi",
     "subtitle": "Ingénieur avant tout. La sécurité comme partie de l'architecture, pas une réflexion après coup.",
-    "description": "Je suis un ingénieur logiciel full-stack qui transforme des idées de produits complexes en systèmes fonctionnels et prêts pour la production. Je travaille sur toute la pile — frontend, backend, API, bases de données, intégrations IA et déploiement — et je considère la sécurité comme partie de l'architecture plutôt que comme une réflexion après coup. Des plateformes propulsées par l'IA et le traitement multimodal de documents aux infrastructures backend sécurisées et aux applications blockchain, je construis des systèmes intelligents, résilients et conçus pour être déployés.",
+    "description": "Je suis Emmanuel Galadima, un ingénieur logiciel chevronné qui conçoit des solutions robustes à l'intersection de systèmes complexes. Mon expertise couvre l'ingénierie full-stack, le développement d'applications IA spécialisées et l'ingénierie produit résiliente. Avec de solides fondations en sécurité applicative et en technologies Web3/blockchain, je conçois des systèmes sécurisés, décentralisés et intelligents qui évoluent. Je fais le pont entre une exécution technique rigoureuse et une vision produit percutante.",
+    "chip": "Basé au Nigéria · Télétravail accepté",
+    "stats": [
+      {
+        "icon": "Briefcase",
+        "value": "5+",
+        "label": "Ans d'expérience"
+      },
+      {
+        "icon": "Rocket",
+        "value": "40+",
+        "label": "Projets livrés"
+      },
+      {
+        "icon": "Code",
+        "value": "12+",
+        "label": "Langages & outils"
+      },
+      {
+        "icon": "MemoryStick",
+        "value": "IA/Web3",
+        "label": "Domaines clés"
+      }
+    ],
     "points": [
       "Applications full-stack : React, Next.js, TypeScript, API, bases de données, interfaces complexes",
       "Ingénierie d'applications IA : agents IA, systèmes multimodaux, intégrations LLM, orchestration",
@@ -41,43 +87,44 @@
     ]
   },
   "capabilities": {
-    "title": "Compétences",
-    "description": "Les cinq disciplines que j'apporte à chaque produit — et comment je les prouve avec de vrais systèmes.",
+    "title": "Ce Que Je Fais",
+    "description": "Des solutions d'ingénierie spécialisées à l'intersection de l'IA et des systèmes complexes.",
     "items": [
       {
-        "icon": "Cpu",
+        "icon": "Terminal",
         "title": "Ingénierie Logicielle",
-        "tag": "01",
-        "description": "Applications full-stack, API, bases de données et interfaces complexes — conçues, construites et déployées de bout en bout.",
-        "tags": ["Next.js", "TypeScript", "API", "Architecture"]
+        "points": [
+          "Architecture full-stack",
+          "Backends scalables (Node/Python)",
+          "Systèmes distribués"
+        ]
       },
       {
-        "icon": "Bot",
-        "title": "Ingénierie IA",
-        "tag": "02",
-        "description": "Agents IA, systèmes multimodaux, intégrations LLM et orchestration intégrés à de vrais produits.",
-        "tags": ["Gemini", "Agents", "Multimodal", "Orchestration"]
-      },
-      {
-        "icon": "Lightbulb",
+        "icon": "LayoutGrid",
         "title": "Ingénierie Produit",
-        "tag": "03",
-        "description": "Faire passer une idée du concept à l'architecture, l'implémentation et le déploiement.",
-        "tags": ["Concept", "Création", "Déploiement", "Itération"]
+        "points": [
+          "Prototypage rapide",
+          "Intégration IA/LLM",
+          "Développement orienté UX"
+        ]
       },
       {
-        "icon": "ShieldCheck",
+        "icon": "Shield",
         "title": "Sécurité Applicative",
-        "tag": "04",
-        "description": "Authentification sécurisée, autorisation, architecture de sécurité et ingénierie défensive intégrées dès le départ.",
-        "tags": ["Auth", "En-têtes de Sécurité", "Contrôle d'Accès", "Protection des Données"]
+        "points": [
+          "Modélisation des menaces",
+          "SDLC sécurisé",
+          "Implémentations cryptographiques"
+        ]
       },
       {
-        "icon": "Blocks",
+        "icon": "Layers",
         "title": "Web3 / Blockchain",
-        "tag": "05",
-        "description": "TON, smart contracts, applications blockchain et recherche appliquée.",
-        "tags": ["TON", "Smart Contracts", "Web3", "Recherche"]
+        "points": [
+          "Développement de smart contracts",
+          "Protocoles décentralisés",
+          "Conception de tokenomics"
+        ]
       }
     ]
   },
@@ -196,43 +243,17 @@
         "title": "Backend & Données",
         "items": ["Node.js", "API", "Supabase", "PostgreSQL", "IndexedDB"]
       },
-      {
-        "title": "IA & Automatisation",
-        "items": ["Gemini", "Genkit", "Agents IA", "Multimodal", "Orchestration"]
-      },
-      {
-        "title": "Sécurité & Infrastructure",
-        "items": ["Authentification", "En-têtes de Sécurité", "Cloudflare", "VPS", "Déploiement"]
-      },
+{
+    "title": "IA & Automatisation",
+    "items": ["Gemini", "Vercel AI SDK", "Together AI", "Agents IA", "Multimodal", "Orchestration"]
+   },
+   {
+    "title": "Sécurité & Infrastructure",
+    "items": ["Authentification", "RBAC", "Sécurité au niveau des lignes", "Cloudflare Tunnels", "VPS"]
+   },
       {
         "title": "Web3 & Blockchain",
         "items": ["TON", "Smart Contracts", "Web3"]
-      }
-    ]
-  },
-  "timeline": {
-    "title": "Expérience & Focus",
-    "description": "Le parcours et les disciplines derrière les systèmes que je construis.",
-    "items": [
-      {
-        "title": "Ingénierie Full-Stack",
-        "period": "Cœur",
-        "description": "Construire des applications complètes — frontend, backend, API, bases de données et architecture."
-      },
-      {
-        "title": "Ingénierie d'Applications IA",
-        "period": "Focus",
-        "description": "Livrer des produits avec l'IA comme partie du produit, des agents aux flux multimodaux."
-      },
-      {
-        "title": "Sécurité Applicative",
-        "period": "Chaque build",
-        "description": "Authentification, autorisation, architecture de sécurité et protection des données intégrées à chaque système."
-      },
-      {
-        "title": "Blockchain & Web3",
-        "period": "Recherche & build",
-        "description": "TON, smart contracts, applications blockchain et éducation."
       }
     ]
   },
@@ -265,16 +286,6 @@
         "topics": ["Web3", "TON", "Recherche"],
         "url": "https://github.com/criptichood"
       }
-    ]
-  },
-  "whyChooseMe": {
-    "title": "Pourquoi travailler avec moi ?",
-    "description": "Un ingénieur qui livre des systèmes complets — avec l'IA, la sécurité et la réflexion produit intégrées.",
-    "items": [
-      { "title": "Ingénierie de bout en bout", "icon": "Cpu" },
-      { "title": "IA intégrée aux produits", "icon": "Bot" },
-      { "title": "Livraison soucieuse de la sécurité", "icon": "ShieldCheck" },
-      { "title": "Orienté livraison, pas seulement discours", "icon": "TrendingUp" }
     ]
   },
   "faq": {
@@ -311,10 +322,9 @@
     "details": {
       "title": "Coordonnées"
     },
-    "social": {
-      "title": "Suivez-moi"
+"social": {
+      "title": "Se connecter"
     },
-    "whatsapp": "Discuter sur WhatsApp",
     "toast": {
       "title": "Message Envoyé !",
       "description": "Merci de m'avoir contacté. Je vous répondrai bientôt."

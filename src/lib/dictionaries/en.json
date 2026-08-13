@@ -9,13 +9,14 @@
     "capabilities": "Capabilities",
     "work": "Work",
     "github": "GitHub",
-    "contact": "Contact"
+    "contact": "Contact",
+    "getInTouch": "Get in touch"
   },
   "hero": {
-    "eyebrow": "Emmanuel Galadima",
-    "titleLine1": "AI Full-Stack",
-    "titleLine2": "Software Engineer",
-    "description": "I design and build intelligent, production-ready software systems — combining full-stack engineering, AI, and security-minded architecture.",
+    "eyebrow": "AI Full-Stack Engineer",
+    "titleLine1": "Building the next generation of",
+    "titleLine2": "intelligent software.",
+    "description": "Specializing in scalable AI-driven applications, robust backends, and intuitive user interfaces. Let's turn complex problems into seamless experiences.",
     "badgesTitle": "Capabilities",
     "badges": [
       "Software Engineering",
@@ -24,14 +25,59 @@
       "Application Security",
       "Web3 / Blockchain"
     ],
+    "stats": [
+      {
+        "icon": "Clock",
+        "value": "5+",
+        "label": "Years Exp"
+      },
+      {
+        "icon": "FolderOpen",
+        "value": "40+",
+        "label": "Projects"
+      },
+      {
+        "icon": "Code",
+        "value": "12+",
+        "label": "Languages"
+      },
+      {
+        "icon": "Brain",
+        "value": "LLM",
+        "label": "Specialist"
+      }
+    ],
     "cta1": "View My Work",
-    "cta2": "Get in Touch",
+    "cta2": "Contact Me",
     "scroll": "Scroll to explore"
   },
   "about": {
     "title": "About Me",
     "subtitle": "Engineer first. Security as part of the architecture, not an afterthought.",
-    "description": "I'm a full-stack software engineer who turns complex product ideas into working, production-ready systems. I work across the entire stack — frontend, backend, APIs, databases, AI integrations, and deployment — and I think about security as part of the architecture rather than an afterthought. From AI-powered platforms and multimodal document processing to secure backend infrastructure and blockchain applications, I build systems that are intelligent, resilient, and built to ship.",
+    "description": "I'm Emmanuel Galadima, a seasoned software engineer architecting robust solutions at the intersection of complex systems. My expertise spans full-stack engineering, specialized AI application development, and resilient product engineering. With a strong foundation in application security and Web3/blockchain technologies, I design secure, decentralized, and intelligent systems that scale. I bridge the gap between rigorous technical execution and impactful product vision.",
+    "chip": "Based in Nigeria · Remote-friendly",
+    "stats": [
+      {
+        "icon": "Briefcase",
+        "value": "5+",
+        "label": "Years Experience"
+      },
+      {
+        "icon": "Rocket",
+        "value": "40+",
+        "label": "Projects Shipped"
+      },
+      {
+        "icon": "Code",
+        "value": "12+",
+        "label": "Languages & Tools"
+      },
+      {
+        "icon": "MemoryStick",
+        "value": "AI/Web3",
+        "label": "Core Focus Areas"
+      }
+    ],
     "points": [
       "Full-stack applications: React, Next.js, TypeScript, APIs, databases, complex interfaces",
       "AI application engineering: AI agents, multimodal systems, LLM integrations, orchestration",
@@ -41,43 +87,44 @@
     ]
   },
   "capabilities": {
-    "title": "Capabilities",
-    "description": "The five disciplines I bring to every product — and how I prove them with real systems.",
+    "title": "What I Do",
+    "description": "Specialized engineering solutions at the intersection of AI and complex systems.",
     "items": [
       {
-        "icon": "Cpu",
+        "icon": "Terminal",
         "title": "Software Engineering",
-        "tag": "01",
-        "description": "Full-stack applications, APIs, databases, and complex interfaces — designed, built, and shipped end to end.",
-        "tags": ["Next.js", "TypeScript", "APIs", "Architecture"]
+        "points": [
+          "Full-stack architecture",
+          "Scalable backends (Node/Python)",
+          "Distributed systems"
+        ]
       },
       {
-        "icon": "Bot",
-        "title": "AI Engineering",
-        "tag": "02",
-        "description": "AI agents, multimodal systems, LLM integrations, and orchestration built into real products.",
-        "tags": ["Gemini", "Agents", "Multimodal", "Orchestration"]
-      },
-      {
-        "icon": "Lightbulb",
+        "icon": "LayoutGrid",
         "title": "Product Engineering",
-        "tag": "03",
-        "description": "Taking an idea from concept through architecture, implementation, and deployment.",
-        "tags": ["Concept", "Build", "Ship", "Iterate"]
+        "points": [
+          "Rapid prototyping",
+          "AI/LLM integration",
+          "UX-driven development"
+        ]
       },
       {
-        "icon": "ShieldCheck",
+        "icon": "Shield",
         "title": "Application Security",
-        "tag": "04",
-        "description": "Secure authentication, authorization, security architecture, and defensive engineering baked in from the start.",
-        "tags": ["Auth", "Security Headers", "Access Control", "Data Protection"]
+        "points": [
+          "Threat modeling",
+          "Secure SDLC",
+          "Cryptographic implementations"
+        ]
       },
       {
-        "icon": "Blocks",
+        "icon": "Layers",
         "title": "Web3 / Blockchain",
-        "tag": "05",
-        "description": "TON, smart contracts, blockchain applications, and applied research.",
-        "tags": ["TON", "Smart Contracts", "Web3", "Research"]
+        "points": [
+          "Smart contract dev",
+          "Decentralized protocols",
+          "Tokenomics design"
+        ]
       }
     ]
   },
@@ -198,41 +245,15 @@
       },
       {
         "title": "AI & Automation",
-        "items": ["Gemini", "Genkit", "AI Agents", "Multimodal", "Orchestration"]
+        "items": ["Gemini", "Vercel AI SDK", "Together AI", "AI Agents", "Multimodal", "Orchestration"]
       },
       {
         "title": "Security & Infrastructure",
-        "items": ["Authentication", "Security Headers", "Cloudflare", "VPS", "Deployment"]
+        "items": ["Authentication", "RBAC", "Row-Level Security", "Cloudflare Tunnels", "VPS"]
       },
       {
         "title": "Web3 & Blockchain",
         "items": ["TON", "Smart Contracts", "Web3"]
-      }
-    ]
-  },
-  "timeline": {
-    "title": "Experience & Focus",
-    "description": "The journey and disciplines behind the systems I build.",
-    "items": [
-      {
-        "title": "Full-Stack Engineering",
-        "period": "Core",
-        "description": "Building complete applications — frontend, backend, APIs, databases, and architecture."
-      },
-      {
-        "title": "AI Application Engineering",
-        "period": "Focus",
-        "description": "Shipping products with AI as part of the product, from agents to multimodal workflows."
-      },
-      {
-        "title": "Application Security",
-        "period": "Every build",
-        "description": "Authentication, authorization, security architecture, and data protection baked into each system."
-      },
-      {
-        "title": "Blockchain & Web3",
-        "period": "Research & build",
-        "description": "TON, smart contracts, and blockchain applications and education."
       }
     ]
   },
@@ -265,16 +286,6 @@
         "topics": ["Web3", "TON", "Research"],
         "url": "https://github.com/criptichood"
       }
-    ]
-  },
-  "whyChooseMe": {
-    "title": "Why Work With Me?",
-    "description": "An engineer who ships complete systems — with AI, security, and product thinking built in.",
-    "items": [
-      { "title": "End-to-End Engineering", "icon": "Cpu" },
-      { "title": "AI Built Into Products", "icon": "Bot" },
-      { "title": "Security-Minded Delivery", "icon": "ShieldCheck" },
-      { "title": "Ship-Focused, Not Just Talk", "icon": "TrendingUp" }
     ]
   },
   "faq": {
@@ -314,7 +325,6 @@
     "social": {
       "title": "Connect"
     },
-    "whatsapp": "Chat on WhatsApp",
     "toast": {
       "title": "Message Sent!",
       "description": "Thank you for reaching out. I'll get back to you soon."

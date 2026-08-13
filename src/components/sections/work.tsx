@@ -11,7 +11,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 export function Work({ dictionary, lang }: { dictionary: any, lang: string }) {
   const projects = dictionary.projectsData;
   return (
-    <section id="work" className="py-20 md:py-32 bg-secondary">
+    <section id="work" className="py-20 md:py-32 bg-surface-container-low">
       <FadeIn className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">{dictionary.title}</h2>
@@ -60,7 +60,7 @@ export function Work({ dictionary, lang }: { dictionary: any, lang: string }) {
                     </div>
                   )}
                 </CardContent>
-                <CardFooter className="flex items-center justify-between">
+                <CardFooter className="flex flex-wrap items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
                     {project.caseStudy && (
                       <Link href={`/${lang}/work/${project.id}`} className="flex items-center gap-1 text-primary font-medium hover:underline">

@@ -1,9 +1,8 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Code, Menu, Globe } from "lucide-react";
+import { Code, Menu, Globe, Mail } from "lucide-react";
 import { NAV_LINKS, GithubIcon } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -29,6 +28,7 @@ const locales = [
 export function Header({ lang, dictionary }: { lang: string, dictionary: any }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("home");
   const pathname = usePathname();
 
   useEffect(() => {
@@ -37,6 +37,25 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const ids = ["home", "about", "capabilities", "work", "github", "contact"];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        }
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+    return () => observer.disconnect();
   }, []);
 
   const navLinks = NAV_LINKS(dictionary);
@@ -60,21 +79,39 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-lg font-headline">
           <Code className="h-6 w-6 text-primary" />
-          Emmanuel Galadima
+          CripticHood
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={`/${lang}${link.href}`}
-              className="hover:text-primary transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
+        <nav className="hidden md:flex items-center gap-1 text-sm font-medium">
+          {navLinks.map((link) => {
+            const id = link.href.replace("#", "");
+            const isActive = activeSection === id;
+            return (
+              <Link
+                key={link.href}
+                href={`/${lang}${link.href}`}
+                className={cn(
+                  "relative rounded-full px-3.5 py-2 transition-colors",
+                  isActive
+                    ? "text-primary bg-primary/10"
+                    : "text-on-surface-variant hover:text-primary hover:bg-primary/5"
+                )}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
+          <a
+            href="mailto:hello@criptichood.com"
+            aria-label={dictionary.getInTouch}
+            title={dictionary.getInTouch}
+            className="hidden md:inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm font-medium hover:bg-accent/10 hover:text-primary transition-colors"
+          >
+            <Mail className="h-4 w-4" />
+            <span className="hidden lg:inline">{dictionary.getInTouch}</span>
+          </a>
           <a
             href="https://github.com/criptichood"
             target="_blank"
@@ -112,20 +149,36 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
                 <div className="flex flex-col p-6">
                   <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-lg font-headline mb-8" onClick={() => setIsMobileMenuOpen(false)}>
                     <Code className="h-6 w-6 text-primary" />
-                    Emmanuel Galadima
+                    CripticHood
                   </Link>
-                  <nav className="flex flex-col gap-6 text-lg">
-                    {navLinks.map((link) => (
-                      <Link
-                        key={link.href}
-                        href={`/${lang}${link.href}`}
-                        className="hover:text-primary transition-colors"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                      >
-                        {link.label}
-                      </Link>
-                    ))}
+                  <nav className="flex flex-col gap-2 text-lg">
+                    {navLinks.map((link) => {
+                      const id = link.href.replace("#", "");
+                      const isActive = activeSection === id;
+                      return (
+                        <Link
+                          key={link.href}
+                          href={`/${lang}${link.href}`}
+                          className={cn(
+                            "rounded-lg px-3 py-2.5 transition-colors",
+                            isActive
+                              ? "text-primary bg-primary/10"
+                              : "text-on-surface-variant hover:text-primary hover:bg-primary/5"
+                          )}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {link.label}
+                        </Link>
+                      );
+                    })}
                   </nav>
+                  <a
+                    href="mailto:hello@criptichood.com"
+                    className="mt-8 flex items-center gap-2 rounded-lg border border-outline-variant px-3 py-2.5 text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-colors"
+                  >
+                    <Mail className="h-4 w-4" />
+                    {dictionary.getInTouch}
+                  </a>
                 </div>
               </SheetContent>
             </Sheet>

@@ -5,9 +5,7 @@ import { Hero } from "@/components/sections/hero";
 import { Capabilities } from "@/components/sections/capabilities";
 import { Work } from "@/components/sections/work";
 import { TechStack } from "@/components/sections/tech-stack";
-import { Timeline } from "@/components/sections/timeline";
 import { GitHubShowcase } from "@/components/sections/github-showcase";
-import { WhyChooseMe } from "@/components/sections/why-choose-me";
 import { getDictionary } from "@/lib/dictionaries";
 
 export default async function LangHomePage(props: { params: Promise<{ lang: string }> }) {
@@ -27,8 +25,6 @@ export default async function LangHomePage(props: { params: Promise<{ lang: stri
       <Work dictionary={dictionary.work} lang={lang} />
       <GitHubShowcase dictionary={dictionary.github} />
       <TechStack dictionary={dictionary.techStack} />
-      <Timeline dictionary={dictionary.timeline} />
-      <WhyChooseMe dictionary={dictionary.whyChooseMe} />
       <FAQ dictionary={dictionary.faq} />
       <Contact dictionary={dictionary.contact} />
     </>
