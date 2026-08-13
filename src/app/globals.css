@@ -5,17 +5,17 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-body: "Inter", sans-serif;
-  --font-headline: "Space Grotesk", sans-serif;
-  --font-code: monospace;
-  --font-label-mono: "JetBrains Mono", monospace;
-  --font-display-lg: "Space Grotesk", sans-serif;
-  --font-display-lg-mobile: "Space Grotesk", sans-serif;
-  --font-caption: "Inter", sans-serif;
-  --font-body-lg: "Inter", sans-serif;
-  --font-body-md: "Inter", sans-serif;
-  --font-headline-md: "Space Grotesk", sans-serif;
-  --font-headline-xl: "Space Grotesk", sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-headline: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
+  --font-code: var(--font-jetbrains-mono), monospace;
+  --font-label-mono: var(--font-jetbrains-mono), monospace;
+  --font-display-lg: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
+  --font-display-lg-mobile: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
+  --font-caption: var(--font-inter), system-ui, sans-serif;
+  --font-body-lg: var(--font-inter), system-ui, sans-serif;
+  --font-body-md: var(--font-inter), system-ui, sans-serif;
+  --font-headline-md: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
+  --font-headline-xl: var(--font-space-grotesk), var(--font-inter), system-ui, sans-serif;
 
   --text-label-mono: 14px;
   --text-label-mono--line-height: 1;
@@ -119,6 +119,35 @@
       height: 0;
     }
   }
+}
+
+html[lang="zh"] {
+  --font-body: var(--font-inter), var(--font-noto-sans-sc), system-ui, sans-serif;
+  --font-headline: var(--font-space-grotesk), var(--font-noto-sans-sc), var(--font-inter), system-ui, sans-serif;
+  --font-display-lg: var(--font-space-grotesk), var(--font-noto-sans-sc), var(--font-inter), system-ui, sans-serif;
+  --font-display-lg-mobile: var(--font-space-grotesk), var(--font-noto-sans-sc), var(--font-inter), system-ui, sans-serif;
+  --font-headline-md: var(--font-space-grotesk), var(--font-noto-sans-sc), var(--font-inter), system-ui, sans-serif;
+  --font-headline-xl: var(--font-space-grotesk), var(--font-noto-sans-sc), var(--font-inter), system-ui, sans-serif;
+}
+
+html[lang="ar"] {
+  --font-body: var(--font-inter), var(--font-noto-naskh-arabic), system-ui, sans-serif;
+  --font-headline: var(--font-space-grotesk), var(--font-noto-naskh-arabic), var(--font-inter), system-ui, sans-serif;
+  --font-display-lg: var(--font-space-grotesk), var(--font-noto-naskh-arabic), var(--font-inter), system-ui, sans-serif;
+  --font-display-lg-mobile: var(--font-space-grotesk), var(--font-noto-naskh-arabic), var(--font-inter), system-ui, sans-serif;
+  --font-headline-md: var(--font-space-grotesk), var(--font-noto-naskh-arabic), var(--font-inter), system-ui, sans-serif;
+  --font-headline-xl: var(--font-space-grotesk), var(--font-noto-naskh-arabic), var(--font-inter), system-ui, sans-serif;
+}
+
+html[dir="rtl"] {
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .tracking-widest,
+html[dir="rtl"] .tracking-wide,
+html[dir="rtl"] .tracking-wider,
+html[dir="rtl"] .font-label-mono {
+  letter-spacing: 0;
 }
 
 @layer base {

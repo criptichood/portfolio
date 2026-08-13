@@ -12,8 +12,8 @@ export function Work({ dictionary, lang }: { dictionary: any, lang: string }) {
     <section id="work" className="py-20 md:py-32 bg-surface-container-low">
       <FadeIn className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">{dictionary.title}</h2>
-          <p className="text-lg text-muted-foreground mt-4">
+          <h2 className="font-headline-xl text-headline-xl text-on-surface">{dictionary.title}</h2>
+          <p className="font-body-lg text-body-lg text-on-surface-variant mt-4">
             {dictionary.description}
           </p>
         </div>
