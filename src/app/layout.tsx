@@ -12,16 +12,24 @@ import Negotiator from 'negotiator';
 import { ScrollToTop } from '@/components/common/scroll-to-top';
 import { SocialRail } from '@/components/common/social-rail';
 import { ChatbotWidget } from '@/components/chatbot/chatbot-widget';
+import { baseFontVariables, localeFontVariables } from '@/lib/fonts';
 
 // This function is now part of the root layout to avoid duplication
 async function getLocale(): Promise<string> {
   const locales = ['en', 'ha', 'fr', 'zh', 'es', 'ar'];
   const defaultLocale = 'en';
-  const negotiatorHeaders: Record<string, string> = {};
   const headerList = await headers();
+
+  // Prefer the locale derived from the URL path by the proxy
+  const pathLocale = headerList.get('x-locale');
+  if (pathLocale && locales.includes(pathLocale)) {
+    return pathLocale;
+  }
+
+  const negotiatorHeaders: Record<string, string> = {};
   headerList.forEach((value, key) => (negotiatorHeaders[key] = value));
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
-  
+
   try {
     return match(languages, locales, defaultLocale);
   } catch (error) {
@@ -32,9 +40,43 @@ async function getLocale(): Promise<string> {
 export async function generateMetadata(): Promise<Metadata> {
   const lang = await getLocale();
   const dictionary = await getDictionary(lang);
+
+  const canonical = `https://criptichood.com/${lang}`;
+
   return {
+    metadataBase: new URL('https://criptichood.com'),
     title: dictionary.metadata.title,
     description: dictionary.metadata.description,
+    applicationName: 'Emmanuel Galadima',
+    alternates: {
+      canonical,
+      languages: {
+        'en': '/en',
+        'ha': '/ha',
+        'fr': '/fr',
+        'es': '/es',
+        'zh': '/zh',
+        'ar': '/ar',
+      },
+    },
+    openGraph: {
+      type: 'website',
+      siteName: 'Emmanuel Galadima',
+      locale: lang,
+      url: canonical,
+      title: dictionary.metadata.title,
+      description: dictionary.metadata.description,
+    },
+    twitter: {
+      card: 'summary',
+      title: dictionary.metadata.title,
+      description: dictionary.metadata.description,
+      creator: '@CripticHood',
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 
@@ -56,11 +98,8 @@ export default async function RootLayout(
   const dictionary = await getDictionary(lang);
 
   return (
-    <html lang={lang} dir={isRtl ? 'rtl' : 'ltr'} className="!scroll-smooth" data-scroll-behavior="smooth" suppressHydrationWarning>
+    <html lang={lang} dir={isRtl ? 'rtl' : 'ltr'} className={`!scroll-smooth ${baseFontVariables} ${localeFontVariables[lang] ?? ''}`} data-scroll-behavior="smooth" suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
