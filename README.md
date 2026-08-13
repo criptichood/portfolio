@@ -1,6 +1,6 @@
-# Criptic Digital - AI & Web Development Portfolio
+# Emmanuel Galadima - Portfolio
 
-This is the source code for the personal portfolio website of Emmanuel Galadima (Criptic Digital), a Blockchain Researcher and AI Web Developer. The site is designed to showcase services, projects, and technical expertise.
+The source code for the personal portfolio website of **Emmanuel Galadima (Criptic Hood)**, an AI Full-Stack Software Engineer who designs and builds intelligent, production-ready software systems — combining full-stack engineering, AI, and security-minded architecture.
 
 The entire application was built iteratively with the help of an AI coding partner.
 
@@ -9,6 +9,8 @@ The entire application was built iteratively with the help of an AI coding partn
 - **Modern Tech Stack**: Built with Next.js (App Router), TypeScript, and Tailwind CSS for a fast, modern, and scalable web experience.
 - **Multilingual Support**: The entire site is available in multiple languages (English, Hausa, French, Spanish, Chinese, Arabic) using a dictionary-based i18n setup.
 - **AI-Powered Chatbot**: Features an integrated chatbot built with Google's Gemini model via the Vercel AI SDK. The chatbot is context-aware, answers questions based on the portfolio content, and supports all available languages.
+- **Case Studies**: Deep-dive case-study pages for featured projects, in addition to on-page summaries.
+- **GitHub Showcase**: A curated showcase of open-source repositories.
 - **Responsive Design**: Fully responsive components built with ShadCN UI, ensuring a great user experience on all devices.
 - **Animations**: Subtle and professional animations powered by Framer Motion to enhance user interaction.
 - **Contact Form**: A contact form with Zod validation (delivery can be wired to an email or message service).
@@ -29,20 +31,20 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (version 18 or higher recommended)
-- [pnpm](https://pnpm.io/installation) (or npm/yarn)
+- [Node.js](https://nodejs.org/) (version 20.9 or higher recommended, required by Next.js 16)
+- [npm](https://www.npmjs.com/) (or pnpm/yarn)
 
 ### Installation
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
+    git clone https://github.com/zeroxhood/myPortfolio.git
+    cd myPortfolio
     ```
 
 2.  **Install dependencies:**
     ```bash
-    pnpm install
+    npm install
     ```
 
 3.  **Set up environment variables:**
@@ -53,20 +55,25 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 4.  **Run the development server:**
     ```bash
-    pnpm dev
+    npm run dev
     ```
     Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Project Structure
 
 - `src/app/[lang]`: The main application routes, structured for internationalization.
+- `src/app/[lang]/work/[slug]`: The deep-dive case-study routes for featured projects.
 - `src/components`: Contains all the reusable React components, categorized into `common`, `sections`, `ui`, etc.
 - `src/ai/flows`: Holds the AI flows that power the AI features like the chatbot and contact form submission.
 - `src/lib`: Includes utility functions, data constants, schemas, and internationalization dictionaries.
 - `src/lib/dictionaries`: JSON files for each supported language.
 
+## Branching Workflow
+
+All development work happens on the `dev` branch. The `main` branch is treated as the stable release branch and is not committed to directly from local development.
+
 ## Customization
 
-- **Content**: To change the text content (like project descriptions, services, etc.), edit the JSON files in `src/lib/dictionaries`.
-- **Styling**: To change the theme (colors, fonts), edit the CSS variables in `src/app/globals.css` and the theme configuration in `tailwind.config.ts`.
+- **Content**: To change the text content (like project descriptions, capabilities, case studies, etc.), edit the JSON files in `src/lib/dictionaries`.
+- **Styling**: To change the theme (colors, fonts), edit the CSS variables and `@theme` configuration in `src/app/globals.css`.
 - **Social Links & Navigation**: Update the `NAV_LINKS` and `SOCIAL_LINKS` arrays in `src/lib/data.ts`.
