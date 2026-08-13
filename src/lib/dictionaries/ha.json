@@ -1,169 +1,311 @@
-
 {
   "metadata": {
-    "title": "Criptic Digital - AI & Ci gaban Yanar Gizo",
-    "description": "Taimaka wa kasuwanci da kamfanoni don ginawa da haɓaka shafukan yanar gizo, kula da tsarin, da kuma amfani da hanyoyin da AI ke tafiyar da su don haɓaka."
+    "title": "Emmanuel Galadima — Injiniyan Software na Full-Stack AI",
+    "description": "Ina tsara da gina tsarin software masu wayo da shirye don samarwa — injiniyan full-stack, AI, da gine-gine mai kula da tsaro."
   },
   "nav": {
     "home": "Gida",
     "about": "Game da",
-    "services": "Ayyuka",
-    "projects": "Ayyukan",
-    "blog": "Shafin",
+    "capabilities": "Iya Aiki",
+    "work": "Ayyuka",
+    "github": "GitHub",
     "contact": "Tuntuɓi"
   },
   "hero": {
-    "headlines": [
-      {
-        "line1": "Shafukan Yanar Gizo Masu Wayo. Tsarin Zamani.",
-        "line2": "Hanyoyin da AI ke Tafiyar da su."
-      },
-      {
-        "line1": "Sabbin Hanyoyin Yanar Gizo & AI.",
-        "line2": "An Gina don Ci Gaba."
-      },
-      {
-        "line1": "Daga Tunanin zuwa Lambar.",
-        "line2": "Burinka, Ya Zama Gaskiya."
-      }
+    "eyebrow": "Emmanuel Galadima",
+    "titleLine1": "Injiniyan Software",
+    "titleLine2": "Full-Stack na AI",
+    "description": "Ina tsara da gina tsarin software masu wayo da shirye don samarwa — injiniyan full-stack, AI, da gine-gine mai kula da tsaro.",
+    "badgesTitle": "Iya Aiki",
+    "badges": [
+      "Injiniyan Software",
+      "Injiniyan AI",
+      "Injiniyan Samfura",
+      "Tsaron Aikace-aikace",
+      "Web3 / Blockchain"
     ],
-    "description": "Taimaka wa kasuwanci da kamfanoni don ginawa da haɓaka shafukan yanar gizo, kula da tsarin, da kuma amfani da hanyoyin da AI ke tafiyar da su don haɓaka.",
-    "cta1": "Samu Shafin Yanar Gizo na Zamani",
-    "cta2": "Duba Aikina"
+    "cta1": "Duba Aikina",
+    "cta2": "Tuntuɓe Ni",
+    "scroll": "Gungura don bincika"
   },
   "about": {
     "title": "Game da Ni",
-    "subtitle": "Mai Binciken Blockchain, Mai Haɓaka Yanar Gizo na AI, da kuma Mai Ba da Shawara kan Fasaha.",
-    "description": "Taimakawa kasuwanci ta hanyar taimaka musu su rungumi makomar fasaha. Na kware wajen gina shafukan yanar gizo da aka haɗa da AI, sabunta aikace-aikace, da kuma ba da ingantaccen kulawa ga tsarin don tabbatar da ayyuka marasa matsala da ci gaba mai dorewa."
+    "subtitle": "Injiniya da farko. Tsaro a matsayin wani ɓangare na gine-gine, ba abin da ake tunani a baya ba.",
+    "description": "Ni injiniyan software na full-stack ne da ke juya ra'ayoyin samfura masu rikitarwa zuwa tsarin aiki masu shirye don samarwa. Ina aiki a duk faɗin stack — gaba, baya, APIs, bayanai, haɗin AI, da turawa — kuma ina ɗaukan tsaro a matsayin wani ɓangare na gine-gine maimakon tunani a baya. Daga dandamalin da AI ke tafiyar da su da sarrafa takardu masu nau'ikan kafofin watsa labarai zuwa ababen more rayuwa na baya masu tsaro da aikace-aikacen blockchain, ina gina tsarin wayo, masu juriya, da tsara don isarwa."
   },
-  "services": {
-    "title": "Ayyukana",
-    "description": "Samar da cikakkun hanyoyin magance matsaloli don ɗaukaka kasancewar ku a duniyar dijital da ingancin aiki.",
-    "servicesData": [
+  "capabilities": {
+    "title": "Iya Aiki",
+    "description": "Fannoni biyar da nake kawowa ga kowane samfuri — da yadda nake tabbatar da su da tsarin gaske.",
+    "items": [
       {
-        "title": "Ci gaban Shafin Yanar Gizo Mai Amfani da AI",
-        "description": "Shafukan yanar gizo masu sauri, masu amsawa, da masu basira waɗanda aka keɓance don bukatun kasuwancin ku.",
-        "icon": "Cpu"
+        "icon": "Cpu",
+        "title": "Injiniyan Software",
+        "tag": "01",
+        "description": "Aikace-aikacen full-stack, APIs, bayanai, da mu'amaloli masu rikitarwa — tsarawa, ginawa, da isarwa daga ƙarshe zuwa ƙarshe.",
+        "tags": ["Next.js", "TypeScript", "APIs", "Gine-gine"]
       },
       {
-        "title": "Haɓaka Shafin Yanar Gizo & Aikace-aikacen Yanar Gizo",
-        "description": "Sabunta tsoffin tsarin ku da sabbin fasahohi don ingantaccen aiki.",
-        "icon": "ArrowUpToLine"
+        "icon": "Bot",
+        "title": "Injiniyan AI",
+        "tag": "02",
+        "description": "Wakilan AI, tsarin multimodal, haɗin LLM, da tsarawa da aka gina cikin samfura na gaske.",
+        "tags": ["Gemini", "Wakilai", "Multimodal", "Tsarawa"]
       },
       {
-        "title": "Kulawar Tsari & Sabar",
-        "description": "Ingantattun haɓaka software, tallafin sabar, da sa ido kan aiki.",
-        "icon": "Server"
+        "icon": "Lightbulb",
+        "title": "Injiniyan Samfura",
+        "tag": "03",
+        "description": "Daukar ra'ayi daga ra'ayi zuwa gine-gine, aiwatarwa, da turawa.",
+        "tags": ["Ra'ayi", "Ginawa", "Isarwa", "Maimaitawa"]
       },
       {
-        "title": "Shawara kan Fasaha mai Zaman Kanta",
-        "description": "Shawarwari da dabarun fasaha da aka keɓance don taimakawa kasuwancin ku ya haɓaka.",
-        "icon": "Briefcase"
+        "icon": "ShieldCheck",
+        "title": "Tsaron Aikace-aikace",
+        "tag": "04",
+        "description": "Tabbatarwa mai tsaro, izini, gine-ginen tsaro, da injiniyan tsaro da aka gina daga farko.",
+        "tags": ["Tabbatarwa", "Rukunin Tsaro", "Sarrafa Shiga", "Kariyar Bayanai"]
       },
       {
-        "title": "Shawara kan Blockchain & Web3",
-        "description": "Jagorancin ƙwararru ga kamfanoni masu hangen nesa da ke shiga sararin Web3.",
-        "icon": "Blocks"
+        "icon": "Blocks",
+        "title": "Web3 / Blockchain",
+        "tag": "05",
+        "description": "TON, kwangiloli masu wayo, aikace-aikacen blockchain, da bincike mai amfani.",
+        "tags": ["TON", "Kwangiloli Masu Wayo", "Web3", "Bincike"]
       }
     ]
   },
-  "projects": {
-    "title": "Aikina",
-    "description": "Zaɓin ayyukan da ke nuna ƙwarewata da sha'awata don gina sabbin hanyoyin dijital na zamani.",
+  "work": {
+    "title": "Zaɓaɓɓun Ayyuka",
+    "description": "Tsarin gaske da na tsara, na gina, kuma na isar — hujjar iya aikin da ke sama.",
     "projectsData": [
       {
-        "id": "cryptodahausa",
+        "id": "ai-construction-takeoff",
+        "title": "Dandalin AI na Gini & Ƙididdigar Adadi",
+        "role": "Injiniyan full-stack + AI",
+        "description": "Dandalin AI na farko wanda ke karanta zane-zane da PDF, yana yin ƙididdigar adadi da AI ke taimakawa, kuma yana sarrafa tsarin ayyukan gini.",
+        "outcome": "Sarrafa takardu masu nau'ikan kafofin watsa labarai, tsarawa da wakilan AI, yanayi mai dorewa, da gine-ginen bayanai a cikin tsarin samarwa guda ɗaya.",
+        "capabilities": ["Injiniyan AI", "Injiniyan Software", "Injiniyan Samfura"],
+        "stack": ["Next.js", "TypeScript", "Gemini", "PostgreSQL", "Wakilan AI"],
+        "caseStudy": true,
+        "githubUrl": "https://github.com/criptichood",
+        "liveUrl": ""
+      },
+      {
+        "id": "scrib-syntax",
+        "title": "ScribSyntax",
+        "role": "Injiniyan aikace-aikacen AI",
+        "description": "Studio da AI ke tafiyar da shi don labaran sauti da bidiyo — juya prompts da rubutun zuwa abun ciki na multimedia mai kyau.",
+        "outcome": "Tsarin samar da multimedia da AI ke tafiyar da shi tare da mu'amalar gyara mai rikitarwa.",
+        "capabilities": ["Injiniyan AI", "Injiniyan Software"],
+        "stack": ["Next.js", "TypeScript", "AI", "Haɗin API"],
+        "caseStudy": false,
+        "githubUrl": "https://github.com/criptichood",
+        "liveUrl": "https://scrib-syntax.vercel.app/"
+      },
+      {
+        "id": "crypto-dahausa",
         "title": "CryptoDaHausa",
-        "description": "Dandalin samar da abun ciki na ilimin blockchain a cikin yaren gida, wanda ke sa batutuwa masu rikitarwa su zama masu sauƙin fahimta.",
+        "role": "Ilimin Blockchain & Abun ciki",
+        "description": "Dandalin ilimin blockchain na gida wanda ke sa batutuwan Web3 masu rikitarwa su zama masu sauƙi ga masu sauraron Hausa.",
+        "outcome": "Gina hanyar shiga cikin blockchain, Web3, da fasahar da ba ta tsakiya ba.",
+        "capabilities": ["Web3 / Blockchain"],
+        "stack": ["Web3", "Blockchain", "Abun ciki", "Al'umma"],
+        "caseStudy": false,
+        "githubUrl": "",
         "liveUrl": "https://www.youtube.com/@CryptoDaHausa"
       },
       {
-        "id": "ai-tools",
-        "title": "ScribSyntax",
-        "description": "Sitidiyon ku mai amfani da AI don labarun sauti da bidiyo.",
-        "liveUrl": "https://scrib-syntax.vercel.app/",
-        "githubUrl": "https://github.com/criptichood"
-      },
-      {
         "id": "company-website",
-        "title": "Turawa Shafin Yanar Gizon Kamfani",
-        "description": "Shafin yanar gizo na zamani da na kwararru wanda aka tsara don daukaka matsayin abokin ciniki na kamfani a duniyar intanet, yana nuna kwarewata wajen gina mafita ga kasuwanci."
+        "title": "Shafin Kamfani & Turawa",
+        "role": "Injiniyan full-stack",
+        "description": "Shafin kamfani na zamani kuma na ƙwararru wanda aka tsara kuma aka tura don abokin ciniki na kasuwanci.",
+        "outcome": "Turawar samarwa wanda ya ɗaukaka matsayin abokin ciniki a intanet da ayyukansa.",
+        "capabilities": ["Injiniyan Software", "Injiniyan Samfura"],
+        "stack": ["Next.js", "Turawa", "Aiki"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": ""
       },
       {
         "id": "personalized-website",
-        "title": "Shafin yanar gizo na musamman don kasuwancin ku",
-        "description": "Shafin yanar gizo na musamman wanda aka keɓe don takamaiman bukatun abokin ciniki na kasuwanci, yana nuna alama da aiki.",
-        "liveUrl": "https://maryams-touch-client.vercel.app/",
-        "githubUrl": ""
+        "title": "Shafin Kasuwanci na Musamman",
+        "role": "Injiniyan full-stack",
+        "description": "Shafin da aka keɓe don bukatun musamman na abokin ciniki na kasuwanci, yana nuna alama da aiki.",
+        "outcome": "Matsayin intanet mai alama da aiki wanda aka gina a kusa da bukatun abokin ciniki.",
+        "capabilities": ["Injiniyan Software", "Injiniyan Samfura"],
+        "stack": ["Next.js", "TypeScript", "UI"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": "https://maryams-touch-client.vercel.app/"
       }
     ],
+    "viewCaseStudy": "Duba Nazarin Case",
     "liveDemo": "Nunin Kai Tsaye",
     "viewMore": "Duba Ƙari akan GitHub"
   },
-  "whyChooseMe": {
-    "title": "Me yasa za a zabe ni?",
-    "description": "Isar da daraja ta hanyar gogewa, sabbin abubuwa, da kuma sadaukar da kai ga nasarar ku.",
+  "caseStudies": {
+    "ai-construction-takeoff": {
+      "title": "Dandalin AI na Gini & Ƙididdigar Adadi",
+      "role": "Injiniyan full-stack + AI",
+      "summary": "Dandalin AI na samarwa wanda ke karanta zane-zanen gini da PDF, yana yin ƙididdigar adadi da AI ke taimakawa, kuma yana sarrafa tsarin ayyuka.",
+      "sections": {
+        "problem": {
+          "title": "Matsalar",
+          "body": "Ƙididdigar adadi na gini na hannu ne, a hankali, kuma mai kuskure. Karanta zane-zane, fitar da awo, da ƙididdige adadin kayan da hannu yana ɗaukar sa'o'i kuma shine ƙugiya ga ƙungiyoyin aikin."
+        },
+        "approach": {
+          "title": "Hanyar",
+          "body": "Na gina tsarin da ya haɗa sarrafa takardu masu nau'ikan kafofin watsa labarai tare da ƙididdigar adadi da AI ke taimakawa — karanta zane-zane da PDF, fitar da adadi da AI, da tura aikin ta hanyar tsari na wakilai da tsarin aiki."
+        },
+        "architecture": {
+          "title": "Gine-gine & Injiniya",
+          "body": "Aikace-aikacen full-stack tare da gine-ginen tushen bayanai don yanayi mai dorewa, matakin tsara wakilan AI, tsarin fitarwa, da mu'amala mai rikitarwa don bita da sarrafa tsarin ƙididdiga."
+        },
+        "stack": {
+          "title": "Stack",
+          "body": "Next.js, TypeScript, Gemini don fahimtar multimodal, PostgreSQL don bayanai masu dorewa, da tsarin wakilan AI da aka tsara."
+        },
+        "outcome": {
+          "title": "Sakamako",
+          "body": "Samfuri na farko wanda ke nuna injiniya daga ƙarshe zuwa ƙarshe — haɗin AI, gine-ginen bayanai, tsarawa da wakilai, da mu'amala mai amfani suna aiki tare a matsayin tsarin guda."
+        },
+        "next": {
+          "title": "Abin da zan yi na gaba",
+          "body": "Ƙara ganin zane-zane mai kyau, haɗin kai mai zurfi tare da kayan aikin sarrafa ayyuka, da ƙarin tsarin tsaro da izini mai ƙarfi tsakanin ƙungiyoyi."
+        }
+      },
+      "backToWork": "Koma zuwa Ayyuka"
+    }
+  },
+  "techStack": {
+    "title": "Stack na Fasaha",
+    "description": "Kayan aikin da nake amfani da su a duk faɗin stack, an raba su ta hanyar iya aikin da suke tafiyar da su.",
+    "groups": [
+      {
+        "title": "Gaba",
+        "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+      },
+      {
+        "title": "Baya & Bayanai",
+        "items": ["Node.js", "APIs", "Supabase", "PostgreSQL", "IndexedDB"]
+      },
+      {
+        "title": "AI & Aiki ta Atomatik",
+        "items": ["Gemini", "Genkit", "Wakilan AI", "Multimodal", "Tsarawa"]
+      },
+      {
+        "title": "Tsaro & Ababen More Rayuwa",
+        "items": ["Tabbatarwa", "Rukunin Tsaro", "Cloudflare", "VPS", "Turawa"]
+      },
+      {
+        "title": "Web3 & Blockchain",
+        "items": ["TON", "Kwangiloli Masu Wayo", "Web3"]
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Gogewa & Mai da Hankali",
+    "description": "Tafiya da fannoni a bayan tsarin da nake ginawa.",
     "items": [
-      { "title": "Hanyoyi Masu Sauƙin Kuɗi", "icon": "BadgeDollarSign" },
-      { "title": "Shafukan Yanar Gizo da aka haɗa da AI", "icon": "Bot" },
-      { "title": "Gogewar Shekaru 5+", "icon": "Medal" },
-      { "title": "Tabbataccen Tarihin Aiki", "icon": "TrendingUp" }
+      {
+        "title": "Injiniyan Full-Stack",
+        "period": "Tushe",
+        "description": "Gina aikace-aikace masu cikakken — gaba, baya, APIs, bayanai, da gine-gine."
+      },
+      {
+        "title": "Injiniyan Aikace-aikacen AI",
+        "period": "Mai da hankali",
+        "description": "Isar da samfura tare da AI a matsayin ɓangare na samfurin, daga wakilai zuwa tsarin multimodal."
+      },
+      {
+        "title": "Tsaron Aikace-aikace",
+        "period": "Kowane gini",
+        "description": "Tabbatarwa, izini, gine-ginen tsaro, da kariyar bayanai da aka gina a cikin kowane tsari."
+      },
+      {
+        "title": "Blockchain & Web3",
+        "period": "Bincike & gini",
+        "description": "TON, kwangiloli masu wayo, aikace-aikacen blockchain, da ilimi."
+      }
+    ]
+  },
+  "github": {
+    "title": "Budaddiyar Source & Code",
+    "description": "Zaɓaɓɓen kallon code da nake ginawa da rabawa akan GitHub.",
+    "viewProfile": "Duba Bayanan GitHub",
+    "repos": [
+      {
+        "name": "AI Construction & Takeoff",
+        "description": "Nazarin zane mai multimodal, ƙididdigar adadi da AI ke taimakawa, da tsarawa da wakilai.",
+        "topics": ["AI", "Next.js", "Wakilai"],
+        "url": "https://github.com/criptichood"
+      },
+      {
+        "name": "ScribSyntax",
+        "description": "Studio da AI ke tafiyar da shi don labaran sauti da bidiyo.",
+        "topics": ["AI", "TypeScript", "Media"],
+        "url": "https://github.com/criptichood"
+      },
+      {
+        "name": "Portfolio Platform",
+        "description": "Wannan portfolio mai harsuna da yawa wanda chatbot na AI ke tafiyar da shi.",
+        "topics": ["Next.js", "i18n", "Gemini"],
+        "url": "https://github.com/criptichood"
+      },
+      {
+        "name": "Blockchain Research",
+        "description": "Rubuce-rubuce da bincike akan TON, Web3, da kwangiloli masu wayo.",
+        "topics": ["Web3", "TON", "Bincike"],
+        "url": "https://github.com/criptichood"
+      }
+    ]
+  },
+  "whyChooseMe": {
+    "title": "Me yasa za a yi aiki da ni?",
+    "description": "Injiniya wanda ke isar da tsarin cikakken — tare da AI, tsaro, da tunanin samfura da aka gina.",
+    "items": [
+      { "title": "Injiniya daga ƙarshe zuwa ƙarshe", "icon": "Cpu" },
+      { "title": "AI da aka gina cikin samfura", "icon": "Bot" },
+      { "title": "Isarwa mai kula da tsaro", "icon": "ShieldCheck" },
+      { "title": "Mai da hankali akan isarwa, ba magana kawai", "icon": "TrendingUp" }
     ]
   },
   "faq": {
     "title": "Tambayoyi da Amsoshi",
-    "description": "Nemo amsoshin tambayoyin da aka saba yi game da ayyukanmu da mahimmancin fasaha a cikin kasuwanci.",
+    "description": "Amsoshi akan yadda nake aiki, hanyar da nake bi da AI, da yadda nake tunani akan tsaro.",
     "items": [
       {
-        "question": "Me yasa kasuwancina ke buƙatar shafin yanar gizo na ƙwararru?",
-        "answer": "Shafin yanar gizo na ƙwararru yana aiki a matsayin shagon ku na dijital, wanda ke samuwa 24/7. Yana gina sahihanci, yana nuna samfuran ku ko ayyukan ku, kuma yana ba ku damar isa ga mafi yawan masu sauraro fiye da yadda wurin zahiri zai iya. Kayan aiki ne na asali don haɓaka da haɗin gwiwar abokin ciniki a duniyar dijital ta yau."
+        "question": "Wane irin ayyuka kake ginawa?",
+        "answer": "Tsarin software na full-stack — daga aikace-aikacen yanar gizo masu rikitarwa da tsarin da AI ke tafiyar da su zuwa ababen more rayuwa na baya masu tsaro da aikace-aikacen blockchain. Ina ɗaukan ra'ayin samfuri, in tsara gine-ginen tsarin, in gina shi, in haɗa AI da bayanai, in tura shi, kuma ina kiyaye tsaro a zuciya."
       },
       {
-        "question": "Menene mahimmancin kula da kwamfuta na yau da kullun ga kasuwancina?",
-        "answer": "Kulawa na yau da kullun yana da mahimmanci ga tsaro da inganci. Yana hana asarar bayanai, yana karewa daga barazanar yanar gizo, kuma yana tabbatar da tsarin ku yana aiki lami lafiya, yana rage lokacin aiki. Kulawa mai himma yana adana kuɗi a cikin dogon lokaci ta hanyar guje wa gyare-gyare na gaggawa masu tsada da dawo da bayanai."
+        "question": "Shin kai injiniyan tsaro na intanet ne?",
+        "answer": "Babban fifikona shine injiniyan software na full-stack. Ina gina aikace-aikace tare da tsaro a matsayin ɓangare na gine-gine — tabbatarwa, izini, rukunin tsaro, sarrafa shiga, da tsari mai tsaro — maimakon ɗaukan tsaro a matsayin tunani a baya."
       },
       {
-        "question": "Mene ne amfanin haɗa AI a cikin shafin yanar gizo na?",
-        "answer": "AI na iya canza shafin yanar gizon ku daga ƙasida maras motsi zuwa kayan aiki mai ƙarfi. Zai iya ƙarfafa ƙwarewar abokin ciniki na keɓaɓɓen, sarrafa tallafi tare da chatbots, samar da fa'idodin bayanai masu mahimmanci, da daidaita ƙirƙirar abun ciki, yana ba ku babbar fa'ida ta gasa."
+        "question": "Yaya kake amfani da AI a aikinka?",
+        "answer": "Ina gina aikace-aikace waɗanda ke amfani da AI a matsayin ɓangare na samfurin — wakilan AI, sarrafa takardu masu nau'ikan kafofin watsa labarai, haɗin LLM, da tsarawa — maimakon kawai amfani da kayan aikin AI don yin shafukan yanar gizo."
+      },
+      {
+        "question": "Za ka iya yin aiki akan samfuri daga ra'ayi zuwa ƙaddamarwa?",
+        "answer": "Ee. Injiniyan samfura ɗaya ce daga cikin manyan iya aikina — ɗaukar ra'ayi daga ra'ayi zuwa gine-gine, aiwatarwa, da turawa."
       }
     ]
   },
-  "blog": {
-    "title": "Shafin & Albarkatu",
-    "description": "Fahimta kan AI, sauye-sauyen dijital, blockchain, da fasahar kasuwanci.",
-    "posts": [
-      {
-        "title": "Haɓakar AI a Ci gaban Yanar Gizo",
-        "excerpt": "Gano yadda Hankalin Ƙirƙira ke kawo sauyi ga yadda muke ginawa da hulɗa da shafukan yanar gizo.",
-        "url": "https://www.designrush.com/agency/web-development-companies/trends/ai-and-web-development"
-      },
-      {
-        "title": "Sauye-sauyen Dijital ga Kasuwancin Gida",
-        "excerpt": "Jagora ga ƙanana da matsakaitan kasuwanci kan yadda za su yi amfani da fasaha don haɓaka.",
-        "url": "https://www.forbes.com/sites/allbusiness/2023/06/09/how-to-make-digital-transformation-work-for-your-small-business/"
-      },
-      {
-        "title": "Fahimtar Blockchain Fiye da Kuɗin Intanet",
-        "excerpt": "Binciko yiwuwar fasahar blockchain a masana'antu daban-daban fiye da harkokin kuɗi.",
-        "url": "https://cioviews.com/blockchain-beyond-cryptocurrency/"
-      }
-    ],
-    "readMore": "Kara Karatu"
-  },
   "contact": {
-    "title": "Tuntuɓe Mu",
-    "description": "Kuna da wani aiki a zuciya ko kawai kuna son yin gaisuwa? Ina son jin daga gare ku.",
+    "title": "Mu Gina Wani Abu",
+    "description": "Kana da ra'ayin samfuri, gini mai rikitarwa, ko tsarin da ke buƙatar injiniya? Mu yi magana.",
     "form": {
       "name": { "label": "Suna", "placeholder": "Sunanka" },
       "email": { "label": "Imel", "placeholder": "your.email@example.com" },
-      "message": { "label": "Saƙo", "placeholder": "Ta yaya zan iya taimaka muku?" },
+      "message": { "label": "Saƙo", "placeholder": "Fada mani game da aikinka ko ra'ayinka..." },
       "button": "Aika Saƙo"
     },
     "details": {
       "title": "Bayanin Tuntuɓa"
     },
     "social": {
-      "title": "Haɗu a Social Media"
+      "title": "Haɗu"
     },
     "whatsapp": "Yi Hira a WhatsApp",
     "toast": {
@@ -172,7 +314,7 @@
     }
   },
   "footer": {
-    "tagline": "Shafukan Yanar Gizo Masu Wayo. Tsarin Zamani. Hanyoyin da AI ke Tafiyar da su.",
+    "tagline": "Ina tsara da gina tsarin software masu wayo — injiniyan full-stack, AI, da gine-gine mai kula da tsaro.",
     "quickLinks": "Hanyoyin Sauri",
     "connect": "Haɗa",
     "rights": "Duk haƙƙoƙi an kiyaye su."
@@ -180,7 +322,7 @@
   "chatbot": {
     "title": "Mataimakin AI",
     "subtitle": "A kan layi - A shirye don taimakawa",
-    "greeting": "Barka da zuwa. Ni ne mataimakin AI na Criptic Digital. Jin daɗin yin tambaya game da ayyukan Emmanuel, ayyuka, ko gwaninta a cikin ci gaban yanar gizo da AI.",
-    "placeholder": "Yi tambaya game da ayyuka, ayyuka..."
+    "greeting": "Barka da zuwa. Ni ne mataimakin AI na Emmanuel Galadima, Injiniyan Software na Full-Stack AI. Jin daɗin yin tambaya game da iya aikinsa, ayyukansa, ko yadda yake gina tsarin aminci da AI ke tafiyar da su.",
+    "placeholder": "Yi tambaya game da iya aiki, ayyuka..."
   }
 }

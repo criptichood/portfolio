@@ -9,21 +9,24 @@ import {
   Bot,
   Medal,
   TrendingUp,
-  Github,
-  Linkedin,
-  Twitter,
   Link as LinkIcon,
   MessageSquare,
   Send,
+  Lightbulb,
+  ShieldCheck,
   type LucideIcon,
 } from "lucide-react";
+
+import { GithubIcon, LinkedinIcon, XTwitterIcon } from "@/lib/brand-icons";
+
+export { GithubIcon, LinkedinIcon, XTwitterIcon };
 
 export const NAV_LINKS = (dictionary: any) => [
   { href: "#home", label: dictionary.home },
   { href: "#about", label: dictionary.about },
-  { href: "#services", label: dictionary.services },
-  { href: "#projects", label: dictionary.projects },
-  { href: "#blog", label: dictionary.blog },
+  { href: "#capabilities", label: dictionary.capabilities },
+  { href: "#work", label: dictionary.work },
+  { href: "#github", label: dictionary.github },
   { href: "#contact", label: dictionary.contact },
 ];
 
@@ -31,17 +34,17 @@ export const SOCIAL_LINKS = [
   {
     name: "GitHub",
     url: "https://github.com/criptichood",
-    Icon: Github,
+    Icon: GithubIcon,
   },
   {
     name: "X/Twitter",
     url: "https://twitter.com/CripticHood",
-    Icon: Twitter,
+    Icon: XTwitterIcon,
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/emmanuel-galadima/",
-    Icon: Linkedin,
+    Icon: LinkedinIcon,
   },
   {
     name: "Linktree",
@@ -66,6 +69,9 @@ export const SERVICES_ICONS: { [key: string]: LucideIcon } = {
   Server,
   Briefcase,
   Blocks,
+  Bot,
+  Lightbulb,
+  ShieldCheck,
 };
 
 export const WHY_CHOOSE_ME_ICONS: { [key: string]: LucideIcon } = {
@@ -73,4 +79,6 @@ export const WHY_CHOOSE_ME_ICONS: { [key: string]: LucideIcon } = {
   Bot,
   Medal,
   TrendingUp,
+  Cpu,
+  ShieldCheck,
 };

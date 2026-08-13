@@ -1,169 +1,318 @@
-
 {
   "metadata": {
-    "title": "Criptic Digital - AI & Web Development",
-    "description": "Helping businesses and companies build and upgrade websites, maintain systems, and adopt AI-driven solutions for growth."
+    "title": "Emmanuel Galadima — AI Full-Stack Software Engineer",
+    "description": "I design and build intelligent, production-ready software systems — combining full-stack engineering, AI, and security-minded architecture."
   },
   "nav": {
     "home": "Home",
     "about": "About",
-    "services": "Services",
-    "projects": "Projects",
-    "blog": "Blog",
+    "capabilities": "Capabilities",
+    "work": "Work",
+    "github": "GitHub",
     "contact": "Contact"
   },
   "hero": {
-    "headlines": [
-      {
-        "line1": "Smarter Websites. Modern Systems.",
-        "line2": "AI-Powered Solutions."
-      },
-      {
-        "line1": "Innovative Web & AI Solutions.",
-        "line2": "Built for Growth."
-      },
-      {
-        "line1": "From Concept to Code.",
-        "line2": "Your Vision, Realized."
-      }
+    "eyebrow": "Emmanuel Galadima",
+    "titleLine1": "AI Full-Stack",
+    "titleLine2": "Software Engineer",
+    "description": "I design and build intelligent, production-ready software systems — combining full-stack engineering, AI, and security-minded architecture.",
+    "badgesTitle": "Capabilities",
+    "badges": [
+      "Software Engineering",
+      "AI Engineering",
+      "Product Engineering",
+      "Application Security",
+      "Web3 / Blockchain"
     ],
-    "description": "Helping businesses and companies build and upgrade websites, maintain systems, and adopt AI-driven solutions for growth.",
-    "cta1": "Get a Modern Website",
-    "cta2": "See My Work"
+    "cta1": "View My Work",
+    "cta2": "Get in Touch",
+    "scroll": "Scroll to explore"
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Blockchain Researcher, AI Web Developer, and Technical Consultant.",
-    "description": "Empowering businesses by helping them embrace the future of technology. I specialize in building AI-integrated websites, modernizing applications, and providing reliable system maintenance to ensure seamless operations and sustainable growth."
+    "subtitle": "Engineer first. Security as part of the architecture, not an afterthought.",
+    "description": "I'm a full-stack software engineer who turns complex product ideas into working, production-ready systems. I work across the entire stack — frontend, backend, APIs, databases, AI integrations, and deployment — and I think about security as part of the architecture rather than an afterthought. From AI-powered platforms and multimodal document processing to secure backend infrastructure and blockchain applications, I build systems that are intelligent, resilient, and built to ship.",
+    "points": [
+      "Full-stack applications: React, Next.js, TypeScript, APIs, databases, complex interfaces",
+      "AI application engineering: AI agents, multimodal systems, LLM integrations, orchestration",
+      "Product engineering: from concept to architecture to implementation to deployment",
+      "Application security: authentication, authorization, security architecture, data protection",
+      "Web3 & blockchain: TON, smart contracts, blockchain applications and research"
+    ]
   },
-  "services": {
-    "title": "My Services",
-    "description": "Providing comprehensive solutions to elevate your digital presence and operational efficiency.",
-    "servicesData": [
+  "capabilities": {
+    "title": "Capabilities",
+    "description": "The five disciplines I bring to every product — and how I prove them with real systems.",
+    "items": [
       {
-        "title": "AI-Powered Website Development",
-        "description": "Fast, responsive, and intelligent websites tailored to your business needs.",
-        "icon": "Cpu"
+        "icon": "Cpu",
+        "title": "Software Engineering",
+        "tag": "01",
+        "description": "Full-stack applications, APIs, databases, and complex interfaces — designed, built, and shipped end to end.",
+        "tags": ["Next.js", "TypeScript", "APIs", "Architecture"]
       },
       {
-        "title": "Website & WebApp Upgrades",
-        "description": "Modernize your outdated systems with the latest technologies for better performance.",
-        "icon": "ArrowUpToLine"
+        "icon": "Bot",
+        "title": "AI Engineering",
+        "tag": "02",
+        "description": "AI agents, multimodal systems, LLM integrations, and orchestration built into real products.",
+        "tags": ["Gemini", "Agents", "Multimodal", "Orchestration"]
       },
       {
-        "title": "System & Server Maintenance",
-        "description": "Reliable software upgrades, server support, and performance monitoring.",
-        "icon": "Server"
+        "icon": "Lightbulb",
+        "title": "Product Engineering",
+        "tag": "03",
+        "description": "Taking an idea from concept through architecture, implementation, and deployment.",
+        "tags": ["Concept", "Build", "Ship", "Iterate"]
       },
       {
-        "title": "Independent Technical Consulting",
-        "description": "Tailored technical recommendations and strategies to help your business grow.",
-        "icon": "Briefcase"
+        "icon": "ShieldCheck",
+        "title": "Application Security",
+        "tag": "04",
+        "description": "Secure authentication, authorization, security architecture, and defensive engineering baked in from the start.",
+        "tags": ["Auth", "Security Headers", "Access Control", "Data Protection"]
       },
       {
-        "title": "Blockchain & Web3 Consulting",
-        "description": "Expert guidance for forward-looking companies stepping into the Web3 space.",
-        "icon": "Blocks"
+        "icon": "Blocks",
+        "title": "Web3 / Blockchain",
+        "tag": "05",
+        "description": "TON, smart contracts, blockchain applications, and applied research.",
+        "tags": ["TON", "Smart Contracts", "Web3", "Research"]
       }
     ]
   },
-  "projects": {
-    "title": "My Work",
-    "description": "A selection of projects that showcase my skills and passion for building modern digital solutions.",
+  "work": {
+    "title": "Selected Work",
+    "description": "Real systems I've designed, built, and shipped — proof of the capabilities above.",
     "projectsData": [
       {
-        "id": "cryptodahausa",
+        "id": "ai-construction-takeoff",
+        "title": "AI Construction & Takeoff Platform",
+        "role": "Full-stack + AI Engineering",
+        "description": "A flagship AI-powered platform that reads blueprints and PDFs, performs AI-assisted quantity takeoff, and manages construction project workflows.",
+        "outcome": "Multimodal document processing, AI agent orchestration, persistent state, and database architecture in one production system.",
+        "capabilities": ["AI Engineering", "Software Engineering", "Product Engineering"],
+        "stack": ["Next.js", "TypeScript", "Gemini", "PostgreSQL", "AI Agents"],
+        "caseStudy": true,
+        "githubUrl": "https://github.com/criptichood",
+        "liveUrl": ""
+      },
+      {
+        "id": "scrib-syntax",
+        "title": "ScribSyntax",
+        "role": "AI Application Engineering",
+        "description": "An AI-powered studio for audiovisual narratives — turning prompts and scripts into polished multimedia content.",
+        "outcome": "AI-driven media generation pipeline with a complex interactive editing interface.",
+        "capabilities": ["AI Engineering", "Software Engineering"],
+        "stack": ["Next.js", "TypeScript", "AI", "API Integration"],
+        "caseStudy": false,
+        "githubUrl": "https://github.com/criptichood",
+        "liveUrl": "https://scrib-syntax.vercel.app/"
+      },
+      {
+        "id": "crypto-dahausa",
         "title": "CryptoDaHausa",
-        "description": "A platform for localized blockchain education content, making complex topics accessible.",
+        "role": "Blockchain Education & Content",
+        "description": "A localized blockchain education platform making complex Web3 topics accessible to a Hausa-speaking audience.",
+        "outcome": "Building an accessible on-ramp into blockchain, Web3, and decentralized technology.",
+        "capabilities": ["Web3 / Blockchain"],
+        "stack": ["Web3", "Blockchain", "Content", "Community"],
+        "caseStudy": false,
+        "githubUrl": "",
         "liveUrl": "https://www.youtube.com/@CryptoDaHausa"
       },
       {
-        "id": "ai-tools",
-        "title": "ScribSyntax",
-        "description": "Your AI-powered studio for audiovisual narratives.",
-        "liveUrl": "https://scrib-syntax.vercel.app/",
-        "githubUrl": "https://github.com/criptichood"
-      },
-      {
         "id": "company-website",
-        "title": "Company Website Deployment",
-        "description": "A modern and professional website designed to elevate a corporate client's digital presence, showcasing my expertise in building solutions for businesses."
+        "title": "Corporate Website & Deployment",
+        "role": "Full-stack Engineering",
+        "description": "A modern, professional corporate website designed and deployed for a business client.",
+        "outcome": "A production deployment that elevated the client's digital presence and operations.",
+        "capabilities": ["Software Engineering", "Product Engineering"],
+        "stack": ["Next.js", "Deployment", "Performance"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": ""
       },
       {
         "id": "personalized-website",
-        "title": "Personalized website for your business",
-        "description": "A custom website tailored to the specific needs of a business client, showcasing branding and functionality.",
-        "liveUrl": "https://maryams-touch-client.vercel.app/",
-        "githubUrl": ""
+        "title": "Personalized Business Website",
+        "role": "Full-stack Engineering",
+        "description": "A custom website tailored to a business client's specific needs, showcasing branding and functionality.",
+        "outcome": "A branded, functional web presence built around the client's requirements.",
+        "capabilities": ["Software Engineering", "Product Engineering"],
+        "stack": ["Next.js", "TypeScript", "UI"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": "https://maryams-touch-client.vercel.app/"
       }
     ],
+    "viewCaseStudy": "View Case Study",
     "liveDemo": "Live Demo",
     "viewMore": "View More on GitHub"
   },
-  "whyChooseMe": {
-    "title": "Why Choose Me?",
-    "description": "Delivering value through experience, innovation, and a commitment to your success.",
+  "caseStudies": {
+    "ai-construction-takeoff": {
+      "title": "AI Construction & Takeoff Platform",
+      "role": "Full-stack + AI Engineering",
+      "summary": "A production AI platform that reads construction blueprints and PDFs, performs AI-assisted quantity takeoff, and manages project workflows.",
+      "sections": {
+        "problem": {
+          "title": "The Problem",
+          "body": "Construction quantity takeoff is manual, slow, and error-prone. Reading blueprints, extracting measurements, and estimating material quantities by hand takes hours and is a bottleneck for project teams."
+        },
+        "approach": {
+          "title": "The Approach",
+          "body": "I built a system that combines multimodal document processing with AI-assisted takeoff — reading blueprints and PDFs, extracting quantities with AI, and routing the work through an orchestrated set of agents and workflows."
+        },
+        "architecture": {
+          "title": "Architecture & Engineering",
+          "body": "A full-stack application with a database-driven architecture for persistent state, an AI agent orchestration layer, an export pipeline, and a complex interactive UI for reviewing and managing takeoff workflows."
+        },
+        "stack": {
+          "title": "Stack",
+          "body": "Next.js, TypeScript, Gemini for multimodal understanding, PostgreSQL for persistent data, and an orchestrated AI agent pipeline."
+        },
+        "outcome": {
+          "title": "Outcome",
+          "body": "A flagship product that demonstrates end-to-end engineering — AI integration, data architecture, agent orchestration, and a usable interface working together as one system."
+        },
+        "next": {
+          "title": "What I'd Do Next",
+          "body": "Add richer blueprint visualization, deeper integration with project-management tools, and tighter security and authorization controls across teams."
+        }
+      },
+      "backToWork": "Back to Work"
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "description": "The tools I use across the stack, grouped by the capabilities they power.",
+    "groups": [
+      {
+        "title": "Frontend",
+        "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+      },
+      {
+        "title": "Backend & Data",
+        "items": ["Node.js", "APIs", "Supabase", "PostgreSQL", "IndexedDB"]
+      },
+      {
+        "title": "AI & Automation",
+        "items": ["Gemini", "Genkit", "AI Agents", "Multimodal", "Orchestration"]
+      },
+      {
+        "title": "Security & Infrastructure",
+        "items": ["Authentication", "Security Headers", "Cloudflare", "VPS", "Deployment"]
+      },
+      {
+        "title": "Web3 & Blockchain",
+        "items": ["TON", "Smart Contracts", "Web3"]
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Experience & Focus",
+    "description": "The journey and disciplines behind the systems I build.",
     "items": [
-      { "title": "Affordable Solutions", "icon": "BadgeDollarSign" },
-      { "title": "AI-Integrated Websites", "icon": "Bot" },
-      { "title": "5+ Years Experience", "icon": "Medal" },
-      { "title": "Proven Track Record", "icon": "TrendingUp" }
+      {
+        "title": "Full-Stack Engineering",
+        "period": "Core",
+        "description": "Building complete applications — frontend, backend, APIs, databases, and architecture."
+      },
+      {
+        "title": "AI Application Engineering",
+        "period": "Focus",
+        "description": "Shipping products with AI as part of the product, from agents to multimodal workflows."
+      },
+      {
+        "title": "Application Security",
+        "period": "Every build",
+        "description": "Authentication, authorization, security architecture, and data protection baked into each system."
+      },
+      {
+        "title": "Blockchain & Web3",
+        "period": "Research & build",
+        "description": "TON, smart contracts, and blockchain applications and education."
+      }
+    ]
+  },
+  "github": {
+    "title": "Open Source & Code",
+    "description": "A curated look at the code I build and share on GitHub.",
+    "viewProfile": "View GitHub Profile",
+    "repos": [
+      {
+        "name": "AI Construction & Takeoff",
+        "description": "Multimodal blueprint analysis, AI-assisted takeoff, and agent orchestration.",
+        "topics": ["AI", "Next.js", "Agents"],
+        "url": "https://github.com/criptichood"
+      },
+      {
+        "name": "ScribSyntax",
+        "description": "AI-powered studio for audiovisual narratives.",
+        "topics": ["AI", "TypeScript", "Media"],
+        "url": "https://github.com/criptichood"
+      },
+      {
+        "name": "Portfolio Platform",
+        "description": "This multilingual, AI-chatbot-powered portfolio itself.",
+        "topics": ["Next.js", "i18n", "Gemini"],
+        "url": "https://github.com/criptichood"
+      },
+      {
+        "name": "Blockchain Research",
+        "description": "Notes and research on TON, Web3, and smart contracts.",
+        "topics": ["Web3", "TON", "Research"],
+        "url": "https://github.com/criptichood"
+      }
+    ]
+  },
+  "whyChooseMe": {
+    "title": "Why Work With Me?",
+    "description": "An engineer who ships complete systems — with AI, security, and product thinking built in.",
+    "items": [
+      { "title": "End-to-End Engineering", "icon": "Cpu" },
+      { "title": "AI Built Into Products", "icon": "Bot" },
+      { "title": "Security-Minded Delivery", "icon": "ShieldCheck" },
+      { "title": "Ship-Focused, Not Just Talk", "icon": "TrendingUp" }
     ]
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "description": "Find answers to common questions about our services and the importance of technology in business.",
+    "description": "Answers about how I work, my approach to AI, and how I think about security.",
     "items": [
       {
-        "question": "Why does my business need a professional website?",
-        "answer": "A professional website acts as your digital storefront, available 24/7. It builds credibility, showcases your products or services, and allows you to reach a wider audience than a physical location ever could. It's a fundamental tool for growth and customer engagement in today's digital world."
+        "question": "What kind of projects do you build?",
+        "answer": "Full-stack software systems — from complex web applications and AI-powered workflows to secure backend infrastructure and blockchain applications. I take a product idea, architect the system, build it, integrate AI and data, deploy it, and keep security in mind throughout."
       },
       {
-        "question": "How important is regular computer maintenance for my business?",
-        "answer": "Regular maintenance is crucial for both security and efficiency. It prevents data loss, protects against cyber threats, and ensures your systems run smoothly, minimizing downtime. Proactive maintenance saves money in the long run by avoiding costly emergency repairs and data recovery."
+        "question": "Are you a cybersecurity engineer?",
+        "answer": "My primary focus is full-stack software engineering. I build applications with security considered as part of the architecture — authentication, authorization, security headers, access control, and secure design — rather than treating security as an afterthought."
       },
       {
-        "question": "What are the benefits of integrating AI into my website?",
-        "answer": "AI can transform your website from a static brochure into a dynamic tool. It can power personalized customer experiences, automate support with chatbots, provide valuable data insights, and streamline content creation, giving you a significant competitive advantage."
+        "question": "How do you use AI in your work?",
+        "answer": "I engineer applications that use AI as part of the product — AI agents, multimodal document processing, LLM integrations, and orchestration — rather than simply using AI tools to make websites."
+      },
+      {
+        "question": "Can you work on a product from idea to launch?",
+        "answer": "Yes. Product engineering is one of my core capabilities — taking an idea from concept through architecture, implementation, and deployment."
       }
     ]
   },
-  "blog": {
-    "title": "Blog & Resources",
-    "description": "Insights on AI, digital transformation, blockchain, and business technology.",
-    "posts": [
-      {
-        "title": "The Rise of AI in Web Development",
-        "excerpt": "Discover how Artificial Intelligence is revolutionizing the way we build and interact with websites.",
-        "url": "https://www.designrush.com/agency/web-development-companies/trends/ai-and-web-development"
-      },
-      {
-        "title": "Digital Transformation for Local Businesses",
-        "excerpt": "A guide for small and medium-sized businesses on leveraging technology for growth.",
-        "url": "https://www.forbes.com/sites/allbusiness/2023/06/09/how-to-make-digital-transformation-work-for-your-small-business/"
-      },
-      {
-        "title": "Understanding Blockchain Beyond Cryptocurrency",
-        "excerpt": "Exploring the potential of blockchain technology in various industries beyond finance.",
-        "url": "https://cioviews.com/blockchain-beyond-cryptocurrency/"
-      }
-    ],
-    "readMore": "Read More"
-  },
   "contact": {
-    "title": "Get in Touch",
-    "description": "Have a project in mind or just want to say hello? I'd love to hear from you.",
+    "title": "Let's Build Something",
+    "description": "Have a product idea, a complex build, or a system that needs engineering? Let's talk.",
     "form": {
       "name": { "label": "Name", "placeholder": "Your Name" },
       "email": { "label": "Email", "placeholder": "your.email@example.com" },
-      "message": { "label": "Message", "placeholder": "How can I help you?" },
+      "message": { "label": "Message", "placeholder": "Tell me about your project or idea..." },
       "button": "Send Message"
     },
     "details": {
       "title": "Contact Details"
     },
     "social": {
-      "title": "Connect on Social"
+      "title": "Connect"
     },
     "whatsapp": "Chat on WhatsApp",
     "toast": {
@@ -172,7 +321,7 @@
     }
   },
   "footer": {
-    "tagline": "Smarter Websites. Modern Systems. AI-Powered Solutions.",
+    "tagline": "I design and build intelligent software systems — full-stack engineering, AI, and security-minded architecture.",
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "rights": "All rights reserved."
@@ -180,7 +329,7 @@
   "chatbot": {
     "title": "AI Assistant",
     "subtitle": "Online - Ready to help",
-    "greeting": "Welcome. I'm the AI assistant for Criptic Digital. Feel free to ask about Emmanuel's services, projects, or expertise in web development and AI.",
-    "placeholder": "Ask about services, projects..."
+    "greeting": "Welcome. I'm the AI assistant for Emmanuel Galadima, an AI Full-Stack Software Engineer. Feel free to ask about his capabilities, projects, or how he builds secure, AI-powered systems.",
+    "placeholder": "Ask about capabilities, projects..."
   }
 }

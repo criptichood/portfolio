@@ -1,14 +1,14 @@
-
 import Image from "next/image";
 import { FadeIn } from "@/components/motion/fade-in";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent } from "@/components/ui/card";
+import { Check } from "lucide-react";
 
 export function About({ dictionary }: { dictionary: any }) {
   const profileImage = PlaceHolderImages.find(img => img.id === 'profile-picture');
 
   return (
-    <section id="about" className="py-20 md:py-32 bg-secondary">
+    <section id="about" className="py-20 md:py-32">
       <FadeIn className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative w-full max-w-md mx-auto">
@@ -35,6 +35,14 @@ export function About({ dictionary }: { dictionary: any }) {
             <p className="text-muted-foreground text-lg">
               {dictionary.description}
             </p>
+            <ul className="space-y-3">
+              {dictionary.points?.map((point: string, index: number) => (
+                <li key={index} className="flex items-start gap-3">
+                  <span className="mt-1 text-primary"><Check className="h-5 w-5" /></span>
+                  <span className="text-muted-foreground">{point}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </FadeIn>

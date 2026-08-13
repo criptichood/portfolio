@@ -1,178 +1,327 @@
-
 {
   "metadata": {
-    "title": "Criptic Digital - IA y Desarrollo Web",
-    "description": "Ayudando a empresas y compañías a construir y actualizar sitios web, mantener sistemas y adoptar soluciones impulsadas por IA para el crecimiento."
+    "title": "Emmanuel Galadima — Ingeniero de Software Full-Stack IA",
+    "description": "Diseño y construyo sistemas de software inteligentes y listos para producción — ingeniería full-stack, IA y arquitectura consciente de la seguridad."
   },
   "nav": {
     "home": "Inicio",
     "about": "Sobre mí",
-    "services": "Servicios",
-    "projects": "Proyectos",
-    "blog": "Blog",
+    "capabilities": "Habilidades",
+    "work": "Trabajo",
+    "github": "GitHub",
     "contact": "Contacto"
   },
   "hero": {
-    "headlines": [
-      {
-        "line1": "Sitios Web Más Inteligentes. Sistemas Modernos.",
-        "line2": "Soluciones Impulsadas por IA."
-      },
-      {
-        "line1": "Soluciones Web e IA Innovadoras.",
-        "line2": "Construidas para el Crecimiento."
-      },
-      {
-        "line1": "Del Concepto al Código.",
-        "line2": "Tu Visión, Hecha Realidad."
-      }
+    "eyebrow": "Emmanuel Galadima",
+    "titleLine1": "Ingeniero de Software",
+    "titleLine2": "Full-Stack IA",
+    "description": "Diseño y construyo sistemas de software inteligentes y listos para producción — ingeniería full-stack, IA y arquitectura consciente de la seguridad.",
+    "badgesTitle": "Habilidades",
+    "badges": [
+      "Ingeniería de Software",
+      "Ingeniería de IA",
+      "Ingeniería de Producto",
+      "Seguridad de Aplicaciones",
+      "Web3 / Blockchain"
     ],
-    "description": "Ayudando a empresas y compañías a construir y actualizar sitios web, mantener sistemas y adoptar soluciones impulsadas por IA para el crecimiento.",
-    "cta1": "Obtener un Sitio Web Moderno",
-    "cta2": "Ver mi Trabajo"
+    "cta1": "Ver mi trabajo",
+    "cta2": "Ponte en contacto",
+    "scroll": "Desplázate para explorar"
   },
   "about": {
     "title": "Sobre Mí",
-    "subtitle": "Investigador de Blockchain, Desarrollador Web de IA y Consultor Técnico.",
-    "description": "Empoderar a las empresas ayudándolas a abrazar el futuro de la tecnología. Me especializo en la construcción de sitios web integrados con IA, la modernización de aplicaciones y la provisión de un mantenimiento de sistemas fiable para garantizar operaciones fluidas y un crecimiento sostenible."
+    "subtitle": "Ingeniero primero. La seguridad como parte de la arquitectura, no una ocurrencia posterior.",
+    "description": "Soy un ingeniero de software full-stack que convierte ideas de productos complejas en sistemas funcionales y listos para producción. Trabajo en toda la pila — frontend, backend, APIs, bases de datos, integraciones de IA y despliegue — y considero la seguridad como parte de la arquitectura en lugar de una ocurrencia posterior. Desde plataformas impulsadas por IA y procesamiento multimodal de documentos hasta infraestructura backend segura y aplicaciones blockchain, construyo sistemas inteligentes, resilientes y diseñados para ser lanzados.",
+    "points": [
+      "Aplicaciones full-stack: React, Next.js, TypeScript, APIs, bases de datos, interfaces complejas",
+      "Ingeniería de aplicaciones de IA: agentes de IA, sistemas multimodales, integraciones LLM, orquestación",
+      "Ingeniería de producto: del concepto a la arquitectura, la implementación y el despliegue",
+      "Seguridad de aplicaciones: autenticación, autorización, arquitectura de seguridad, protección de datos",
+      "Web3 y blockchain: TON, smart contracts, aplicaciones blockchain e investigación"
+    ]
   },
-  "services": {
-    "title": "Mis Servicios",
-    "description": "Proporcionando soluciones integrales para elevar su presencia digital y eficiencia operativa.",
-    "servicesData": [
+  "capabilities": {
+    "title": "Habilidades",
+    "description": "Las cinco disciplinas que aporto a cada producto — y cómo las demuestro con sistemas reales.",
+    "items": [
       {
-        "title": "Desarrollo de Sitios Web con IA",
-        "description": "Sitios web rápidos, responsivos e inteligentes adaptados a las necesidades de su negocio.",
-        "icon": "Cpu"
+        "icon": "Cpu",
+        "title": "Ingeniería de Software",
+        "tag": "01",
+        "description": "Aplicaciones full-stack, APIs, bases de datos e interfaces complejas — diseñadas, construidas y lanzadas de principio a fin.",
+        "tags": ["Next.js", "TypeScript", "APIs", "Arquitectura"]
       },
       {
-        "title": "Actualizaciones de Sitios y Aplicaciones Web",
-        "description": "Modernice sus sistemas obsoletos con las últimas tecnologías para un mejor rendimiento.",
-        "icon": "ArrowUpToLine"
+        "icon": "Bot",
+        "title": "Ingeniería de IA",
+        "tag": "02",
+        "description": "Agentes de IA, sistemas multimodales, integraciones LLM y orquestación integrados en productos reales.",
+        "tags": ["Gemini", "Agentes", "Multimodal", "Orquestación"]
       },
       {
-        "title": "Mantenimiento de Sistemas y Servidores",
-        "description": "Actualizaciones de software fiables, soporte de servidores y monitoreo de rendimiento.",
-        "icon": "Server"
+        "icon": "Lightbulb",
+        "title": "Ingeniería de Producto",
+        "tag": "03",
+        "description": "Llevar una idea del concepto a la arquitectura, la implementación y el despliegue.",
+        "tags": ["Concepto", "Construir", "Lanzar", "Iterar"]
       },
       {
-        "title": "Consultoría Técnica Independiente",
-        "description": "Recomendaciones y estrategias técnicas a medida para ayudar a su negocio a crecer.",
-        "icon": "Briefcase"
+        "icon": "ShieldCheck",
+        "title": "Seguridad de Aplicaciones",
+        "tag": "04",
+        "description": "Autenticación segura, autorización, arquitectura de seguridad e ingeniería defensiva integradas desde el inicio.",
+        "tags": ["Auth", "Cabeceras de Seguridad", "Control de Acceso", "Protección de Datos"]
       },
       {
-        "title": "Consultoría de Blockchain y Web3",
-        "description": "Orientación experta para empresas con visión de futuro que se adentran en el espacio Web3.",
-        "icon": "Blocks"
+        "icon": "Blocks",
+        "title": "Web3 / Blockchain",
+        "tag": "05",
+        "description": "TON, smart contracts, aplicaciones blockchain e investigación aplicada.",
+        "tags": ["TON", "Smart Contracts", "Web3", "Investigación"]
       }
     ]
   },
-  "projects": {
-    "title": "Mi Trabajo",
-    "description": "Una selección de proyectos que muestran mis habilidades y pasión por construir soluciones digitales modernas.",
+  "work": {
+    "title": "Trabajo Seleccionado",
+    "description": "Sistemas reales que he diseñado, construido y lanzado — la prueba de las habilidades anteriores.",
     "projectsData": [
       {
-        "id": "cryptodahausa",
+        "id": "ai-construction-takeoff",
+        "title": "Plataforma IA de Construcción y Mediciones",
+        "role": "Ingeniería full-stack + IA",
+        "description": "Una plataforma IA insignia que lee planos y PDF, realiza mediciones de cantidades asistidas por IA y gestiona flujos de trabajo de proyectos de construcción.",
+        "outcome": "Procesamiento multimodal de documentos, orquestación de agentes de IA, estado persistente y arquitectura de base de datos en un solo sistema de producción.",
+        "capabilities": ["Ingeniería de IA", "Ingeniería de Software", "Ingeniería de Producto"],
+        "stack": ["Next.js", "TypeScript", "Gemini", "PostgreSQL", "Agentes IA"],
+        "caseStudy": true,
+        "githubUrl": "https://github.com/criptichood",
+        "liveUrl": ""
+      },
+      {
+        "id": "scrib-syntax",
+        "title": "ScribSyntax",
+        "role": "Ingeniería de aplicaciones de IA",
+        "description": "Un estudio impulsado por IA para narrativas audiovisuales — convirtiendo prompts y guiones en contenido multimedia pulido.",
+        "outcome": "Pipeline de generación de medios impulsado por IA con una interfaz de edición interactiva compleja.",
+        "capabilities": ["Ingeniería de IA", "Ingeniería de Software"],
+        "stack": ["Next.js", "TypeScript", "IA", "Integración de APIs"],
+        "caseStudy": false,
+        "githubUrl": "https://github.com/criptichood",
+        "liveUrl": "https://scrib-syntax.vercel.app/"
+      },
+      {
+        "id": "crypto-dahausa",
         "title": "CryptoDaHausa",
-        "description": "Una plataforma de contenido educativo sobre blockchain localizado, que hace accesibles temas complejos.",
+        "role": "Educación Blockchain y Contenido",
+        "description": "Una plataforma de educación blockchain localizada que hace accesibles los temas complejos de Web3 a una audiencia de habla hausa.",
+        "outcome": "Construyendo una puerta de entrada accesible hacia blockchain, Web3 y tecnología descentralizada.",
+        "capabilities": ["Web3 / Blockchain"],
+        "stack": ["Web3", "Blockchain", "Contenido", "Comunidad"],
+        "caseStudy": false,
+        "githubUrl": "",
         "liveUrl": "https://www.youtube.com/@CryptoDaHausa"
       },
       {
-        "id": "ai-tools",
-        "title": "ScribSyntax",
-        "description": "Su estudio impulsado por IA para narrativas audiovisuales.",
-        "liveUrl": "https://scrib-syntax.vercel.app/",
-        "githubUrl": "https://github.com/criptichood"
-      },
-      {
         "id": "company-website",
-        "title": "Implementación de Sitio Web Corporativo",
-        "description": "Un sitio web moderno y profesional diseñado para elevar la presencia digital de un cliente corporativo, mostrando mi experiencia en la creación de soluciones para empresas."
+        "title": "Sitio Web Corporativo y Despliegue",
+        "role": "Ingeniería full-stack",
+        "description": "Un sitio web corporativo moderno y profesional diseñado y desplegado para un cliente empresarial.",
+        "outcome": "Un despliegue de producción que elevó la presencia digital y las operaciones del cliente.",
+        "capabilities": ["Ingeniería de Software", "Ingeniería de Producto"],
+        "stack": ["Next.js", "Despliegue", "Rendimiento"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": ""
       },
       {
         "id": "personalized-website",
-        "title": "Sitio web personalizado para su negocio",
-        "description": "Un sitio web personalizado adaptado a las necesidades específicas de un cliente de negocios, mostrando la marca y la funcionalidad.",
-        "liveUrl": "https://maryams-touch-client.vercel.app/",
-        "githubUrl": ""
+        "title": "Sitio Web Empresarial Personalizado",
+        "role": "Ingeniería full-stack",
+        "description": "Un sitio web personalizado adaptado a las necesidades específicas de un cliente empresarial, mostrando la marca y la funcionalidad.",
+        "outcome": "Una presencia web con marca y funcional construida alrededor de los requisitos del cliente.",
+        "capabilities": ["Ingeniería de Software", "Ingeniería de Producto"],
+        "stack": ["Next.js", "TypeScript", "UI"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": "https://maryams-touch-client.vercel.app/"
       }
     ],
+    "viewCaseStudy": "Ver estudio de caso",
     "liveDemo": "Demostración en Vivo",
     "viewMore": "Ver Más en GitHub"
   },
-  "whyChooseMe": {
-    "title": "¿Por Qué Elegirme?",
-    "description": "Entregando valor a través de la experiencia, la innovación y el compromiso con su éxito.",
+  "caseStudies": {
+    "ai-construction-takeoff": {
+      "title": "Plataforma IA de Construcción y Mediciones",
+      "role": "Ingeniería full-stack + IA",
+      "summary": "Una plataforma IA de producción que lee planos de construcción y PDF, realiza mediciones de cantidades asistidas por IA y gestiona flujos de trabajo de proyectos.",
+      "sections": {
+        "problem": {
+          "title": "El Problema",
+          "body": "La medición de cantidades en construcción es manual, lenta y propensa a errores. Leer planos, extraer medidas y estimar cantidades de materiales a mano lleva horas y es un cuello de botella para los equipos de proyecto."
+        },
+        "approach": {
+          "title": "El Enfoque",
+          "body": "Construí un sistema que combina el procesamiento multimodal de documentos con la medición asistida por IA — leyendo planos y PDF, extrayendo cantidades con IA y enrutando el trabajo a través de un conjunto orquestado de agentes y flujos."
+        },
+        "architecture": {
+          "title": "Arquitectura e Ingeniería",
+          "body": "Una aplicación full-stack con una arquitectura basada en base de datos para el estado persistente, una capa de orquestación de agentes de IA, un pipeline de exportación y una interfaz interactiva compleja para revisar y gestionar los flujos de medición."
+        },
+        "stack": {
+          "title": "Stack",
+          "body": "Next.js, TypeScript, Gemini para el entendimiento multimodal, PostgreSQL para los datos persistentes y un pipeline orquestado de agentes de IA."
+        },
+        "outcome": {
+          "title": "Resultado",
+          "body": "Un producto insignia que demuestra ingeniería de extremo a extremo — integración de IA, arquitectura de datos, orquestación de agentes y una interfaz usable trabajando juntos como un solo sistema."
+        },
+        "next": {
+          "title": "Lo que haría después",
+          "body": "Añadir una visualización más rica de los planos, una integración más profunda con herramientas de gestión de proyectos y controles de seguridad y autorización más estrictos entre equipos."
+        }
+      },
+      "backToWork": "Volver al trabajo"
+    }
+  },
+  "techStack": {
+    "title": "Stack Tecnológico",
+    "description": "Las herramientas que uso en toda la pila, agrupadas por las habilidades que impulsan.",
+    "groups": [
+      {
+        "title": "Frontend",
+        "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+      },
+      {
+        "title": "Backend y Datos",
+        "items": ["Node.js", "APIs", "Supabase", "PostgreSQL", "IndexedDB"]
+      },
+      {
+        "title": "IA y Automatización",
+        "items": ["Gemini", "Genkit", "Agentes IA", "Multimodal", "Orquestación"]
+      },
+      {
+        "title": "Seguridad e Infraestructura",
+        "items": ["Autenticación", "Cabeceras de Seguridad", "Cloudflare", "VPS", "Despliegue"]
+      },
+      {
+        "title": "Web3 y Blockchain",
+        "items": ["TON", "Smart Contracts", "Web3"]
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Experiencia y Enfoque",
+    "description": "El recorrido y las disciplinas detrás de los sistemas que construyo.",
     "items": [
-      { "title": "Soluciones Asequibles", "icon": "BadgeDollarSign" },
-      { "title": "Sitios Web Integrados con IA", "icon": "Bot" },
-      { "title": "Más de 5 Años de Experiencia", "icon": "Medal" },
-      { "title": "Historial Comprobado", "icon": "TrendingUp" }
+      {
+        "title": "Ingeniería Full-Stack",
+        "period": "Núcleo",
+        "description": "Construir aplicaciones completas — frontend, backend, APIs, bases de datos y arquitectura."
+      },
+      {
+        "title": "Ingeniería de Aplicaciones de IA",
+        "period": "Enfoque",
+        "description": "Entregar productos con IA como parte del producto, de agentes a flujos multimodales."
+      },
+      {
+        "title": "Seguridad de Aplicaciones",
+        "period": "Cada build",
+        "description": "Autenticación, autorización, arquitectura de seguridad y protección de datos integradas en cada sistema."
+      },
+      {
+        "title": "Blockchain y Web3",
+        "period": "Investigación y build",
+        "description": "TON, smart contracts, aplicaciones blockchain y educación."
+      }
+    ]
+  },
+  "github": {
+    "title": "Código Abierto y Código",
+    "description": "Una mirada seleccionada al código que construyo y comparto en GitHub.",
+    "viewProfile": "Ver perfil de GitHub",
+    "repos": [
+      {
+        "name": "AI Construction & Takeoff",
+        "description": "Análisis multimodal de planos, mediciones asistidas por IA y orquestación de agentes.",
+        "topics": ["IA", "Next.js", "Agentes"],
+        "url": "https://github.com/criptichood"
+      },
+      {
+        "name": "ScribSyntax",
+        "description": "Estudio impulsado por IA para narrativas audiovisuales.",
+        "topics": ["IA", "TypeScript", "Medios"],
+        "url": "https://github.com/criptichood"
+      },
+      {
+        "name": "Portfolio Platform",
+        "description": "Este portfolio multilingüe impulsado por un chatbot de IA.",
+        "topics": ["Next.js", "i18n", "Gemini"],
+        "url": "https://github.com/criptichood"
+      },
+      {
+        "name": "Blockchain Research",
+        "description": "Notas e investigación sobre TON, Web3 y smart contracts.",
+        "topics": ["Web3", "TON", "Investigación"],
+        "url": "https://github.com/criptichood"
+      }
+    ]
+  },
+  "whyChooseMe": {
+    "title": "¿Por qué trabajar conmigo?",
+    "description": "Un ingeniero que entrega sistemas completos — con IA, seguridad y pensamiento de producto integrados.",
+    "items": [
+      { "title": "Ingeniería de extremo a extremo", "icon": "Cpu" },
+      { "title": "IA integrada en los productos", "icon": "Bot" },
+      { "title": "Entrega consciente de la seguridad", "icon": "ShieldCheck" },
+      { "title": "Enfocado en entregar, no solo hablar", "icon": "TrendingUp" }
     ]
   },
   "faq": {
     "title": "Preguntas Frecuentes",
-    "description": "Encuentre respuestas a preguntas comunes sobre nuestros servicios y la importancia de la tecnología en los negocios.",
+    "description": "Respuestas sobre cómo trabajo, mi enfoque de la IA y cómo pienso sobre la seguridad.",
     "items": [
       {
-        "question": "¿Por qué mi negocio necesita un sitio web profesional?",
-        "answer": "Un sitio web profesional actúa como su escaparate digital, disponible 24/7. Genera credibilidad, muestra sus productos o servicios y le permite llegar a una audiencia más amplia de lo que una ubicación física podría jamás. Es una herramienta fundamental para el crecimiento y la participación del cliente en el mundo digital actual."
+        "question": "¿Qué tipo de proyectos construyes?",
+        "answer": "Sistemas de software full-stack — desde aplicaciones web complejas y flujos de trabajo impulsados por IA hasta infraestructura backend segura y aplicaciones blockchain. Tomo una idea de producto, arquitectura el sistema, lo construyo, integro IA y datos, lo despliego y mantengo la seguridad presente durante todo el proceso."
       },
       {
-        "question": "¿Qué tan importante es el mantenimiento regular de las computadoras para mi negocio?",
-        "answer": "El mantenimiento regular es crucial tanto para la seguridad como para la eficiencia. Previene la pérdida de datos, protege contra las amenazas cibernéticas y garantiza que sus sistemas funcionen sin problemas, minimizando el tiempo de inactividad. El mantenimiento proactivo ahorra dinero a largo plazo al evitar costosas reparaciones de emergencia y recuperación de datos."
+        "question": "¿Eres un ingeniero de ciberseguridad?",
+        "answer": "Mi enfoque principal es la ingeniería de software full-stack. Construyo aplicaciones con la seguridad considerada como parte de la arquitectura — autenticación, autorización, cabeceras de seguridad, control de acceso y diseño seguro — en lugar de tratar la seguridad como una ocurrencia posterior."
       },
       {
-        "question": "¿Cuáles son los beneficios de integrar la IA en mi sitio web?",
-        "answer": "La IA puede transformar su sitio web de un folleto estático a una herramienta dinámica. Puede potenciar experiencias de cliente personalizadas, automatizar el soporte con chatbots, proporcionar información valiosa de datos y agilizar la creación de contenido, lo que le brinda una ventaja competitiva significativa."
+        "question": "¿Cómo usas la IA en tu trabajo?",
+        "answer": "Ingeniero aplicaciones que usan la IA como parte del producto — agentes de IA, procesamiento multimodal de documentos, integraciones LLM y orquestación — en lugar de simplemente usar herramientas de IA para crear sitios web."
+      },
+      {
+        "question": "¿Puedes trabajar en un producto desde la idea hasta el lanzamiento?",
+        "answer": "Sí. La ingeniería de producto es una de mis habilidades principales — llevar una idea del concepto a la arquitectura, la implementación y el despliegue."
       }
     ]
   },
-  "blog": {
-    "title": "Blog y Recursos",
-    "description": "Perspectivas sobre IA, transformación digital, blockchain y tecnología empresarial.",
-    "posts": [
-      {
-        "title": "El Auge de la IA en el Desarrollo Web",
-        "excerpt": "Descubra cómo la Inteligencia Artificial está revolucionando la forma en que construimos e interactuamos con los sitios web.",
-        "url": "https://www.designrush.com/agency/web-development-companies/trends/ai-and-web-development"
-      },
-      {
-        "title": "Transformación Digital para Empresas Locales",
-        "excerpt": "Una guía para pequeñas y medianas empresas sobre cómo aprovechar la tecnología para el crecimiento.",
-        "url": "https://www.forbes.com/sites/allbusiness/2023/06/09/how-to-make-digital-transformation-work-for-your-small-business/"
-      },
-      {
-        "title": "Entendiendo Blockchain Más Allá de las Criptomonedas",
-        "excerpt": "Explorando el potencial de la tecnología blockchain en diversas industrias más allá de las finanzas.",
-        "url": "https://cioviews.com/blockchain-beyond-cryptocurrency/"
-      }
-    ],
-    "readMore": "Leer Más"
-  },
   "contact": {
-    "title": "Póngase en Contacto",
-    "description": "¿Tiene un proyecto en mente o simplemente quiere saludar? Me encantaría saber de usted.",
+    "title": "Construyamos Algo",
+    "description": "¿Tienes una idea de producto, una construcción compleja o un sistema que necesita ingeniería? Hablemos.",
     "form": {
       "name": { "label": "Nombre", "placeholder": "Su Nombre" },
       "email": { "label": "Correo Electrónico", "placeholder": "su.email@example.com" },
-      "message": { "label": "Mensaje", "placeholder": "¿Cómo puedo ayudarle?" },
+      "message": { "label": "Mensaje", "placeholder": "Cuéntame sobre tu proyecto o idea..." },
       "button": "Enviar Mensaje"
     },
     "details": {
       "title": "Detalles de Contacto"
     },
     "social": {
-      "title": "Conecte en Redes Sociales"
+      "title": "Conectar"
     },
     "whatsapp": "Chatear en WhatsApp",
     "toast": {
       "title": "¡Mensaje Enviado!",
-      "description": "Gracias por contactarnos. Le responderé pronto."
+      "description": "Gracias por contactarme. Te responderé pronto."
     }
   },
   "footer": {
-    "tagline": "Sitios Web Más Inteligentes. Sistemas Modernos. Soluciones Impulsadas por IA.",
+    "tagline": "Diseño y construyo sistemas de software inteligentes — ingeniería full-stack, IA y arquitectura consciente de la seguridad.",
     "quickLinks": "Enlaces Rápidos",
     "connect": "Conectar",
     "rights": "Todos los derechos reservados."
@@ -180,7 +329,7 @@
   "chatbot": {
     "title": "Asistente de IA",
     "subtitle": "En línea - Listo para ayudar",
-    "greeting": "Bienvenido. Soy el asistente de IA de Criptic Digital. No dude en preguntar sobre los servicios, proyectos o experiencia de Emmanuel en desarrollo web e IA.",
-    "placeholder": "Pregunta sobre servicios, proyectos..."
+    "greeting": "Bienvenido. Soy el asistente de IA de Emmanuel Galadima, un Ingeniero de Software Full-Stack IA. No dudes en preguntar sobre sus habilidades, proyectos o cómo construye sistemas seguros impulsados por IA.",
+    "placeholder": "Pregunta sobre habilidades, proyectos..."
   }
 }

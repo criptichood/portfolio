@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Code, Menu, Globe } from "lucide-react";
-import { NAV_LINKS } from "@/lib/data";
+import { NAV_LINKS, GithubIcon } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -60,7 +60,7 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-lg font-headline">
           <Code className="h-6 w-6 text-primary" />
-          Criptic Digital
+          Emmanuel Galadima
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           {navLinks.map((link) => (
@@ -75,6 +75,16 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
+          <a
+            href="https://github.com/criptichood"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="hidden md:inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm font-medium hover:bg-accent/10 hover:text-primary transition-colors"
+          >
+            <GithubIcon className="h-4 w-4" />
+            GitHub
+          </a>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon">
@@ -102,7 +112,7 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
                 <div className="flex flex-col p-6">
                   <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-lg font-headline mb-8" onClick={() => setIsMobileMenuOpen(false)}>
                     <Code className="h-6 w-6 text-primary" />
-                    Criptic Digital
+                    Emmanuel Galadima
                   </Link>
                   <nav className="flex flex-col gap-6 text-lg">
                     {navLinks.map((link) => (

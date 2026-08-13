@@ -8,10 +8,10 @@ The entire application was built iteratively with the help of an AI coding partn
 
 - **Modern Tech Stack**: Built with Next.js (App Router), TypeScript, and Tailwind CSS for a fast, modern, and scalable web experience.
 - **Multilingual Support**: The entire site is available in multiple languages (English, Hausa, French, Spanish, Chinese, Arabic) using a dictionary-based i18n setup.
-- **AI-Powered Chatbot**: Features an integrated chatbot built with Google's Gemini model via Genkit. The chatbot is context-aware, answers questions based on the portfolio content, and supports all available languages.
+- **AI-Powered Chatbot**: Features an integrated chatbot built with Google's Gemini model via the Vercel AI SDK. The chatbot is context-aware, answers questions based on the portfolio content, and supports all available languages.
 - **Responsive Design**: Fully responsive components built with ShadCN UI, ensuring a great user experience on all devices.
 - **Animations**: Subtle and professional animations powered by Framer Motion to enhance user interaction.
-- **Contact Form**: A functional contact form that saves submissions to a database (requires Firebase setup).
+- **Contact Form**: A contact form with Zod validation (delivery can be wired to an email or message service).
 
 ## Tech Stack
 
@@ -20,7 +20,7 @@ The entire application was built iteratively with the help of an AI coding partn
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **UI Components**: [ShadCN UI](https://ui.shadcn.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **AI/Generative**: [Genkit (Google)](https://firebase.google.com/docs/genkit)
+- **AI/Generative**: [Vercel AI SDK](https://ai-sdk.dev/) with [Google Gemini](https://ai.google.dev/)
 - **Forms**: [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
 
 ## Getting Started
@@ -61,7 +61,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 - `src/app/[lang]`: The main application routes, structured for internationalization.
 - `src/components`: Contains all the reusable React components, categorized into `common`, `sections`, `ui`, etc.
-- `src/ai/flows`: Holds the Genkit flows that power the AI features like the chatbot and contact form submission.
+- `src/ai/flows`: Holds the AI flows that power the AI features like the chatbot and contact form submission.
 - `src/lib`: Includes utility functions, data constants, schemas, and internationalization dictionaries.
 - `src/lib/dictionaries`: JSON files for each supported language.
 

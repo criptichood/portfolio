@@ -8,13 +8,19 @@
       "imageHint": "professional portrait"
     },
     {
-      "id": "project-cryptodahausa",
+      "id": "project-ai-construction-takeoff",
+      "description": "Thumbnail for the AI Construction and Takeoff Platform project",
+      "imageUrl": "https://res.cloudinary.com/dlbcsvcys/image/upload/v1757888451/MSaga_nvfo7a.png",
+      "imageHint": "construction AI platform"
+    },
+    {
+      "id": "project-crypto-dahausa",
       "description": "Thumbnail for CryptoDaHausa project",
       "imageUrl": "https://res.cloudinary.com/dlbcsvcys/image/upload/v1757887745/Cryptoda2_prghyc.png",
       "imageHint": "blockchain technology"
     },
     {
-      "id": "project-ai-tools",
+      "id": "project-scrib-syntax",
       "description": "Thumbnail for ScribSyntax project",
       "imageUrl": "https://res.cloudinary.com/dlbcsvcys/image/upload/v1757813305/Screenshot_2025-09-14_022706_qmt3eh.png",
       "imageHint": "ai audiovisual"

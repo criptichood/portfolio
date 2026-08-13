@@ -1,13 +1,12 @@
-
 import Link from "next/link";
 import { Code } from "lucide-react";
-import { NAV_LINKS, SOCIAL_LINKS } from "@/lib/data";
-import { Button } from "@/components/ui/button";
+import { NAV_LINKS, SOCIAL_LINKS, GithubIcon } from "@/lib/data";
 import { getDictionary } from "@/lib/dictionaries";
 
 export async function Footer({ lang }: { lang: string }) {
   const dictionary = await getDictionary(lang);
   const currentYear = new Date().getFullYear();
+  const githubUrl = SOCIAL_LINKS.find((l) => l.name === "GitHub")?.url;
 
   return (
     <footer className="bg-secondary">
@@ -16,7 +15,7 @@ export async function Footer({ lang }: { lang: string }) {
           <div className="space-y-4">
             <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-xl font-headline">
               <Code className="h-7 w-7 text-primary" />
-              Criptic Digital
+              Emmanuel Galadima
             </Link>
             <p className="text-muted-foreground max-w-sm">
               {dictionary.footer.tagline}
@@ -50,10 +49,16 @@ export async function Footer({ lang }: { lang: string }) {
                 </a>
               ))}
             </div>
+            {githubUrl && (
+              <Link href={githubUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <GithubIcon className="h-5 w-5" />
+                github.com/criptichood
+              </Link>
+            )}
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-muted-foreground text-sm">
-          <p>&copy; {currentYear} Criptic Digital. {dictionary.footer.rights}</p>
+          <p>&copy; {currentYear} Emmanuel Galadima. {dictionary.footer.rights}</p>
         </div>
       </div>
     </footer>

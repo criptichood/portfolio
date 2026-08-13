@@ -6,9 +6,10 @@ import Negotiator from 'negotiator';
 const locales = ['en', 'ha', 'fr', 'zh', 'es', 'ar'];
 const defaultLocale = 'en';
 
-function getLocale(): string {
+async function getLocale(): Promise<string> {
   const negotiatorHeaders: Record<string, string> = {};
-  headers().forEach((value, key) => (negotiatorHeaders[key] = value));
+  const headerList = await headers();
+  headerList.forEach((value, key) => (negotiatorHeaders[key] = value));
 
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
   
@@ -19,7 +20,7 @@ function getLocale(): string {
   }
 }
 
-export default function Home() {
-  const locale = getLocale();
+export default async function Home() {
+  const locale = await getLocale();
   redirect(`/${locale}`);
 }
