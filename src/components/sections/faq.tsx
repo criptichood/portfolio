@@ -16,7 +16,7 @@ export function FAQ({ dictionary }: { dictionary: any }) {
   const faqItems: FaqItem[] = dictionary.items;
 
   return (
-    <section id="faq" className="py-20 md:py-32 bg-secondary">
+    <section id="faq" className="py-20 md:py-32 bg-surface-container-low">
       <FadeIn className="container mx-auto px-4 md:px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-headline">{dictionary.title}</h2>

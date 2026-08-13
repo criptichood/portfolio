@@ -10,6 +10,7 @@ import { headers } from 'next/headers';
 import { match } from '@formatjs/intl-localematcher';
 import Negotiator from 'negotiator';
 import { ScrollToTop } from '@/components/common/scroll-to-top';
+import { SocialRail } from '@/components/common/social-rail';
 import { ChatbotWidget } from '@/components/chatbot/chatbot-widget';
 
 // This function is now part of the root layout to avoid duplication
@@ -59,7 +60,7 @@ export default async function RootLayout(
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -68,7 +69,7 @@ export default async function RootLayout(
               "@type": "Person",
               "name": "Emmanuel Galadima",
               "jobTitle": "AI Full-Stack Software Engineer",
-              "description": "I design and build intelligent, production-ready software systems — combining full-stack engineering, AI, and security-minded architecture.",
+              "description": "I design and build software that combines full-stack engineering, AI, and security-minded architecture.",
               "url": "https://criptichood.com",
               "sameAs": [
                 "https://github.com/criptichood",
@@ -87,7 +88,8 @@ export default async function RootLayout(
           disableTransitionOnChange
         >
           <Header lang={lang} dictionary={dictionary.nav} />
-          <main className="overflow-x-hidden">{children}</main>
+          <SocialRail lang={lang} />
+          <main className="overflow-x-hidden lg:ps-20">{children}</main>
           <Footer lang={lang} />
           <Toaster />
           <div className="fixed bottom-4 right-4 z-40">

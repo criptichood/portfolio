@@ -8,6 +8,71 @@
   --font-body: "Inter", sans-serif;
   --font-headline: "Space Grotesk", sans-serif;
   --font-code: monospace;
+  --font-label-mono: "JetBrains Mono", monospace;
+  --font-display-lg: "Space Grotesk", sans-serif;
+  --font-display-lg-mobile: "Space Grotesk", sans-serif;
+  --font-caption: "Inter", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-headline-md: "Space Grotesk", sans-serif;
+  --font-headline-xl: "Space Grotesk", sans-serif;
+
+  --text-label-mono: 14px;
+  --text-label-mono--line-height: 1;
+  --text-label-mono--letter-spacing: 0.05em;
+  --text-label-mono--font-weight: 500;
+  --text-display-lg: 72px;
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
+  --text-display-lg-mobile: 40px;
+  --text-display-lg-mobile--line-height: 1.2;
+  --text-display-lg-mobile--font-weight: 700;
+  --text-caption: 12px;
+  --text-caption--line-height: 1.4;
+  --text-caption--font-weight: 500;
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.5;
+  --text-body-md--font-weight: 400;
+  --text-headline-md: 32px;
+  --text-headline-md--line-height: 1.3;
+  --text-headline-md--font-weight: 500;
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 1.2;
+  --text-headline-xl--font-weight: 600;
+
+  --color-surface: hsl(var(--surface));
+  --color-surface-dim: hsl(var(--surface-dim));
+  --color-surface-bright: hsl(var(--surface-bright));
+  --color-surface-container: hsl(var(--surface-container));
+  --color-surface-container-high: hsl(var(--surface-container-high));
+  --color-surface-container-highest: hsl(var(--surface-container-highest));
+  --color-surface-container-lowest: hsl(var(--surface-container-lowest));
+  --color-surface-container-low: hsl(var(--surface-container-low));
+  --color-on-surface-variant: hsl(var(--on-surface-variant));
+  --color-on-surface: hsl(var(--on-surface));
+  --color-on-background: hsl(var(--on-background));
+  --color-outline: hsl(var(--outline));
+  --color-outline-variant: hsl(var(--outline-variant));
+  --color-primary-container: hsl(var(--primary-container));
+  --color-on-primary-container: hsl(var(--on-primary-container));
+  --color-on-primary: hsl(var(--on-primary));
+  --color-inverse-primary: hsl(var(--inverse-primary));
+  --color-tertiary: hsl(var(--tertiary));
+  --color-tertiary-container: hsl(var(--tertiary-container));
+  --color-on-tertiary: hsl(var(--on-tertiary));
+  --color-on-tertiary-container: hsl(var(--on-tertiary-container));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-container: hsl(var(--secondary-container));
+  --color-on-secondary: hsl(var(--on-secondary));
+  --color-on-secondary-container: hsl(var(--on-secondary-container));
+  --color-error: hsl(var(--error));
+  --color-error-container: hsl(var(--error-container));
+  --color-on-error: hsl(var(--on-error));
+  --color-on-error-container: hsl(var(--on-error-container));
 
   --radius: 0.5rem;
   --radius-lg: var(--radius);
@@ -78,28 +143,89 @@
     --input: 240 5.9% 90%;
     --ring: 231 48% 48%;
     --radius: 0.5rem;
+
+    --surface: 0 0% 97%;
+    --surface-dim: 228 8% 88%;
+    --surface-bright: 0 0% 99%;
+    --surface-container-lowest: 0 0% 100%;
+    --surface-container-low: 0 0% 94%;
+    --surface-container: 228 10% 91%;
+    --surface-container-high: 228 9% 88%;
+    --surface-container-highest: 228 8% 85%;
+    --surface-variant: 228 8% 85%;
+    --on-surface: 240 6% 12%;
+    --on-surface-variant: 235 7% 40%;
+    --on-background: 240 6% 12%;
+    --outline: 235 7% 55%;
+    --outline-variant: 234 10% 86%;
+    --primary-container: 228 100% 90%;
+    --on-primary-container: 229 60% 25%;
+    --on-primary: 0 0% 100%;
+    --inverse-primary: 229 45% 55%;
+    --tertiary: 240 8% 42%;
+    --tertiary-container: 245 14% 92%;
+    --on-tertiary: 240 8% 98%;
+    --on-tertiary-container: 250 10% 22%;
+    --secondary-container: 20 10% 90%;
+    --on-secondary: 20 8% 98%;
+    --on-secondary-container: 20 10% 25%;
+    --error: 4 80% 55%;
+    --error-container: 6 100% 93%;
+    --on-error: 0 0% 100%;
+    --on-error-container: 6 90% 30%;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --background: 200 8% 8%;
+    --foreground: 240 5% 89%;
+    --card: 200 5% 11%;
+    --card-foreground: 240 5% 89%;
+    --popover: 200 5% 11%;
+    --popover-foreground: 240 5% 89%;
     --primary: 231 48% 60%;
     --primary-foreground: 0 0% 9%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --secondary: 20 4% 29%;
+    --secondary-foreground: 20 5% 73%;
+    --muted: 200 3% 12%;
+    --muted-foreground: 240 13% 80%;
     --accent: 291 64% 55%;
     --accent-foreground: 0 0% 9%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
+    --border: 234 8% 29%;
+    --input: 234 8% 29%;
     --ring: 231 48% 60%;
+
+    --surface: 200 8% 8%;
+    --surface-dim: 200 8% 8%;
+    --surface-bright: 210 4% 22%;
+    --surface-container-lowest: 200 11% 5%;
+    --surface-container-low: 200 5% 11%;
+    --surface-container: 200 3% 12%;
+    --surface-container-high: 200 3% 16%;
+    --surface-container-highest: 200 3% 20%;
+    --surface-variant: 200 3% 20%;
+    --on-surface: 240 5% 89%;
+    --on-surface-variant: 240 13% 80%;
+    --on-background: 240 5% 89%;
+    --outline: 235 7% 59%;
+    --outline-variant: 234 8% 29%;
+    --primary-container: 229 53% 47%;
+    --on-primary-container: 228 100% 88%;
+    --on-primary: 227 100% 25%;
+    --inverse-primary: 228 48% 48%;
+    --tertiary: 240 9% 79%;
+    --on-tertiary-container: 250 14% 87%;
+    --tertiary-container: 240 5% 38%;
+    --on-tertiary: 240 9% 20%;
+    --secondary: 20 3% 77%;
+    --secondary-container: 20 4% 29%;
+    --on-secondary: 20 3% 19%;
+    --on-secondary-container: 20 5% 73%;
+    --error: 3 100% 84%;
+    --error-container: 354 100% 30%;
+    --on-error: 356 100% 21%;
+    --on-error-container: 6 100% 88%;
   }
 
   * {
@@ -108,5 +234,329 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@media (min-width: 1024px) {
+  .hover-scale-desktop:hover {
+    transform: scale(1.02);
+    transition: transform 0.4s ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-blink,
+  .float-animation,
+  .hover-scale-desktop {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Terminal syntax highlighting (always light-on-dark; it's a terminal window) */
+.terminal-window .token-keyword {
+  color: #b7c4ff;
+}
+
+.terminal-window .token-string {
+  color: #ffb86c;
+}
+
+.terminal-window .token-function {
+  color: #8be9fd;
+}
+
+.terminal-window .token-comment {
+  color: #6a737d;
+}
+
+/* ===== 3D Card Patterns ===== */
+
+/* Shared 3D container */
+.card-3d {
+  perspective: 1500px;
+  transform-style: preserve-3d;
+}
+.card-3d-inner {
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+}
+
+/* 1. Prismatic Refraction */
+.card-prismatic .card-3d-inner:hover {
+  transform: rotateX(10deg) rotateY(-10deg) translateZ(30px);
+}
+.card-prismatic .glass-volume {
+  background: rgba(18, 20, 20, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02), 0 20px 40px rgba(0, 0, 0, 0.5);
+  transition: all 0.6s ease;
+}
+.card-prismatic .card-3d-inner:hover .glass-volume {
+  border-color: rgba(183, 196, 255, 0.3);
+  box-shadow: inset 0 0 20px rgba(183, 196, 255, 0.1), -5px -5px 15px rgba(255, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 255, 0.1), 0 30px 60px rgba(0, 0, 0, 0.6);
+}
+.card-prismatic .content-layer {
+  transform: translateZ(40px);
+  transition: transform 0.6s ease;
+}
+.card-prismatic .card-3d-inner:hover .content-layer {
+  transform: translateZ(60px);
+}
+
+/* 2. Kinetic Wireframe */
+.card-kinetic .card-3d-inner:hover {
+  transform: rotateX(-5deg) rotateY(15deg) translateZ(40px);
+}
+.wireframe-mesh {
+  background-image: linear-gradient(rgba(183, 196, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(183, 196, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  transform: translateZ(-20px) rotateX(20deg) scale(1.2);
+  opacity: 0.3;
+  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.card-kinetic .card-3d-inner:hover .wireframe-mesh {
+  transform: translateZ(50px) rotateX(0deg) scale(1.1);
+  opacity: 0.6;
+  background-image: linear-gradient(rgba(183, 196, 255, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(183, 196, 255, 0.3) 1px, transparent 1px);
+}
+.card-kinetic .content-layer {
+  transform: translateZ(30px);
+}
+
+/* 3. Neural Pulse */
+.card-neural .card-3d-inner {
+  transition: transform 0.1s ease-out;
+}
+.card-neural .core-pulse {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(183, 196, 255, 0.8) 0%, rgba(58, 86, 184, 0.2) 50%, transparent 70%);
+  border-radius: 50%;
+  transform: translateZ(20px);
+  animation: pulse 3s infinite alternate;
+}
+@keyframes pulse {
+  0% {
+    transform: translateZ(20px) scale(0.9);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(40px) scale(1.2);
+    opacity: 1;
+    box-shadow: 0 0 40px rgba(183, 196, 255, 0.4);
+  }
+}
+.card-neural .content-layer {
+  transform: translateZ(60px);
+}
+
+/* 4. Obsidian Void */
+.card-void {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.6s ease;
+  background: linear-gradient(145deg, hsl(var(--surface-container-high)), hsl(var(--surface-container-low)));
+  box-shadow: inset 0 0 40px hsl(var(--surface-dim) / 0.25), inset 0 0 10px hsl(var(--primary) / 0.06);
+  border: 1px solid hsl(var(--outline-variant));
+}
+.card-void:hover {
+  transform: rotateX(10deg) rotateY(-10deg) translateZ(20px);
+  box-shadow: inset 0 0 60px hsl(var(--surface-dim) / 0.3), inset 0 0 20px hsl(var(--primary) / 0.15), 0 0 30px hsl(var(--primary) / 0.15);
+}
+.dark .card-void {
+  background: linear-gradient(145deg, #121414, #0a0a0a);
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(58, 86, 184, 0.1);
+  border: 1px solid rgba(38, 38, 38, 0.5);
+}
+.dark .card-void:hover {
+  transform: rotateX(10deg) rotateY(-10deg) translateZ(20px);
+  box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.95), inset 0 0 20px rgba(58, 86, 184, 0.3), 0 0 30px rgba(58, 86, 184, 0.15);
+}
+.void-inner {
+  transform: translateZ(-30px);
+  transition: transform 0.6s ease;
+}
+.card-void:hover .void-inner {
+  transform: translateZ(-50px) scale(0.95);
+}
+
+/* 5. Nebula Pulse */
+.card-nebula {
+  transform-style: preserve-3d;
+  background: rgba(18, 20, 20, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(183, 196, 255, 0.1);
+  transition: transform 0.5s ease;
+  overflow: hidden;
+  position: relative;
+}
+.card-nebula::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(circle at center, rgba(58, 86, 184, 0.4) 0%, transparent 60%);
+  filter: blur(40px);
+  opacity: 0.5;
+  transition: transform 0.8s ease, opacity 0.5s ease;
+  transform: translateZ(-10px);
+}
+.card-nebula:hover {
+  transform: translateY(-10px) rotateX(5deg);
+}
+.card-nebula:hover::before {
+  transform: translateZ(20px) scale(1.2);
+  opacity: 0.8;
+  animation: pulse-nebula 3s infinite alternate ease-in-out;
+}
+@keyframes pulse-nebula {
+  0% {
+    background: radial-gradient(circle at 40% 40%, rgba(58, 86, 184, 0.5) 0%, transparent 60%);
+  }
+  100% {
+    background: radial-gradient(circle at 60% 60%, rgba(138, 43, 226, 0.3) 0%, transparent 60%);
+  }
+}
+.nebula-content {
+  transform: translateZ(30px);
+}
+
+/* 6. Crystalline Lattice */
+.card-lattice {
+  transform-style: preserve-3d;
+  background: hsl(var(--surface-container-low));
+  border: 1px solid hsl(var(--outline-variant));
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+}
+.lattice-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2px;
+  padding: 2px;
+  pointer-events: none;
+}
+.shard {
+  background: rgba(183, 196, 255, 0.03);
+  border: 1px solid rgba(183, 196, 255, 0.1);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+.card-lattice:hover {
+  transform: rotateY(15deg) scale(1.05);
+  box-shadow: -20px 0 40px hsl(var(--surface-dim) / 0.35);
+}
+.dark .card-lattice:hover {
+  box-shadow: -20px 0 40px rgba(0, 0, 0, 0.5);
+}
+.card-lattice:hover .shard {
+  opacity: 0.8;
+  border-color: rgba(183, 196, 255, 0.3);
+}
+.card-lattice:hover .shard:nth-child(even) {
+  transform: translateZ(20px) rotateX(15deg) rotateY(-10deg);
+}
+.card-lattice:hover .shard:nth-child(odd) {
+  transform: translateZ(40px) rotateX(-15deg) rotateY(10deg);
+}
+.card-lattice:hover .shard:nth-child(3n) {
+  transform: translateZ(60px) rotateZ(5deg);
+}
+.lattice-content {
+  position: relative;
+  z-index: 10;
+  transform: translateZ(50px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-3d-inner,
+  .card-void,
+  .card-nebula,
+  .card-lattice,
+  .core-pulse,
+  .wireframe-mesh,
+  .shard {
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
   }
 }

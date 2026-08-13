@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Emmanuel Galadima — Ingeniero de Software Full-Stack IA",
-    "description": "Diseño y construyo sistemas de software inteligentes y listos para producción — ingeniería full-stack, IA y arquitectura consciente de la seguridad."
+    "title": "Emmanuel Galadima | Ingeniero de Software Full-Stack IA",
+    "description": "Diseño y construyo sistemas de software inteligentes y listos para producción. Ingeniería full-stack, IA y arquitectura consciente de la seguridad."
   },
   "nav": {
     "home": "Inicio",
@@ -9,13 +9,13 @@
     "capabilities": "Habilidades",
     "work": "Trabajo",
     "github": "GitHub",
-    "contact": "Contacto"
+    "getInTouch": "Ponte en contacto"
   },
   "hero": {
-    "eyebrow": "Emmanuel Galadima",
-    "titleLine1": "Ingeniero de Software",
-    "titleLine2": "Full-Stack IA",
-    "description": "Diseño y construyo sistemas de software inteligentes y listos para producción — ingeniería full-stack, IA y arquitectura consciente de la seguridad.",
+    "eyebrow": "Ingeniero Full-Stack IA",
+    "titleLine1": "Construyendo la próxima generación de",
+    "titleLine2": "software inteligente.",
+    "description": "Especializado en aplicaciones escalables impulsadas por IA, backends robustos e interfaces intuitivas. Convirtamos problemas complejos en experiencias fluidas.",
     "badgesTitle": "Habilidades",
     "badges": [
       "Ingeniería de Software",
@@ -24,6 +24,28 @@
       "Seguridad de Aplicaciones",
       "Web3 / Blockchain"
     ],
+    "stats": [
+      {
+        "icon": "Clock",
+        "value": "5+",
+        "label": "Años de experiencia"
+      },
+      {
+        "icon": "FolderOpen",
+        "value": "40+",
+        "label": "Proyectos"
+      },
+      {
+        "icon": "Code",
+        "value": "12+",
+        "label": "Idiomas"
+      },
+      {
+        "icon": "Brain",
+        "value": "LLM",
+        "label": "Especialista"
+      }
+    ],
     "cta1": "Ver mi trabajo",
     "cta2": "Ponte en contacto",
     "scroll": "Desplázate para explorar"
@@ -31,7 +53,30 @@
   "about": {
     "title": "Sobre Mí",
     "subtitle": "Ingeniero primero. La seguridad como parte de la arquitectura, no una ocurrencia posterior.",
-    "description": "Soy un ingeniero de software full-stack que convierte ideas de productos complejas en sistemas funcionales y listos para producción. Trabajo en toda la pila — frontend, backend, APIs, bases de datos, integraciones de IA y despliegue — y considero la seguridad como parte de la arquitectura en lugar de una ocurrencia posterior. Desde plataformas impulsadas por IA y procesamiento multimodal de documentos hasta infraestructura backend segura y aplicaciones blockchain, construyo sistemas inteligentes, resilientes y diseñados para ser lanzados.",
+    "description": "Soy Emmanuel Galadima, un ingeniero de software al que le gusta construir sistemas donde la lógica compleja se encuentra con un diseño cuidado. Soy cofundador y desarrollador principal de GrowencyAI, que ayuda a las empresas a integrar IA en sus flujos de trabajo, y desarrollador principal de la aplicación iBuild3 en su estado inicial. Pasé dos años investigando dApps y herramientas del ecosistema TON como investigador en OpenRating. Mi trabajo abarca el desarrollo full-stack, las aplicaciones de IA y la ingeniería de producto, con experiencia en seguridad de aplicaciones y Web3. Me importa que las cosas funcionen bien bajo el capó y sigan siendo agradables de usar.",
+    "chip": "Basado en Nigeria · Listo para remoto",
+    "stats": [
+      {
+        "icon": "Briefcase",
+        "value": "5+",
+        "label": "Años de experiencia"
+      },
+      {
+        "icon": "Rocket",
+        "value": "40+",
+        "label": "Proyectos entregados"
+      },
+      {
+        "icon": "Code",
+        "value": "12+",
+        "label": "Lenguajes y herramientas"
+      },
+      {
+        "icon": "MemoryStick",
+        "value": "IA/Web3",
+        "label": "Áreas principales"
+      }
+    ],
     "points": [
       "Aplicaciones full-stack: React, Next.js, TypeScript, APIs, bases de datos, interfaces complejas",
       "Ingeniería de aplicaciones de IA: agentes de IA, sistemas multimodales, integraciones LLM, orquestación",
@@ -40,51 +85,99 @@
       "Web3 y blockchain: TON, smart contracts, aplicaciones blockchain e investigación"
     ]
   },
-  "capabilities": {
-    "title": "Habilidades",
-    "description": "Las cinco disciplinas que aporto a cada producto — y cómo las demuestro con sistemas reales.",
+  "roles": {
+    "title": "Roles y experiencia",
     "items": [
       {
-        "icon": "Cpu",
+        "company": "GrowencyAI",
+        "role": "Cofundador y desarrollador principal",
+        "url": "https://growency.ai/",
+        "initial": "G"
+      },
+      {
+        "company": "iBuild3",
+        "role": "Desarrollador principal",
+        "url": "https://app.ibuild3.com/",
+        "initial": "i"
+      },
+      {
+        "company": "OpenRating",
+        "role": "Investigador",
+        "url": "https://openrating.xyz/",
+        "initial": "O"
+      }
+    ]
+  },
+  "capabilities": {
+    "title": "Lo Que Hago",
+    "description": "Soluciones de ingeniería especializadas en la intersección de la IA y los sistemas complejos.",
+    "items": [
+      {
+        "icon": "Terminal",
         "title": "Ingeniería de Software",
-        "tag": "01",
-        "description": "Aplicaciones full-stack, APIs, bases de datos e interfaces complejas — diseñadas, construidas y lanzadas de principio a fin.",
-        "tags": ["Next.js", "TypeScript", "APIs", "Arquitectura"]
+        "points": [
+          "Arquitectura full-stack",
+          "Backends escalables (Node/Python)",
+          "Sistemas distribuidos"
+        ]
       },
       {
-        "icon": "Bot",
-        "title": "Ingeniería de IA",
-        "tag": "02",
-        "description": "Agentes de IA, sistemas multimodales, integraciones LLM y orquestación integrados en productos reales.",
-        "tags": ["Gemini", "Agentes", "Multimodal", "Orquestación"]
-      },
-      {
-        "icon": "Lightbulb",
+        "icon": "LayoutGrid",
         "title": "Ingeniería de Producto",
-        "tag": "03",
-        "description": "Llevar una idea del concepto a la arquitectura, la implementación y el despliegue.",
-        "tags": ["Concepto", "Construir", "Lanzar", "Iterar"]
+        "points": [
+          "Prototipado rápido",
+          "Integración de IA/LLM",
+          "Desarrollo orientado a UX"
+        ]
       },
       {
-        "icon": "ShieldCheck",
+        "icon": "Shield",
         "title": "Seguridad de Aplicaciones",
-        "tag": "04",
-        "description": "Autenticación segura, autorización, arquitectura de seguridad e ingeniería defensiva integradas desde el inicio.",
-        "tags": ["Auth", "Cabeceras de Seguridad", "Control de Acceso", "Protección de Datos"]
+        "points": [
+          "Modelado de amenazas",
+          "SDLC seguro",
+          "Implementaciones criptográficas"
+        ]
       },
       {
-        "icon": "Blocks",
+        "icon": "Layers",
         "title": "Web3 / Blockchain",
-        "tag": "05",
-        "description": "TON, smart contracts, aplicaciones blockchain e investigación aplicada.",
-        "tags": ["TON", "Smart Contracts", "Web3", "Investigación"]
+        "points": [
+          "Desarrollo de smart contracts",
+          "Protocolos descentralizados",
+          "Diseño de tokenomics"
+        ]
       }
     ]
   },
   "work": {
     "title": "Trabajo Seleccionado",
-    "description": "Sistemas reales que he diseñado, construido y lanzado — la prueba de las habilidades anteriores.",
+    "description": "Sistemas reales que he diseñado, construido y lanzado. La prueba de las habilidades anteriores.",
     "projectsData": [
+      {
+        "id": "growency",
+        "title": "GrowencyAI",
+        "role": "Cofundador y desarrollador principal",
+        "description": "GrowencyAI ayuda a las empresas de servicios a integrar IA en sus flujos de trabajo. Construimos aplicaciones, sitios web, CRM y chatbots impulsados por IA, y ayudamos a las empresas a identificar qué tareas pueden automatizar.",
+        "outcome": "Un espacio de trabajo de equipo IA disponible 24/7, con agentes especializados que responden llamadas, reservan trabajos, persiguen prospectos y gestionan la automatización.",
+        "capabilities": ["Ingeniería de IA", "Ingeniería de Producto", "Ingeniería de Software"],
+        "stack": ["Next.js", "TypeScript", "Agentes IA", "Automatización"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": "https://growency.ai/"
+      },
+      {
+        "id": "ibuild3",
+        "title": "iBuild3",
+        "role": "Desarrollador principal",
+        "description": "Una plataforma de software para construcción donde soy el desarrollador principal de la aplicación en su estado inicial.",
+        "outcome": "Llevar la plataforma del concepto a un producto funcional, encargándome de la arquitectura y la construcción.",
+        "capabilities": ["Ingeniería de Software", "Ingeniería de Producto"],
+        "stack": ["Next.js", "TypeScript", "Arquitectura"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": "https://app.ibuild3.com/"
+      },
       {
         "id": "ai-construction-takeoff",
         "title": "Plataforma IA de Construcción y Mediciones",
@@ -101,7 +194,7 @@
         "id": "scrib-syntax",
         "title": "ScribSyntax",
         "role": "Ingeniería de aplicaciones de IA",
-        "description": "Un estudio impulsado por IA para narrativas audiovisuales — convirtiendo prompts y guiones en contenido multimedia pulido.",
+        "description": "Un estudio impulsado por IA para narrativas audiovisuales. Convierte prompts y guiones en contenido multimedia pulido.",
         "outcome": "Pipeline de generación de medios impulsado por IA con una interfaz de edición interactiva compleja.",
         "capabilities": ["Ingeniería de IA", "Ingeniería de Software"],
         "stack": ["Next.js", "TypeScript", "IA", "Integración de APIs"],
@@ -147,7 +240,7 @@
       }
     ],
     "viewCaseStudy": "Ver estudio de caso",
-    "liveDemo": "Demostración en Vivo",
+    "visitSite": "Visitar el sitio",
     "viewMore": "Ver Más en GitHub"
   },
   "caseStudies": {
@@ -162,7 +255,7 @@
         },
         "approach": {
           "title": "El Enfoque",
-          "body": "Construí un sistema que combina el procesamiento multimodal de documentos con la medición asistida por IA — leyendo planos y PDF, extrayendo cantidades con IA y enrutando el trabajo a través de un conjunto orquestado de agentes y flujos."
+          "body": "Construí un sistema que combina el procesamiento multimodal de documentos con la medición asistida por IA. Lee planos y PDF, extrae cantidades con IA y enruta el trabajo a través de un conjunto orquestado de agentes y flujos."
         },
         "architecture": {
           "title": "Arquitectura e Ingeniería",
@@ -174,7 +267,7 @@
         },
         "outcome": {
           "title": "Resultado",
-          "body": "Un producto insignia que demuestra ingeniería de extremo a extremo — integración de IA, arquitectura de datos, orquestación de agentes y una interfaz usable trabajando juntos como un solo sistema."
+          "body": "Un producto insignia que demuestra ingeniería de extremo a extremo. La integración de IA, la arquitectura de datos, la orquestación de agentes y una interfaz usable trabajan juntos como un solo sistema."
         },
         "next": {
           "title": "Lo que haría después",
@@ -196,43 +289,17 @@
         "title": "Backend y Datos",
         "items": ["Node.js", "APIs", "Supabase", "PostgreSQL", "IndexedDB"]
       },
-      {
-        "title": "IA y Automatización",
-        "items": ["Gemini", "Genkit", "Agentes IA", "Multimodal", "Orquestación"]
-      },
-      {
-        "title": "Seguridad e Infraestructura",
-        "items": ["Autenticación", "Cabeceras de Seguridad", "Cloudflare", "VPS", "Despliegue"]
-      },
+{
+    "title": "IA y Automatización",
+    "items": ["Gemini", "Vercel AI SDK", "Together AI", "Agentes IA", "Multimodal", "Orquestación"]
+   },
+   {
+    "title": "Seguridad e Infraestructura",
+    "items": ["Autenticación", "RBAC", "Seguridad a nivel de fila", "Cloudflare Tunnels", "VPS"]
+   },
       {
         "title": "Web3 y Blockchain",
         "items": ["TON", "Smart Contracts", "Web3"]
-      }
-    ]
-  },
-  "timeline": {
-    "title": "Experiencia y Enfoque",
-    "description": "El recorrido y las disciplinas detrás de los sistemas que construyo.",
-    "items": [
-      {
-        "title": "Ingeniería Full-Stack",
-        "period": "Núcleo",
-        "description": "Construir aplicaciones completas — frontend, backend, APIs, bases de datos y arquitectura."
-      },
-      {
-        "title": "Ingeniería de Aplicaciones de IA",
-        "period": "Enfoque",
-        "description": "Entregar productos con IA como parte del producto, de agentes a flujos multimodales."
-      },
-      {
-        "title": "Seguridad de Aplicaciones",
-        "period": "Cada build",
-        "description": "Autenticación, autorización, arquitectura de seguridad y protección de datos integradas en cada sistema."
-      },
-      {
-        "title": "Blockchain y Web3",
-        "period": "Investigación y build",
-        "description": "TON, smart contracts, aplicaciones blockchain y educación."
       }
     ]
   },
@@ -267,35 +334,25 @@
       }
     ]
   },
-  "whyChooseMe": {
-    "title": "¿Por qué trabajar conmigo?",
-    "description": "Un ingeniero que entrega sistemas completos — con IA, seguridad y pensamiento de producto integrados.",
-    "items": [
-      { "title": "Ingeniería de extremo a extremo", "icon": "Cpu" },
-      { "title": "IA integrada en los productos", "icon": "Bot" },
-      { "title": "Entrega consciente de la seguridad", "icon": "ShieldCheck" },
-      { "title": "Enfocado en entregar, no solo hablar", "icon": "TrendingUp" }
-    ]
-  },
   "faq": {
     "title": "Preguntas Frecuentes",
     "description": "Respuestas sobre cómo trabajo, mi enfoque de la IA y cómo pienso sobre la seguridad.",
     "items": [
       {
         "question": "¿Qué tipo de proyectos construyes?",
-        "answer": "Sistemas de software full-stack — desde aplicaciones web complejas y flujos de trabajo impulsados por IA hasta infraestructura backend segura y aplicaciones blockchain. Tomo una idea de producto, arquitectura el sistema, lo construyo, integro IA y datos, lo despliego y mantengo la seguridad presente durante todo el proceso."
+        "answer": "Sistemas de software full-stack. Desde aplicaciones web complejas y flujos de trabajo impulsados por IA hasta infraestructura backend segura y aplicaciones blockchain. Tomo una idea de producto, arquitectura el sistema, lo construyo, integro IA y datos, lo despliego y mantengo la seguridad presente durante todo el proceso."
       },
       {
         "question": "¿Eres un ingeniero de ciberseguridad?",
-        "answer": "Mi enfoque principal es la ingeniería de software full-stack. Construyo aplicaciones con la seguridad considerada como parte de la arquitectura — autenticación, autorización, cabeceras de seguridad, control de acceso y diseño seguro — en lugar de tratar la seguridad como una ocurrencia posterior."
+        "answer": "Mi enfoque principal es la ingeniería de software full-stack. Construyo aplicaciones con la seguridad considerada como parte de la arquitectura. Autenticación, autorización, cabeceras de seguridad, control de acceso y diseño seguro, en lugar de tratar la seguridad como una ocurrencia posterior."
       },
       {
         "question": "¿Cómo usas la IA en tu trabajo?",
-        "answer": "Ingeniero aplicaciones que usan la IA como parte del producto — agentes de IA, procesamiento multimodal de documentos, integraciones LLM y orquestación — en lugar de simplemente usar herramientas de IA para crear sitios web."
+        "answer": "Ingeniero aplicaciones que usan la IA como parte del producto. Agentes de IA, procesamiento multimodal de documentos, integraciones LLM y orquestación, en lugar de simplemente usar herramientas de IA para crear sitios web."
       },
       {
         "question": "¿Puedes trabajar en un producto desde la idea hasta el lanzamiento?",
-        "answer": "Sí. La ingeniería de producto es una de mis habilidades principales — llevar una idea del concepto a la arquitectura, la implementación y el despliegue."
+        "answer": "Sí. La ingeniería de producto es una de mis habilidades principales. Llevo una idea del concepto a la arquitectura, la implementación y el despliegue."
       }
     ]
   },
@@ -314,14 +371,13 @@
     "social": {
       "title": "Conectar"
     },
-    "whatsapp": "Chatear en WhatsApp",
     "toast": {
       "title": "¡Mensaje Enviado!",
       "description": "Gracias por contactarme. Te responderé pronto."
     }
   },
   "footer": {
-    "tagline": "Diseño y construyo sistemas de software inteligentes — ingeniería full-stack, IA y arquitectura consciente de la seguridad.",
+    "tagline": "Diseño y construyo sistemas de software inteligentes. Ingeniería full-stack, IA y arquitectura consciente de la seguridad.",
     "quickLinks": "Enlaces Rápidos",
     "connect": "Conectar",
     "rights": "Todos los derechos reservados."

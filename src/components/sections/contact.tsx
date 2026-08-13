@@ -4,7 +4,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { MessageSquare } from "lucide-react";
 
 import { FadeIn } from "@/components/motion/fade-in";
 import { Button } from "@/components/ui/button";
@@ -110,8 +109,8 @@ export function Contact({ dictionary }: { dictionary: any }) {
             <div>
               <h3 className="text-xl font-semibold font-headline mb-4">{dictionary.details.title}</h3>
               <p className="text-muted-foreground">Emmanuel Galadima</p>
-              <a href="mailto:hello@criptic.digital" className="text-primary hover:underline">
-                hello@criptic.digital
+              <a href="mailto:hello@criptichood.com" className="text-primary hover:underline">
+                hello@criptichood.com
               </a>
             </div>
             <div>
@@ -130,14 +129,6 @@ export function Contact({ dictionary }: { dictionary: any }) {
                   </a>
                 ))}
               </div>
-            </div>
-            <div>
-                <Button asChild size="lg" className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white">
-                    <a href={SOCIAL_LINKS.find(l => l.name === 'WhatsApp')?.url} target="_blank" rel="noopener noreferrer">
-                        <MessageSquare className="mr-2 h-5 w-5" />
-                        {dictionary.whatsapp}
-                    </a>
-                </Button>
             </div>
           </div>
         </div>

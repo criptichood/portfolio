@@ -1,16 +1,16 @@
 import Link from "next/link";
 import { Code } from "lucide-react";
-import { NAV_LINKS, SOCIAL_LINKS, GithubIcon } from "@/lib/data";
+import { NAV_LINKS, SOCIAL_LINKS, GithubIcon, GITHUB_URL } from "@/lib/data";
 import { getDictionary } from "@/lib/dictionaries";
 
 export async function Footer({ lang }: { lang: string }) {
   const dictionary = await getDictionary(lang);
   const currentYear = new Date().getFullYear();
-  const githubUrl = SOCIAL_LINKS.find((l) => l.name === "GitHub")?.url;
+  const githubUrl = GITHUB_URL;
 
   return (
-    <footer className="bg-secondary">
-      <div className="container mx-auto py-12 px-4 md:px-6">
+    <footer className="bg-surface-container-low">
+      <div className="container mx-auto py-12 px-4 md:px-6 lg:ps-20">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-4">
             <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-xl font-headline">
@@ -58,7 +58,7 @@ export async function Footer({ lang }: { lang: string }) {
           </div>
         </div>
         <div className="mt-12 border-t pt-8 text-center text-muted-foreground text-sm">
-          <p>&copy; {currentYear} Emmanuel Galadima. {dictionary.footer.rights}</p>
+          <p>&copy; {currentYear} Criptic Hood. {dictionary.footer.rights}</p>
         </div>
       </div>
     </footer>
