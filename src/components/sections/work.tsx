@@ -3,8 +3,6 @@ import Link from "next/link";
 import { ExternalLink, ArrowRight } from "lucide-react";
 import { GithubIcon } from "@/lib/data";
 import { FadeIn } from "@/components/motion/fade-in";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -19,13 +17,13 @@ export function Work({ dictionary, lang }: { dictionary: any, lang: string }) {
             {dictionary.description}
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-5 md:grid-cols-2">
           {projects.map((project: any, index: number) => {
             const projectImage = PlaceHolderImages.find(img => img.id === `project-${project.id}`);
             return (
               <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
                 {projectImage && (
-                   <div className="aspect-video relative overflow-hidden">
+                   <div className="relative h-40 overflow-hidden">
                     <Image
                       src={projectImage.imageUrl}
                       alt={projectImage.description}
@@ -36,49 +34,50 @@ export function Work({ dictionary, lang }: { dictionary: any, lang: string }) {
                     />
                    </div>
                 )}
-                <CardHeader>
-                  <CardTitle className="font-headline">{project.title}</CardTitle>
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-headline text-lg leading-snug">{project.title}</CardTitle>
                   {project.role && (
-                    <CardDescription className="text-sm font-medium text-primary">{project.role}</CardDescription>
+                    <CardDescription className="text-xs font-semibold uppercase tracking-wide text-primary">{project.role}</CardDescription>
                   )}
                 </CardHeader>
-                <CardContent className="flex-grow space-y-4">
-                  <CardDescription className="text-base">{project.description}</CardDescription>
-                  {project.outcome && (
-                    <CardDescription className="text-sm text-muted-foreground">{project.outcome}</CardDescription>
-                  )}
-                  <div className="flex flex-wrap gap-2">
+                <CardContent className="flex-grow space-y-3 pb-4">
+                  <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>
+                  <div className="flex flex-wrap gap-1.5">
                     {project.capabilities?.map((cap: string) => (
-                      <Badge key={cap} variant="secondary">{cap}</Badge>
+                      <span key={cap} className="rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">
+                        {cap}
+                      </span>
                     ))}
                   </div>
                   {project.stack && (
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1.5">
                       {project.stack.map((tech: string) => (
-                        <Badge key={tech} variant="outline">{tech}</Badge>
+                        <span key={tech} className="rounded-full border border-outline-variant px-2.5 py-0.5 text-xs text-muted-foreground">
+                          {tech}
+                        </span>
                       ))}
                     </div>
                   )}
                 </CardContent>
-                <CardFooter className="flex flex-wrap items-center justify-between gap-4">
+                <CardFooter className="flex flex-wrap items-center justify-between gap-3 py-4">
                   <div className="flex items-center gap-4">
                     {project.caseStudy && (
-                      <Link href={`/${lang}/work/${project.id}`} className="flex items-center gap-1 text-primary font-medium hover:underline">
+                      <Link href={`/${lang}/work/${project.id}`} className="flex items-center gap-1 text-sm text-primary font-medium hover:underline">
                         {dictionary.viewCaseStudy} <ArrowRight className="h-4 w-4" />
                       </Link>
                     )}
                   </div>
                   <div className="flex items-center gap-4">
                     {project.githubUrl && (
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
-                        <GithubIcon className="h-5 w-5" />
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm hover:text-primary transition-colors">
+                        <GithubIcon className="h-4 w-4" />
                         GitHub
                       </a>
                     )}
                     {project.liveUrl && (
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
-                        <ExternalLink className="h-5 w-5" />
-                        {project.id === 'crypto-dahausa' ? 'YouTube' : dictionary.liveDemo}
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-sm hover:text-primary transition-colors">
+                        <ExternalLink className="h-4 w-4" />
+                        {project.id === 'crypto-dahausa' ? 'YouTube' : dictionary.visitSite}
                       </a>
                     )}
                   </div>

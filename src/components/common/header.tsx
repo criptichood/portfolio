@@ -103,15 +103,15 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <a
-            href="mailto:hello@criptichood.com"
+          <Link
+            href={`/${lang}#contact`}
             aria-label={dictionary.getInTouch}
             title={dictionary.getInTouch}
             className="hidden md:inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm font-medium hover:bg-accent/10 hover:text-primary transition-colors"
           >
             <Mail className="h-4 w-4" />
             <span className="hidden lg:inline">{dictionary.getInTouch}</span>
-          </a>
+          </Link>
           <a
             href="https://github.com/criptichood"
             target="_blank"
@@ -172,13 +172,14 @@ export function Header({ lang, dictionary }: { lang: string, dictionary: any }) 
                       );
                     })}
                   </nav>
-                  <a
-                    href="mailto:hello@criptichood.com"
+                  <Link
+                    href={`/${lang}#contact`}
+                    onClick={() => setIsMobileMenuOpen(false)}
                     className="mt-8 flex items-center gap-2 rounded-lg border border-outline-variant px-3 py-2.5 text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-primary/5 transition-colors"
                   >
                     <Mail className="h-4 w-4" />
                     {dictionary.getInTouch}
-                  </a>
+                  </Link>
                 </div>
               </SheetContent>
             </Sheet>

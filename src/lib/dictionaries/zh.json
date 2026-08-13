@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Emmanuel Galadima — AI 全栈软件工程师",
-    "description": "我设计和构建智能、可投入生产的软件系统——结合全栈工程、人工智能和安全优先的架构。"
+    "title": "Emmanuel Galadima | AI 全栈软件工程师",
+    "description": "我设计和构建智能、可投入生产的软件系统，结合全栈工程、人工智能和安全优先的架构。"
   },
   "nav": {
     "home": "首页",
@@ -9,7 +9,6 @@
     "capabilities": "能力",
     "work": "作品",
     "github": "GitHub",
-    "contact": "联系方式",
     "getInTouch": "联系我"
   },
   "hero": {
@@ -54,7 +53,7 @@
   "about": {
     "title": "关于我",
     "subtitle": "首先是工程师。安全是架构的一部分，而不是事后才考虑的事情。",
-    "description": "我是 Emmanuel Galadima，一位资深软件工程师，专注于复杂系统的交汇处构建稳健的解决方案。我的专长涵盖全栈工程、专业 AI 应用开发和弹性产品工程。凭借应用安全和 Web3/区块链技术的扎实基础，我设计安全、去中心化且可扩展的智能系统。我弥合严谨的技术执行与有影响力的产品愿景之间的鸿沟。",
+    "description": "我是 Emmanuel Galadima，一名软件工程师，喜欢构建复杂逻辑与精心设计相交汇的系统。我是 GrowencyAI 的联合创始人兼核心开发者，它帮助各类企业将 AI 融入工作流程；我也是 iBuild3 应用初始阶段的首席开发者。我曾在 OpenRating 担任两年研究员，研究 TON 生态中的 dApp 与工具。我的工作涵盖全栈开发、AI 应用和产品工程，并具备应用安全和 Web3 背景。我关心那些内部运转良好、用起来也舒服的东西。",
     "chip": "常驻尼日利亚 · 可远程协作",
     "stats": [
       {
@@ -84,6 +83,29 @@
       "产品工程：从概念到架构、实现再到部署",
       "应用安全：身份验证、授权、安全架构、数据保护",
       "Web3 与区块链：TON、智能合约、区块链应用与研究"
+    ]
+  },
+  "roles": {
+    "title": "角色与经历",
+    "items": [
+      {
+        "company": "GrowencyAI",
+        "role": "联合创始人兼核心开发者",
+        "url": "https://growency.ai/",
+        "initial": "G"
+      },
+      {
+        "company": "iBuild3",
+        "role": "首席开发者",
+        "url": "https://app.ibuild3.com/",
+        "initial": "i"
+      },
+      {
+        "company": "OpenRating",
+        "role": "研究员",
+        "url": "https://openrating.xyz/",
+        "initial": "O"
+      }
     ]
   },
   "capabilities": {
@@ -130,8 +152,32 @@
   },
   "work": {
     "title": "精选作品",
-    "description": "我设计、构建和交付的真实系统——上面这些能力的证明。",
+    "description": "我设计、构建和交付的真实系统，上面这些能力的证明。",
     "projectsData": [
+      {
+        "id": "growency",
+        "title": "GrowencyAI",
+        "role": "联合创始人兼核心开发者",
+        "description": "GrowencyAI 帮助服务型企业将 AI 融入工作流程。我们构建定制化的 AI 应用、网站、CRM 和聊天机器人，并帮助企业识别可以自动化的功能。",
+        "outcome": "一个 7x24 小时的 AI 团队工作空间，配备专门代理来应答电话、预订工作、跟进潜在客户并处理自动化。",
+        "capabilities": ["AI 工程", "产品工程", "软件工程"],
+        "stack": ["Next.js", "TypeScript", "AI 代理", "自动化"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": "https://growency.ai/"
+      },
+      {
+        "id": "ibuild3",
+        "title": "iBuild3",
+        "role": "首席开发者",
+        "description": "一个建筑软件平台，我在其初始阶段担任应用的首席开发者。",
+        "outcome": "将平台从概念带到可用的产品，负责核心架构与构建。",
+        "capabilities": ["软件工程", "产品工程"],
+        "stack": ["Next.js", "TypeScript", "架构"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": "https://app.ibuild3.com/"
+      },
       {
         "id": "ai-construction-takeoff",
         "title": "AI 建筑与工程量测算平台",
@@ -148,7 +194,7 @@
         "id": "scrib-syntax",
         "title": "ScribSyntax",
         "role": "AI 应用工程",
-        "description": "一个由 AI 驱动的视听叙事工作室——将提示词和脚本转化为精美的多媒体内容。",
+        "description": "一个由 AI 驱动的视听叙事工作室，将提示词和脚本转化为精美的多媒体内容。",
         "outcome": "由 AI 驱动的媒体生成流水线，并配有复杂的交互式编辑界面。",
         "capabilities": ["AI 工程", "软件工程"],
         "stack": ["Next.js", "TypeScript", "AI", "API 集成"],
@@ -194,7 +240,7 @@
       }
     ],
     "viewCaseStudy": "查看案例研究",
-    "liveDemo": "现场演示",
+    "visitSite": "访问网站",
     "viewMore": "在 GitHub 上查看更多"
   },
   "caseStudies": {
@@ -209,7 +255,7 @@
         },
         "approach": {
           "title": "方法",
-          "body": "我构建了一个将多模态文档处理与 AI 辅助测算相结合的系统——读取蓝图和 PDF、使用 AI 提取数量，并通过一组编排的代理和工作流来分配工作。"
+          "body": "我构建了一个将多模态文档处理与 AI 辅助测算相结合的系统，能够读取蓝图和 PDF、使用 AI 提取数量，并通过一组编排的代理和工作流来分配工作。"
         },
         "architecture": {
           "title": "架构与工程",
@@ -221,7 +267,7 @@
         },
         "outcome": {
           "title": "成果",
-          "body": "一个展示了端到端工程的旗舰产品——AI 集成、数据架构、代理编排和可用的界面作为一个系统协同工作。"
+          "body": "一个展示了端到端工程的旗舰产品，AI 集成、数据架构、代理编排和可用的界面作为一个系统协同工作。"
         },
         "next": {
           "title": "接下来我会做什么",
@@ -294,19 +340,19 @@
     "items": [
       {
         "question": "你构建什么样的项目？",
-        "answer": "全栈软件系统——从复杂的 Web 应用和 AI 驱动的工作流，到安全的后端基础设施和区块链应用。我会接受一个产品创意，设计系统架构，构建它，集成 AI 和数据，部署它，并在整个过程中始终将安全放在心上。"
+        "answer": "全栈软件系统，从复杂的 Web 应用和 AI 驱动的工作流，到安全的后端基础设施和区块链应用。我会接受一个产品创意，设计系统架构，构建它，集成 AI 和数据，部署它，并在整个过程中始终将安全放在心上。"
       },
       {
         "question": "你是网络安全工程师吗？",
-        "answer": "我的主要方向是全栈软件工程。我构建的应用将安全视为架构的一部分——身份验证、授权、安全头、访问控制和安全设计——而不是事后才考虑安全。"
+        "answer": "我的主要方向是全栈软件工程。我构建的应用将安全视为架构的一部分，包括身份验证、授权、安全头、访问控制和安全设计，而不是事后才考虑安全。"
       },
       {
         "question": "你如何在工作中使用 AI？",
-        "answer": "我构建的应用将 AI 作为产品的一部分——AI 代理、多模态文档处理、LLM 集成和编排——而不是仅仅使用 AI 工具来制作网站。"
+        "answer": "我构建的应用将 AI 作为产品的一部分，包括 AI 代理、多模态文档处理、LLM 集成和编排，而不是仅仅使用 AI 工具来制作网站。"
       },
       {
         "question": "你能把产品从创意做到上线吗？",
-        "answer": "可以。产品工程是我的核心能力之一——将创意从概念推进到架构、实现和部署。"
+        "answer": "可以。产品工程是我的核心能力之一，能够将创意从概念推进到架构、实现和部署。"
       }
     ]
   },
@@ -331,7 +377,7 @@
     }
   },
   "footer": {
-    "tagline": "我设计和构建智能软件系统——全栈工程、AI 和安全优先的架构。",
+    "tagline": "我设计和构建智能软件系统，涵盖全栈工程、AI 和安全优先的架构。",
     "quickLinks": "快速链接",
     "connect": "联系",
     "rights": "版权所有。"

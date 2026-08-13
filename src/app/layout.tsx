@@ -69,7 +69,7 @@ export default async function RootLayout(
               "@type": "Person",
               "name": "Emmanuel Galadima",
               "jobTitle": "AI Full-Stack Software Engineer",
-              "description": "I design and build intelligent, production-ready software systems — combining full-stack engineering, AI, and security-minded architecture.",
+              "description": "I design and build software that combines full-stack engineering, AI, and security-minded architecture.",
               "url": "https://criptichood.com",
               "sameAs": [
                 "https://github.com/criptichood",

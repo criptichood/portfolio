@@ -21,8 +21,8 @@
     },
     {
       "id": "project-scrib-syntax",
-      "description": "Thumbnail for ScribSyntax project",
-      "imageUrl": "https://res.cloudinary.com/dlbcsvcys/image/upload/v1757813305/Screenshot_2025-09-14_022706_qmt3eh.png",
+      "description": "Live preview of ScribSyntax, an AI-powered audiovisual studio",
+      "imageUrl": "https://image.thum.io/get/width/800/https://scrib-syntax.vercel.app/",
       "imageHint": "ai audiovisual"
     },
     {
@@ -33,9 +33,21 @@
     },
     {
       "id": "project-personalized-website",
-      "description": "Thumbnail for a personalized business website project",
-      "imageUrl": "https://res.cloudinary.com/dlbcsvcys/image/upload/v1757852626/MTouch_uu1n2u.png",
+      "description": "Live preview of a personalized business website project",
+      "imageUrl": "https://image.thum.io/get/width/800/https://maryams-touch-client.vercel.app/",
       "imageHint": "ecommerce website"
+    },
+    {
+      "id": "project-growency",
+      "description": "Live preview of GrowencyAI, a 24/7 AI team workspace for service businesses",
+      "imageUrl": "https://res.cloudinary.com/dwszp4w8i/image/upload/v1786658522/Screenshot_2026-08-13_230039_jxiae2.png",
+      "imageHint": "ai team workspace"
+    },
+    {
+      "id": "project-ibuild3",
+      "description": "Live preview of the iBuild3 construction platform app",
+      "imageUrl": "https://res.cloudinary.com/dwszp4w8i/image/upload/v1786658563/Screenshot_2026-08-13_230132_tkbikb.png",
+      "imageHint": "construction software"
     },
     {
       "id": "blog-post-1",

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Emmanuel Galadima — AI Full-Stack Software Engineer",
-    "description": "I design and build intelligent, production-ready software systems — combining full-stack engineering, AI, and security-minded architecture."
+    "title": "Emmanuel Galadima | AI Full-Stack Software Engineer",
+    "description": "I design and build software that combines full-stack engineering, AI, and security-minded architecture."
   },
   "nav": {
     "home": "Home",
@@ -9,14 +9,13 @@
     "capabilities": "Capabilities",
     "work": "Work",
     "github": "GitHub",
-    "contact": "Contact",
     "getInTouch": "Get in touch"
   },
   "hero": {
     "eyebrow": "AI Full-Stack Engineer",
     "titleLine1": "Building the next generation of",
     "titleLine2": "intelligent software.",
-    "description": "Specializing in scalable AI-driven applications, robust backends, and intuitive user interfaces. Let's turn complex problems into seamless experiences.",
+    "description": "I build scalable AI-driven applications, solid backends, and interfaces people actually enjoy using. Let's turn complex problems into simple, working solutions.",
     "badgesTitle": "Capabilities",
     "badges": [
       "Software Engineering",
@@ -53,8 +52,8 @@
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Engineer first. Security as part of the architecture, not an afterthought.",
-    "description": "I'm Emmanuel Galadima, a seasoned software engineer architecting robust solutions at the intersection of complex systems. My expertise spans full-stack engineering, specialized AI application development, and resilient product engineering. With a strong foundation in application security and Web3/blockchain technologies, I design secure, decentralized, and intelligent systems that scale. I bridge the gap between rigorous technical execution and impactful product vision.",
+    "subtitle": "Engineer first. Security is part of the architecture, not an afterthought.",
+    "description": "I'm Emmanuel Galadima, a software engineer who enjoys building systems where complex logic meets careful design. I'm the co-founder and core developer of GrowencyAI, which helps businesses integrate AI into their workflows, and the lead developer of iBuild3's app in its initial state. I spent two years researching dApps and tools across the TON ecosystem as a researcher at OpenRating. My work spans full-stack development, AI applications, and product engineering, with a background in application security and Web3. I care about things that work well under the hood and still feel good to use.",
     "chip": "Based in Nigeria · Remote-friendly",
     "stats": [
       {
@@ -86,9 +85,32 @@
       "Web3 & blockchain: TON, smart contracts, blockchain applications and research"
     ]
   },
+  "roles": {
+    "title": "Roles & Experience",
+    "items": [
+      {
+        "company": "GrowencyAI",
+        "role": "Co-founder & Core Developer",
+        "url": "https://growency.ai/",
+        "initial": "G"
+      },
+      {
+        "company": "iBuild3",
+        "role": "Lead Developer",
+        "url": "https://app.ibuild3.com/",
+        "initial": "i"
+      },
+      {
+        "company": "OpenRating",
+        "role": "Researcher",
+        "url": "https://openrating.xyz/",
+        "initial": "O"
+      }
+    ]
+  },
   "capabilities": {
     "title": "What I Do",
-    "description": "Specialized engineering solutions at the intersection of AI and complex systems.",
+    "description": "Engineering work that sits at the edge of AI and complex systems, built to actually ship.",
     "items": [
       {
         "icon": "Terminal",
@@ -130,8 +152,32 @@
   },
   "work": {
     "title": "Selected Work",
-    "description": "Real systems I've designed, built, and shipped — proof of the capabilities above.",
+    "description": "Real systems I've designed, built, and shipped. Proof of the capabilities above.",
     "projectsData": [
+      {
+        "id": "growency",
+        "title": "GrowencyAI",
+        "role": "Co-founder & Core Developer",
+        "description": "GrowencyAI helps service businesses integrate AI into their workflows. We build custom AI-powered applications, websites, CRMs, and chatbots, and help businesses identify features they can automate.",
+        "outcome": "A 24/7 AI team workspace with specialized agents that answer calls, book jobs, chase leads, and handle automation for service businesses.",
+        "capabilities": ["AI Engineering", "Product Engineering", "Software Engineering"],
+        "stack": ["Next.js", "TypeScript", "AI Agents", "Automation"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": "https://growency.ai/"
+      },
+      {
+        "id": "ibuild3",
+        "title": "iBuild3",
+        "role": "Lead Developer",
+        "description": "A construction software platform where I serve as the lead developer of the app in its initial state.",
+        "outcome": "Taking the platform from concept to a working product, owning the core architecture and build.",
+        "capabilities": ["Software Engineering", "Product Engineering"],
+        "stack": ["Next.js", "TypeScript", "Architecture"],
+        "caseStudy": false,
+        "githubUrl": "",
+        "liveUrl": "https://app.ibuild3.com/"
+      },
       {
         "id": "ai-construction-takeoff",
         "title": "AI Construction & Takeoff Platform",
@@ -148,7 +194,7 @@
         "id": "scrib-syntax",
         "title": "ScribSyntax",
         "role": "AI Application Engineering",
-        "description": "An AI-powered studio for audiovisual narratives — turning prompts and scripts into polished multimedia content.",
+        "description": "An AI-powered studio for audiovisual narratives. It turns prompts and scripts into polished multimedia content.",
         "outcome": "AI-driven media generation pipeline with a complex interactive editing interface.",
         "capabilities": ["AI Engineering", "Software Engineering"],
         "stack": ["Next.js", "TypeScript", "AI", "API Integration"],
@@ -194,7 +240,7 @@
       }
     ],
     "viewCaseStudy": "View Case Study",
-    "liveDemo": "Live Demo",
+    "visitSite": "Visit Site",
     "viewMore": "View More on GitHub"
   },
   "caseStudies": {
@@ -209,7 +255,7 @@
         },
         "approach": {
           "title": "The Approach",
-          "body": "I built a system that combines multimodal document processing with AI-assisted takeoff — reading blueprints and PDFs, extracting quantities with AI, and routing the work through an orchestrated set of agents and workflows."
+          "body": "I built a system that combines multimodal document processing with AI-assisted takeoff. It reads blueprints and PDFs, extracts quantities with AI, and routes the work through an orchestrated set of agents and workflows."
         },
         "architecture": {
           "title": "Architecture & Engineering",
@@ -221,7 +267,7 @@
         },
         "outcome": {
           "title": "Outcome",
-          "body": "A flagship product that demonstrates end-to-end engineering — AI integration, data architecture, agent orchestration, and a usable interface working together as one system."
+          "body": "A flagship product that demonstrates end-to-end engineering. AI integration, data architecture, agent orchestration, and a usable interface all working together as one system."
         },
         "next": {
           "title": "What I'd Do Next",
@@ -294,19 +340,19 @@
     "items": [
       {
         "question": "What kind of projects do you build?",
-        "answer": "Full-stack software systems — from complex web applications and AI-powered workflows to secure backend infrastructure and blockchain applications. I take a product idea, architect the system, build it, integrate AI and data, deploy it, and keep security in mind throughout."
+        "answer": "Full-stack software systems. Everything from complex web applications and AI-powered workflows to secure backend infrastructure and blockchain apps. I take a product idea, architect it, build it, integrate AI and data, deploy it, and keep security in mind the whole way through."
       },
       {
         "question": "Are you a cybersecurity engineer?",
-        "answer": "My primary focus is full-stack software engineering. I build applications with security considered as part of the architecture — authentication, authorization, security headers, access control, and secure design — rather than treating security as an afterthought."
+        "answer": "My primary focus is full-stack software engineering. Security is built into how I work, not bolted on at the end. Authentication, authorization, security headers, access control, and secure design are all part of the architecture."
       },
       {
         "question": "How do you use AI in your work?",
-        "answer": "I engineer applications that use AI as part of the product — AI agents, multimodal document processing, LLM integrations, and orchestration — rather than simply using AI tools to make websites."
+        "answer": "AI is part of the product, not just a wrapper. AI agents, multimodal document processing, LLM integrations, and orchestration are built into the systems I ship, rather than using AI tools purely to make websites."
       },
       {
         "question": "Can you work on a product from idea to launch?",
-        "answer": "Yes. Product engineering is one of my core capabilities — taking an idea from concept through architecture, implementation, and deployment."
+        "answer": "Yes. Product engineering is one of my core strengths. I can take an idea from concept through architecture, implementation, and deployment."
       }
     ]
   },
@@ -331,7 +377,7 @@
     }
   },
   "footer": {
-    "tagline": "I design and build intelligent software systems — full-stack engineering, AI, and security-minded architecture.",
+    "tagline": "I design and build intelligent software systems. Full-stack engineering, AI, and security-minded architecture.",
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "rights": "All rights reserved."
@@ -339,7 +385,7 @@
   "chatbot": {
     "title": "AI Assistant",
     "subtitle": "Online - Ready to help",
-    "greeting": "Welcome. I'm the AI assistant for Emmanuel Galadima, an AI Full-Stack Software Engineer. Feel free to ask about his capabilities, projects, or how he builds secure, AI-powered systems.",
+    "greeting": "Welcome. I'm the AI assistant for Emmanuel Galadima, an AI Full-Stack Software Engineer. Ask me about his capabilities, projects, or how he builds secure, AI-powered systems.",
     "placeholder": "Ask about capabilities, projects..."
   }
 }

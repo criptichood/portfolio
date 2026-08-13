@@ -14,60 +14,95 @@ type TermToken = { text: string; cls?: string };
 const TERMINAL_LINES: TermToken[][] = [
   [
     { text: "import", cls: "token-keyword" },
-    { text: " asyncio" },
-  ],
-  [
+    { text: " OpenAI " },
     { text: "from", cls: "token-keyword" },
-    { text: " core " },
-    { text: "import", cls: "token-keyword" },
-    { text: " NeuralEngine, UXBuilder" },
-  ],
-  [],
-  [
-    { text: "async def", cls: "token-keyword" },
     { text: " " },
-    { text: "init_project", cls: "token-function" },
-    { text: "(spec_data):" },
+    { text: '"openai"', cls: "token-string" },
+  ],
+  [],
+  [
+    { text: "const", cls: "token-keyword" },
+    { text: " " },
+    { text: "client", cls: "token-function" },
+    { text: " = " },
+    { text: "new", cls: "token-keyword" },
+    { text: " OpenAI({" },
   ],
   [
-    { text: "    " },
-    { text: "# 1. Analyze constraints", cls: "token-comment" },
+    { text: "  apiKey: " },
+    { text: "process.env.AI_GATEWAY_API_KEY", cls: "token-string" },
   ],
-  [{ text: "    engine = NeuralEngine()" }],
   [
-    { text: "    architecture = " },
+    { text: "  baseURL: " },
+    { text: '"https://ai-gateway.vercel.sh/v1"', cls: "token-string" },
+  ],
+  [{ text: "})" }],
+  [],
+  [
+    { text: "const", cls: "token-keyword" },
+    { text: " " },
+    { text: "stream", cls: "token-function" },
+    { text: " = " },
     { text: "await", cls: "token-keyword" },
-    { text: " engine.process(spec_data)" },
+    { text: " client.responses.stream({" },
   ],
+  [
+    { text: "  model: " },
+    { text: '"google/gemini-3.7-flash"', cls: "token-string" },
+  ],
+  [
+    { text: "  instructions: " },
+    { text: '"You are a senior full-stack engineer. Act on the spec and return a deployable plan."', cls: "token-string" },
+  ],
+  [
+    { text: "  input: `Build a fast, accessible web app from this spec...`," },
+  ],
+  [
+    { text: "  tools: [" },
+  ],
+  [
+    { text: "    { type: " },
+    { text: '"function"', cls: "token-string" },
+    { text: ", name: " },
+    { text: '"scaffold"', cls: "token-string" },
+    { text: "," },
+  ],
+  [
+    { text: "      description: " },
+    { text: '"Scaffold the project structure."', cls: "token-string" },
+  ],
+  [
+    { text: "      parameters: { type: " },
+    { text: '"object"', cls: "token-string" },
+    { text: ", properties: { name: { type: " },
+    { text: '"string"', cls: "token-string" },
+    { text: " } } }," },
+  ],
+  [
+    { text: "  ]," },
+  ],
+  [{ text: "})" }],
   [],
   [
-    { text: "    " },
-    { text: "# 2. Synthesize interface", cls: "token-comment" },
+    { text: "for await", cls: "token-keyword" },
+    { text: " (const event " },
+    { text: "of", cls: "token-keyword" },
+    { text: " stream) {" },
   ],
   [
-    { text: "    ui = UXBuilder(theme=" },
-    { text: "'dark_minimal'", cls: "token-string" },
-    { text: ")" },
-  ],
-  [{ text: "    interface = ui.generate(architecture)" }],
-  [],
-  [
-    { text: "    " },
-    { text: "return", cls: "token-keyword" },
-    { text: " interface.deploy()" },
-  ],
-  [],
-  [
+    { text: "  " },
     { text: "if", cls: "token-keyword" },
-    { text: " __name__ == " },
-    { text: '"__main__"', cls: "token-string" },
-    { text: ":" },
+    { text: " (event.type === " },
+    { text: '"response.output_text.delta"', cls: "token-string" },
+    { text: ") {" },
   ],
   [
-    { text: "    status = " },
-    { text: "await", cls: "token-keyword" },
-    { text: " init_project(next_idea)" },
+    { text: "    process.stdout.write(event.delta)" },
   ],
+  [
+    { text: "  }" },
+  ],
+  [{ text: "}" }],
 ];
 
 export function Hero({ dictionary, lang }: { dictionary: any, lang: string }) {
@@ -134,7 +169,7 @@ export function Hero({ dictionary, lang }: { dictionary: any, lang: string }) {
                   <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
                   <div className="w-3 h-3 rounded-full bg-[#28c840]" />
                 </div>
-                <div className="flex-grow text-center font-label-mono text-xs text-[#c5c5d4]">agent.py</div>
+                <div className="flex-grow text-center font-label-mono text-xs text-[#c5c5d4]">agent.ts</div>
               </div>
               {/* Code Content */}
               <div className="p-6 font-label-mono text-label-mono leading-relaxed overflow-x-auto">

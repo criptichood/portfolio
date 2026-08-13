@@ -13,7 +13,6 @@ export const NAV_LINKS = (dictionary: any) => [
   { href: "#capabilities", label: dictionary.capabilities },
   { href: "#work", label: dictionary.work },
   { href: "#github", label: dictionary.github },
-  { href: "#contact", label: dictionary.contact },
 ];
 
 export const GITHUB_URL = "https://github.com/criptichood";

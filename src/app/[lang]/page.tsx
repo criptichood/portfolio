@@ -6,6 +6,7 @@ import { Capabilities } from "@/components/sections/capabilities";
 import { Work } from "@/components/sections/work";
 import { TechStack } from "@/components/sections/tech-stack";
 import { GitHubShowcase } from "@/components/sections/github-showcase";
+import { Roles } from "@/components/sections/roles";
 import { getDictionary } from "@/lib/dictionaries";
 
 export default async function LangHomePage(props: { params: Promise<{ lang: string }> }) {
@@ -21,6 +22,7 @@ export default async function LangHomePage(props: { params: Promise<{ lang: stri
     <>
       <Hero dictionary={dictionary.hero} lang={lang} />
       <About dictionary={dictionary.about} />
+      <Roles dictionary={dictionary.roles} />
       <Capabilities dictionary={dictionary.capabilities} />
       <Work dictionary={dictionary.work} lang={lang} />
       <GitHubShowcase dictionary={dictionary.github} />
