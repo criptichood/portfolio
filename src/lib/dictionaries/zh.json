@@ -453,7 +453,10 @@
         "label": "信息",
         "placeholder": "告诉我你的项目或创意..."
       },
-      "button": "发送信息"
+      "button": "发送信息",
+      "sending": "正在发送",
+      "error": "消息发送失败。",
+      "rateLimited": "此连接发送次数过多，请稍后再试。"
     },
     "details": {
       "title": "联系方式",
@@ -492,6 +495,15 @@
     "emailError": "请输入有效的邮箱地址。",
     "launcher": "问问我的工作",
     "send": "发送",
+    "close": "关闭",
+    "home": "主页",
+    "messages": "消息",
+    "homeGreeting": "你好",
+    "homeTitle": "需要什么帮助？",
+    "homeBody": "我设计和构建由人工智能驱动的产品、扎实的后端，以及人们真正会用的界面。",
+    "sendCardTitle": "发送消息",
+    "sendCardBody": "可以问项目、技术栈，或一个产品。",
+    "questionsLabel": "常见问题",
     "suggestions": [
       "你构建什么样的系统？",
       "介绍一下 GrowencyAI。",

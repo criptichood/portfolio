@@ -453,7 +453,10 @@
         "label": "Message",
         "placeholder": "Tell me about your project or idea..."
       },
-      "button": "Send Message"
+      "button": "Send Message",
+      "sending": "Sending",
+      "error": "There was a problem sending your message.",
+      "rateLimited": "Too many messages from this connection. Try again in a little while."
     },
     "details": {
       "title": "Contact Details",
@@ -492,6 +495,15 @@
     "emailError": "Enter a valid email address.",
     "launcher": "Ask about my work",
     "send": "Send",
+    "close": "Close",
+    "home": "Home",
+    "messages": "Messages",
+    "homeGreeting": "Hi there",
+    "homeTitle": "How can I help?",
+    "homeBody": "I design and build AI-driven products, solid backends, and interfaces people actually use.",
+    "sendCardTitle": "Send a message",
+    "sendCardBody": "Ask about the work, the stack, or a product.",
+    "questionsLabel": "Common questions",
     "suggestions": [
       "What kind of systems do you build?",
       "Tell me about GrowencyAI.",

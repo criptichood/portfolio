@@ -446,7 +446,10 @@
         "label": "Saƙo",
         "placeholder": "Fada mani game da aikinka ko ra'ayinka..."
       },
-      "button": "Aika Saƙo"
+      "button": "Aika Saƙo",
+      "sending": "Ana aikawa",
+      "error": "Aika saƙon ya gaza.",
+      "rateLimited": "Saƙonni sun yi yawa daga wannan haɗin. Sake gwadawa daga baya."
     },
     "details": {
       "title": "Bayanin Tuntuɓa",
@@ -485,6 +488,15 @@
     "emailError": "Shigar da ingantaccen imel.",
     "launcher": "Tambaya game da aikina",
     "send": "Aika",
+    "close": "Rufe",
+    "home": "Gida",
+    "messages": "Saƙonni",
+    "homeGreeting": "Sannu",
+    "homeTitle": "Ta yaya zan iya taimaka?",
+    "homeBody": "Ina tsara kuma ina gina samfurori da AI, ingantattun backends, da interfaces da mutane ke amfani da su.",
+    "sendCardTitle": "Aika saƙo",
+    "sendCardBody": "Tambaya game da aiki, kayan aiki, ko samfur.",
+    "questionsLabel": "Tambayoyi na yau da kullum",
     "suggestions": [
       "Wane irin tsarin kake gina?",
       "Faɗa mini game da GrowencyAI.",

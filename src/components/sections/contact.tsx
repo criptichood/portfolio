@@ -10,15 +10,17 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import { CONTACT_EMAIL, SOCIAL_LINKS, TELEGRAM_URL } from "@/lib/data";
 import { sendContactMessage } from "@/ai/flows/contact-flow";
 import { useState } from "react";
 import { ContactFormSchema } from "@/lib/schemas";
+import { Loader2 } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 
 export function Contact({ dictionary }: { dictionary: any }) {
-  const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const form = useForm<z.infer<typeof ContactFormSchema>>({
     resolver: zodResolver(ContactFormSchema),
@@ -31,19 +33,20 @@ export function Contact({ dictionary }: { dictionary: any }) {
 
   async function onSubmit(values: z.infer<typeof ContactFormSchema>) {
     setIsSubmitting(true);
+    setStatus("idle");
+    setErrorMessage("");
     try {
-      await sendContactMessage(values);
-      toast({
-        title: dictionary.toast.title,
-        description: dictionary.toast.description,
-      });
+      const result = await sendContactMessage(values);
+      if (!result.ok) {
+        setStatus("error");
+        setErrorMessage(result.reason === "rate_limited" ? dictionary.form.rateLimited : dictionary.form.error);
+        return;
+      }
       form.reset();
-    } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Something went wrong.",
-        description: "There was a problem with your request.",
-      });
+      setStatus("success");
+    } catch {
+      setStatus("error");
+      setErrorMessage(dictionary.form.error);
     } finally {
       setIsSubmitting(false);
     }
@@ -68,7 +71,7 @@ export function Contact({ dictionary }: { dictionary: any }) {
                   <FormItem>
                     <FormLabel>{dictionary.form.name.label}</FormLabel>
                     <FormControl>
-                      <Input placeholder={dictionary.form.name.placeholder} {...field} disabled />
+                      <Input placeholder={dictionary.form.name.placeholder} {...field} disabled={isSubmitting} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -81,7 +84,7 @@ export function Contact({ dictionary }: { dictionary: any }) {
                   <FormItem>
                     <FormLabel>{dictionary.form.email.label}</FormLabel>
                     <FormControl>
-                      <Input placeholder={dictionary.form.email.placeholder} {...field} disabled />
+                      <Input placeholder={dictionary.form.email.placeholder} {...field} disabled={isSubmitting} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -94,15 +97,53 @@ export function Contact({ dictionary }: { dictionary: any }) {
                   <FormItem>
                     <FormLabel>{dictionary.form.message.label}</FormLabel>
                     <FormControl>
-                      <Textarea placeholder={dictionary.form.message.placeholder} {...field} rows={5} disabled />
+                      <Textarea placeholder={dictionary.form.message.placeholder} {...field} rows={5} disabled={isSubmitting} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" size="lg" className="w-full" disabled>
-                {dictionary.form.button}
+              <Button type="submit" size="lg" className="w-full" disabled={isSubmitting} aria-busy={isSubmitting}>
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    {dictionary.form.sending}
+                  </>
+                ) : (
+                  dictionary.form.button
+                )}
               </Button>
+              <div aria-live="polite" className="min-h-6">
+                <AnimatePresence mode="wait">
+                  {status === "success" && (
+                    <motion.div
+                      key="success"
+                      role="status"
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 4 }}
+                      transition={{ duration: 0.2 }}
+                      className="rounded-xl border bg-card px-4 py-3"
+                    >
+                      <p className="text-sm font-medium text-foreground">{dictionary.toast.title}</p>
+                      <p className="mt-1 text-sm text-muted-foreground">{dictionary.toast.description}</p>
+                    </motion.div>
+                  )}
+                  {status === "error" && (
+                    <motion.p
+                      key="error"
+                      role="alert"
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 4 }}
+                      transition={{ duration: 0.2 }}
+                      className="text-sm text-destructive"
+                    >
+                      {errorMessage}
+                    </motion.p>
+                  )}
+                </AnimatePresence>
+              </div>
             </form>
           </Form>
           <div className="space-y-8">

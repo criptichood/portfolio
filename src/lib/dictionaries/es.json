@@ -453,7 +453,10 @@
         "label": "Mensaje",
         "placeholder": "Cuéntame sobre tu proyecto o idea..."
       },
-      "button": "Enviar Mensaje"
+      "button": "Enviar Mensaje",
+      "sending": "Enviando",
+      "error": "No se pudo enviar el mensaje.",
+      "rateLimited": "Demasiados mensajes desde esta conexión. Inténtalo de nuevo en un momento."
     },
     "details": {
       "title": "Detalles de Contacto",
@@ -492,6 +495,15 @@
     "emailError": "Escribe un correo válido.",
     "launcher": "Pregunta por mi trabajo",
     "send": "Enviar",
+    "close": "Cerrar",
+    "home": "Inicio",
+    "messages": "Mensajes",
+    "homeGreeting": "Hola",
+    "homeTitle": "¿Cómo puedo ayudarte?",
+    "homeBody": "Diseño y construyo productos con IA, backends sólidos e interfaces que la gente usa de verdad.",
+    "sendCardTitle": "Enviar un mensaje",
+    "sendCardBody": "Pregunta por el trabajo, la tecnología o un producto.",
+    "questionsLabel": "Preguntas frecuentes",
     "suggestions": [
       "¿Qué tipo de sistemas construyes?",
       "Cuéntame sobre GrowencyAI.",

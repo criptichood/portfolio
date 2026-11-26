@@ -453,7 +453,10 @@
         "label": "Message",
         "placeholder": "Parlez-moi de votre projet ou de votre idée..."
       },
-      "button": "Envoyer le Message"
+      "button": "Envoyer le Message",
+      "sending": "Envoi",
+      "error": "L’envoi du message a échoué.",
+      "rateLimited": "Trop de messages depuis cette connexion. Réessayez dans un moment."
     },
     "details": {
       "title": "Coordonnées",
@@ -492,6 +495,15 @@
     "emailError": "Entrez une adresse e-mail valide.",
     "launcher": "Demander sur mon travail",
     "send": "Envoyer",
+    "close": "Fermer",
+    "home": "Accueil",
+    "messages": "Messages",
+    "homeGreeting": "Bonjour",
+    "homeTitle": "Comment puis-je aider ?",
+    "homeBody": "Je conçois et je construis des produits pilotés par l’IA, des backends solides, et des interfaces que les gens utilisent vraiment.",
+    "sendCardTitle": "Envoyer un message",
+    "sendCardBody": "Posez une question sur le travail, la stack, ou un produit.",
+    "questionsLabel": "Questions fréquentes",
     "suggestions": [
       "Quels systèmes construisez-vous ?",
       "Parlez-moi de GrowencyAI.",
