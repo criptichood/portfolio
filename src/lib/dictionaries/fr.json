@@ -453,7 +453,10 @@
         "label": "Message",
         "placeholder": "Parlez-moi de votre projet ou de votre idée..."
       },
-      "button": "Envoyer le Message"
+      "button": "Envoyer le Message",
+      "sending": "Envoi",
+      "error": "L’envoi du message a échoué.",
+      "rateLimited": "Trop de messages depuis cette connexion. Réessayez dans un moment."
     },
     "details": {
       "title": "Coordonnées",

@@ -453,7 +453,10 @@
         "label": "Mensaje",
         "placeholder": "Cuéntame sobre tu proyecto o idea..."
       },
-      "button": "Enviar Mensaje"
+      "button": "Enviar Mensaje",
+      "sending": "Enviando",
+      "error": "No se pudo enviar el mensaje.",
+      "rateLimited": "Demasiados mensajes desde esta conexión. Inténtalo de nuevo en un momento."
     },
     "details": {
       "title": "Detalles de Contacto",

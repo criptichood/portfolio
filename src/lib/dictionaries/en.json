@@ -453,7 +453,10 @@
         "label": "Message",
         "placeholder": "Tell me about your project or idea..."
       },
-      "button": "Send Message"
+      "button": "Send Message",
+      "sending": "Sending",
+      "error": "There was a problem sending your message.",
+      "rateLimited": "Too many messages from this connection. Try again in a little while."
     },
     "details": {
       "title": "Contact Details",
