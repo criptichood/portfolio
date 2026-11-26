@@ -13,7 +13,7 @@ The entire application was built iteratively with the help of an AI coding partn
 - **GitHub Showcase**: A curated showcase of open-source repositories.
 - **Responsive Design**: Fully responsive components built with ShadCN UI, ensuring a great user experience on all devices.
 - **Animations**: Subtle and professional animations powered by Framer Motion to enhance user interaction.
-- **Contact Form**: A contact form with Zod validation (delivery can be wired to an email or message service).
+- **Contact Form**: A contact form with Zod validation, IP-based rate limiting, and Supabase persistence.
 
 ## Tech Stack
 
@@ -38,8 +38,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/zeroxhood/myPortfolio.git
-    cd myPortfolio
+    git clone https://github.com/criptichood/portfolio.git
+    cd portfolio
     ```
 
 2.  **Install dependencies:**
@@ -48,9 +48,11 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```
 
 3.  **Set up environment variables:**
-    Create a `.env.local` file in the root of your project and add your Google AI (Gemini) API key. You can get one from [Google AI Studio](https://aistudio.google.com/app/apikey).
+    Copy `example.env` to `.env.local` in the root of your project and fill in your credentials (`GEMINI_API_KEY` from [Google AI Studio](https://aistudio.google.com/app/apikey), plus `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` from your Supabase project):
     ```env
     GEMINI_API_KEY=your_gemini_api_key_here
+    SUPABASE_URL=your_supabase_url_here
+    SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key_here
     ```
 
 4.  **Run the development server:**
@@ -58,6 +60,12 @@ Follow these instructions to get a copy of the project up and running on your lo
     npm run dev
     ```
     Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+5.  **Cloudflare Workers build & local preview:**
+    ```bash
+    npm run cf:build
+    npm run cf:preview
+    ```
 
 ## Project Structure
 
