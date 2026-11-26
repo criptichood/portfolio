@@ -36,8 +36,9 @@ function consumeInMemory(key: string, limit: number) {
 
 async function clientKeyHash() {
   const headerList = await headers();
+  const cfIp = headerList.get("cf-connecting-ip")?.trim();
   const forwarded = headerList.get("x-forwarded-for")?.split(",")[0]?.trim();
-  const ip = forwarded || headerList.get("x-real-ip") || "unknown";
+  const ip = cfIp || forwarded || headerList.get("x-real-ip") || "unknown";
   return createHash("sha256").update(ip).digest("hex");
 }
 
