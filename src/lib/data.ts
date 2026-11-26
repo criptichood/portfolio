@@ -3,9 +3,9 @@ import {
   Link as LinkIcon,
 } from "lucide-react";
 
-import { GithubIcon, LinkedinIcon, XTwitterIcon } from "@/lib/brand-icons";
+import { GithubIcon, LinkedinIcon, TelegramIcon, XTwitterIcon } from "@/lib/brand-icons";
 
-export { GithubIcon, LinkedinIcon, XTwitterIcon };
+export { GithubIcon, LinkedinIcon, TelegramIcon, XTwitterIcon };
 
 export const NAV_LINKS = (dictionary: any) => [
   { href: "#home", label: dictionary.home },
@@ -17,7 +17,16 @@ export const NAV_LINKS = (dictionary: any) => [
 
 export const GITHUB_URL = "https://github.com/criptichood";
 
+export const CONTACT_EMAIL = "hello@criptichood.com";
+
+export const TELEGRAM_URL = "https://t.me/criptichood";
+
 export const SOCIAL_LINKS = [
+  {
+    name: "Telegram",
+    url: TELEGRAM_URL,
+    Icon: TelegramIcon,
+  },
   {
     name: "X/Twitter",
     url: "https://twitter.com/CripticHood",

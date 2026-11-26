@@ -11,7 +11,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { SOCIAL_LINKS } from "@/lib/data";
+import { CONTACT_EMAIL, SOCIAL_LINKS, TELEGRAM_URL } from "@/lib/data";
 import { sendContactMessage } from "@/ai/flows/contact-flow";
 import { useState } from "react";
 import { ContactFormSchema } from "@/lib/schemas";
@@ -109,9 +109,19 @@ export function Contact({ dictionary }: { dictionary: any }) {
             <div>
               <h3 className="text-xl font-semibold font-headline mb-4">{dictionary.details.title}</h3>
               <p className="text-muted-foreground">Emmanuel Galadima</p>
-              <a href="mailto:hello@criptichood.com" className="text-primary hover:underline">
-                hello@criptichood.com
-              </a>
+              <div className="mt-4">
+                <p className="text-sm font-medium text-on-surface">{dictionary.details.telegramLabel}</p>
+                <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  t.me/criptichood
+                </a>
+                <p className="mt-1 text-sm text-muted-foreground">{dictionary.details.telegramHint}</p>
+              </div>
+              <div className="mt-4">
+                <p className="text-sm font-medium text-on-surface">{dictionary.details.emailLabel}</p>
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-primary hover:underline">
+                  {CONTACT_EMAIL}
+                </a>
+              </div>
             </div>
             <div>
               <h3 className="text-xl font-semibold font-headline mb-4">{dictionary.social.title}</h3>

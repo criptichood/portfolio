@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/lib/data";
@@ -5,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { getDictionary } from "@/lib/dictionaries";
+import { OG_IMAGE, localeUrl } from "@/lib/site";
 
 export function generateStaticParams() {
   return [
@@ -15,6 +17,34 @@ export function generateStaticParams() {
     { lang: "zh", slug: "ai-construction-takeoff" },
     { lang: "ar", slug: "ai-construction-takeoff" },
   ];
+}
+
+export async function generateMetadata(props: { params: Promise<{ lang: string, slug: string }> }): Promise<Metadata> {
+  const { lang, slug } = await props.params;
+  const dictionary = await getDictionary(lang);
+  const caseStudy = dictionary.caseStudies?.[slug];
+  const title = caseStudy?.title ?? "Work";
+  const description = caseStudy?.summary ?? dictionary.metadata.description;
+  const canonical = localeUrl(lang, `/work/${slug}`);
+
+  return {
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      type: "article",
+      url: canonical,
+      title,
+      description,
+      images: [OG_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [OG_IMAGE.url],
+    },
+  };
 }
 
 export default async function CaseStudyPage(props: { params: Promise<{ lang: string, slug: string }> }) {

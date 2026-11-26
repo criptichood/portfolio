@@ -160,8 +160,17 @@
         "role": "Cofundador y desarrollador principal",
         "description": "GrowencyAI ayuda a las empresas de servicios a integrar IA en sus flujos de trabajo. Construimos aplicaciones, sitios web, CRM y chatbots impulsados por IA, y ayudamos a las empresas a identificar qué tareas pueden automatizar.",
         "outcome": "Un espacio de trabajo de equipo IA disponible 24/7, con agentes especializados que responden llamadas, reservan trabajos, persiguen prospectos y gestionan la automatización.",
-        "capabilities": ["Ingeniería de IA", "Ingeniería de Producto", "Ingeniería de Software"],
-        "stack": ["Next.js", "TypeScript", "Agentes IA", "Automatización"],
+        "capabilities": [
+          "Ingeniería de IA",
+          "Ingeniería de Producto",
+          "Ingeniería de Software"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Agentes IA",
+          "Automatización"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://growency.ai/"
@@ -172,8 +181,15 @@
         "role": "Desarrollador principal",
         "description": "Una plataforma de software para construcción donde soy el desarrollador principal de la aplicación en su estado inicial.",
         "outcome": "Llevar la plataforma del concepto a un producto funcional, encargándome de la arquitectura y la construcción.",
-        "capabilities": ["Ingeniería de Software", "Ingeniería de Producto"],
-        "stack": ["Next.js", "TypeScript", "Arquitectura"],
+        "capabilities": [
+          "Ingeniería de Software",
+          "Ingeniería de Producto"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Arquitectura"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://app.ibuild3.com/"
@@ -184,9 +200,19 @@
         "role": "Ingeniería full-stack + IA",
         "description": "Una plataforma IA insignia que lee planos y PDF, realiza mediciones de cantidades asistidas por IA y gestiona flujos de trabajo de proyectos de construcción.",
         "outcome": "Procesamiento multimodal de documentos, orquestación de agentes de IA, estado persistente y arquitectura de base de datos en un solo sistema de producción.",
-        "capabilities": ["Ingeniería de IA", "Ingeniería de Software", "Ingeniería de Producto"],
-        "stack": ["Next.js", "TypeScript", "Gemini", "PostgreSQL", "Agentes IA"],
-        "caseStudy": true,
+        "capabilities": [
+          "Ingeniería de IA",
+          "Ingeniería de Software",
+          "Ingeniería de Producto"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Gemini",
+          "PostgreSQL",
+          "Agentes IA"
+        ],
+        "caseStudy": false,
         "githubUrl": "https://github.com/criptichood",
         "liveUrl": ""
       },
@@ -196,23 +222,19 @@
         "role": "Ingeniería de aplicaciones de IA",
         "description": "Un estudio impulsado por IA para narrativas audiovisuales. Convierte prompts y guiones en contenido multimedia pulido.",
         "outcome": "Pipeline de generación de medios impulsado por IA con una interfaz de edición interactiva compleja.",
-        "capabilities": ["Ingeniería de IA", "Ingeniería de Software"],
-        "stack": ["Next.js", "TypeScript", "IA", "Integración de APIs"],
+        "capabilities": [
+          "Ingeniería de IA",
+          "Ingeniería de Software"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "IA",
+          "Integración de APIs"
+        ],
         "caseStudy": false,
         "githubUrl": "https://github.com/criptichood",
         "liveUrl": "https://scrib-syntax.vercel.app/"
-      },
-      {
-        "id": "crypto-dahausa",
-        "title": "CryptoDaHausa",
-        "role": "Educación Blockchain y Contenido",
-        "description": "Una plataforma de educación blockchain localizada que hace accesibles los temas complejos de Web3 a una audiencia de habla hausa.",
-        "outcome": "Construyendo una puerta de entrada accesible hacia blockchain, Web3 y tecnología descentralizada.",
-        "capabilities": ["Web3 / Blockchain"],
-        "stack": ["Web3", "Blockchain", "Contenido", "Comunidad"],
-        "caseStudy": false,
-        "githubUrl": "",
-        "liveUrl": "https://www.youtube.com/@CryptoDaHausa"
       },
       {
         "id": "company-website",
@@ -220,8 +242,15 @@
         "role": "Ingeniería full-stack",
         "description": "Un sitio web corporativo moderno y profesional diseñado y desplegado para un cliente empresarial.",
         "outcome": "Un despliegue de producción que elevó la presencia digital y las operaciones del cliente.",
-        "capabilities": ["Ingeniería de Software", "Ingeniería de Producto"],
-        "stack": ["Next.js", "Despliegue", "Rendimiento"],
+        "capabilities": [
+          "Ingeniería de Software",
+          "Ingeniería de Producto"
+        ],
+        "stack": [
+          "Next.js",
+          "Despliegue",
+          "Rendimiento"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": ""
@@ -232,8 +261,15 @@
         "role": "Ingeniería full-stack",
         "description": "Un sitio web personalizado adaptado a las necesidades específicas de un cliente empresarial, mostrando la marca y la funcionalidad.",
         "outcome": "Una presencia web con marca y funcional construida alrededor de los requisitos del cliente.",
-        "capabilities": ["Ingeniería de Software", "Ingeniería de Producto"],
-        "stack": ["Next.js", "TypeScript", "UI"],
+        "capabilities": [
+          "Ingeniería de Software",
+          "Ingeniería de Producto"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "UI"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://maryams-touch-client.vercel.app/"
@@ -283,23 +319,52 @@
     "groups": [
       {
         "title": "Frontend",
-        "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+        "items": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ]
       },
       {
         "title": "Backend y Datos",
-        "items": ["Node.js", "APIs", "Supabase", "PostgreSQL", "IndexedDB"]
+        "items": [
+          "Node.js",
+          "APIs",
+          "Supabase",
+          "PostgreSQL",
+          "IndexedDB"
+        ]
       },
-{
-    "title": "IA y Automatización",
-    "items": ["Gemini", "Vercel AI SDK", "Together AI", "Agentes IA", "Multimodal", "Orquestación"]
-   },
-   {
-    "title": "Seguridad e Infraestructura",
-    "items": ["Autenticación", "RBAC", "Seguridad a nivel de fila", "Cloudflare Tunnels", "VPS"]
-   },
+      {
+        "title": "IA y Automatización",
+        "items": [
+          "Gemini",
+          "Vercel AI SDK",
+          "Together AI",
+          "Agentes IA",
+          "Multimodal",
+          "Orquestación"
+        ]
+      },
+      {
+        "title": "Seguridad e Infraestructura",
+        "items": [
+          "Autenticación",
+          "RBAC",
+          "Seguridad a nivel de fila",
+          "Cloudflare Tunnels",
+          "VPS"
+        ]
+      },
       {
         "title": "Web3 y Blockchain",
-        "items": ["TON", "Smart Contracts", "Web3"]
+        "items": [
+          "TON",
+          "Smart Contracts",
+          "Web3"
+        ]
       }
     ]
   },
@@ -311,25 +376,41 @@
       {
         "name": "AI Construction & Takeoff",
         "description": "Análisis multimodal de planos, mediciones asistidas por IA y orquestación de agentes.",
-        "topics": ["IA", "Next.js", "Agentes"],
+        "topics": [
+          "IA",
+          "Next.js",
+          "Agentes"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "ScribSyntax",
         "description": "Estudio impulsado por IA para narrativas audiovisuales.",
-        "topics": ["IA", "TypeScript", "Medios"],
+        "topics": [
+          "IA",
+          "TypeScript",
+          "Medios"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "Portfolio Platform",
         "description": "Este portfolio multilingüe impulsado por un chatbot de IA.",
-        "topics": ["Next.js", "i18n", "Gemini"],
+        "topics": [
+          "Next.js",
+          "i18n",
+          "Gemini"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "Blockchain Research",
         "description": "Notas e investigación sobre TON, Web3 y smart contracts.",
-        "topics": ["Web3", "TON", "Investigación"],
+        "topics": [
+          "Web3",
+          "TON",
+          "Investigación"
+        ],
         "url": "https://github.com/criptichood"
       }
     ]
@@ -360,13 +441,25 @@
     "title": "Construyamos Algo",
     "description": "¿Tienes una idea de producto, una construcción compleja o un sistema que necesita ingeniería? Hablemos.",
     "form": {
-      "name": { "label": "Nombre", "placeholder": "Su Nombre" },
-      "email": { "label": "Correo Electrónico", "placeholder": "su.email@example.com" },
-      "message": { "label": "Mensaje", "placeholder": "Cuéntame sobre tu proyecto o idea..." },
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Su Nombre"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "su.email@example.com"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Cuéntame sobre tu proyecto o idea..."
+      },
       "button": "Enviar Mensaje"
     },
     "details": {
-      "title": "Detalles de Contacto"
+      "title": "Detalles de Contacto",
+      "emailLabel": "Correo",
+      "telegramLabel": "Telegram",
+      "telegramHint": "La forma más rápida de contactarme."
     },
     "social": {
       "title": "Conectar"
@@ -385,7 +478,24 @@
   "chatbot": {
     "title": "Asistente de IA",
     "subtitle": "En línea - Listo para ayudar",
-    "greeting": "Bienvenido. Soy el asistente de IA de Emmanuel Galadima, un Ingeniero de Software Full-Stack IA. No dudes en preguntar sobre sus habilidades, proyectos o cómo construye sistemas seguros impulsados por IA.",
-    "placeholder": "Pregunta sobre habilidades, proyectos..."
+    "greeting": "Pregunta por el trabajo, la tecnología, o cómo se construye un producto.",
+    "thinking": "Preparando una respuesta",
+    "placeholder": "Pregunta sobre habilidades, proyectos...",
+    "gateTitle": "Antes de empezar",
+    "gateBody": "Deja tu nombre y tu correo. Después podrás hablar con el asistente.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo",
+    "emailPlaceholder": "tu@example.com",
+    "start": "Continuar",
+    "nameError": "Escribe tu nombre.",
+    "emailError": "Escribe un correo válido.",
+    "launcher": "Pregunta por mi trabajo",
+    "send": "Enviar",
+    "suggestions": [
+      "¿Qué tipo de sistemas construyes?",
+      "Cuéntame sobre GrowencyAI.",
+      "¿Cómo usas la IA en un producto?"
+    ]
   }
 }

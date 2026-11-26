@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Code } from "lucide-react";
-import { NAV_LINKS, SOCIAL_LINKS, GithubIcon, GITHUB_URL } from "@/lib/data";
+import { NAV_LINKS, SOCIAL_LINKS, GithubIcon, GITHUB_URL, TELEGRAM_URL } from "@/lib/data";
 import { getDictionary } from "@/lib/dictionaries";
 
 export async function Footer({ lang }: { lang: string }) {
@@ -49,8 +49,12 @@ export async function Footer({ lang }: { lang: string }) {
                 </a>
               ))}
             </div>
+            <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer" className="mt-4 block text-muted-foreground hover:text-primary transition-colors">
+              <span className="block text-sm font-medium text-on-surface">{dictionary.contact.details.telegramLabel}</span>
+              <span className="text-sm">t.me/criptichood</span>
+            </a>
             {githubUrl && (
-              <Link href={githubUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+              <Link href={githubUrl} target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
                 <GithubIcon className="h-5 w-5" />
                 github.com/criptichood
               </Link>

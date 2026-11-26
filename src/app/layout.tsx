@@ -1,5 +1,5 @@
 
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Header } from '@/components/common/header';
@@ -13,11 +13,13 @@ import { ScrollToTop } from '@/components/common/scroll-to-top';
 import { SocialRail } from '@/components/common/social-rail';
 import { ChatbotWidget } from '@/components/chatbot/chatbot-widget';
 import { baseFontVariables, localeFontVariables } from '@/lib/fonts';
+import { CONTACT_EMAIL, GITHUB_URL, TELEGRAM_URL } from '@/lib/data';
+import { DEFAULT_LOCALE, LOCALES, OG_IMAGE, SEO_KEYWORDS, SITE_URL, localeUrl } from '@/lib/site';
 
 // This function is now part of the root layout to avoid duplication
 async function getLocale(): Promise<string> {
-  const locales = ['en', 'ha', 'fr', 'zh', 'es', 'ar'];
-  const defaultLocale = 'en';
+  const locales: readonly string[] = LOCALES;
+  const defaultLocale = DEFAULT_LOCALE;
   const headerList = await headers();
 
   // Prefer the locale derived from the URL path by the proxy
@@ -41,44 +43,67 @@ export async function generateMetadata(): Promise<Metadata> {
   const lang = await getLocale();
   const dictionary = await getDictionary(lang);
 
-  const canonical = `https://criptichood.com/${lang}`;
+  const canonical = localeUrl(lang);
+  const languageAlternates = Object.fromEntries([
+    ["x-default", localeUrl(DEFAULT_LOCALE)],
+    ...LOCALES.map((locale) => [locale, localeUrl(locale)]),
+  ]);
 
   return {
-    metadataBase: new URL('https://criptichood.com'),
-    title: dictionary.metadata.title,
+    metadataBase: new URL(SITE_URL),
+    title: {
+      default: dictionary.metadata.title,
+      template: "%s | Emmanuel Galadima",
+    },
     description: dictionary.metadata.description,
-    applicationName: 'Emmanuel Galadima',
+    applicationName: "Emmanuel Galadima",
+    authors: [{ name: "Emmanuel Galadima", url: SITE_URL }],
+    creator: "Emmanuel Galadima",
+    publisher: "Emmanuel Galadima",
+    keywords: SEO_KEYWORDS,
+    category: "portfolio",
     alternates: {
       canonical,
-      languages: {
-        'en': '/en',
-        'ha': '/ha',
-        'fr': '/fr',
-        'es': '/es',
-        'zh': '/zh',
-        'ar': '/ar',
-      },
+      languages: languageAlternates,
     },
     openGraph: {
-      type: 'website',
-      siteName: 'Emmanuel Galadima',
+      type: "website",
+      siteName: "Emmanuel Galadima",
       locale: lang,
+      alternateLocale: LOCALES.filter((locale) => locale !== lang),
       url: canonical,
       title: dictionary.metadata.title,
       description: dictionary.metadata.description,
+      images: [OG_IMAGE],
     },
     twitter: {
-      card: 'summary',
+      card: "summary_large_image",
       title: dictionary.metadata.title,
       description: dictionary.metadata.description,
-      creator: '@CripticHood',
+      site: "@CripticHood",
+      creator: "@CripticHood",
+      images: [OG_IMAGE.url],
     },
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
     },
   };
 }
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f5f5f5" },
+    { media: "(prefers-color-scheme: dark)", color: "#131516" },
+  ],
+};
 
 const rtlLocales = ['ar'];
 
@@ -109,11 +134,17 @@ export default async function RootLayout(
               "name": "Emmanuel Galadima",
               "jobTitle": "AI Full-Stack Software Engineer",
               "description": "I design and build software that combines full-stack engineering, AI, and security-minded architecture.",
-              "url": "https://criptichood.com",
+              "url": SITE_URL,
+              "image": OG_IMAGE.url,
+              "email": CONTACT_EMAIL,
+              "knowsLanguage": ["en", "ha", "fr", "es", "zh", "ar"],
+              "knowsAbout": ["Full-stack engineering", "AI engineering", "Product engineering", "Application security", "Web3"],
               "sameAs": [
-                "https://github.com/criptichood",
+                GITHUB_URL,
                 "https://www.linkedin.com/in/emmanuel-galadima/",
-                "https://twitter.com/CripticHood"
+                "https://twitter.com/CripticHood",
+                TELEGRAM_URL,
+                "https://linktr.ee/CripticHood"
               ]
             }),
           }}
@@ -131,7 +162,7 @@ export default async function RootLayout(
           <main className="overflow-x-hidden lg:ps-20">{children}</main>
           <Footer lang={lang} />
           <Toaster />
-          <div className="fixed bottom-4 right-4 z-40">
+          <div className="fixed bottom-24 end-4 z-40">
             <ScrollToTop />
           </div>
           <ChatbotWidget dictionary={dictionary.chatbot} />

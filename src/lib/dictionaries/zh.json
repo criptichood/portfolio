@@ -160,8 +160,17 @@
         "role": "联合创始人兼核心开发者",
         "description": "GrowencyAI 帮助服务型企业将 AI 融入工作流程。我们构建定制化的 AI 应用、网站、CRM 和聊天机器人，并帮助企业识别可以自动化的功能。",
         "outcome": "一个 7x24 小时的 AI 团队工作空间，配备专门代理来应答电话、预订工作、跟进潜在客户并处理自动化。",
-        "capabilities": ["AI 工程", "产品工程", "软件工程"],
-        "stack": ["Next.js", "TypeScript", "AI 代理", "自动化"],
+        "capabilities": [
+          "AI 工程",
+          "产品工程",
+          "软件工程"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "AI 代理",
+          "自动化"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://growency.ai/"
@@ -172,8 +181,15 @@
         "role": "首席开发者",
         "description": "一个建筑软件平台，我在其初始阶段担任应用的首席开发者。",
         "outcome": "将平台从概念带到可用的产品，负责核心架构与构建。",
-        "capabilities": ["软件工程", "产品工程"],
-        "stack": ["Next.js", "TypeScript", "架构"],
+        "capabilities": [
+          "软件工程",
+          "产品工程"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "架构"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://app.ibuild3.com/"
@@ -184,9 +200,19 @@
         "role": "全栈 + AI 工程",
         "description": "一个旗舰级 AI 平台，可读取蓝图和 PDF、执行 AI 辅助的工程量测算，并管理建筑项目工作流程。",
         "outcome": "在一个生产系统中集成了多模态文档处理、AI 代理编排、持久状态和数据库架构。",
-        "capabilities": ["AI 工程", "软件工程", "产品工程"],
-        "stack": ["Next.js", "TypeScript", "Gemini", "PostgreSQL", "AI 代理"],
-        "caseStudy": true,
+        "capabilities": [
+          "AI 工程",
+          "软件工程",
+          "产品工程"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Gemini",
+          "PostgreSQL",
+          "AI 代理"
+        ],
+        "caseStudy": false,
         "githubUrl": "https://github.com/criptichood",
         "liveUrl": ""
       },
@@ -196,23 +222,19 @@
         "role": "AI 应用工程",
         "description": "一个由 AI 驱动的视听叙事工作室，将提示词和脚本转化为精美的多媒体内容。",
         "outcome": "由 AI 驱动的媒体生成流水线，并配有复杂的交互式编辑界面。",
-        "capabilities": ["AI 工程", "软件工程"],
-        "stack": ["Next.js", "TypeScript", "AI", "API 集成"],
+        "capabilities": [
+          "AI 工程",
+          "软件工程"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "AI",
+          "API 集成"
+        ],
         "caseStudy": false,
         "githubUrl": "https://github.com/criptichood",
         "liveUrl": "https://scrib-syntax.vercel.app/"
-      },
-      {
-        "id": "crypto-dahausa",
-        "title": "CryptoDaHausa",
-        "role": "区块链教育与内容",
-        "description": "一个本地化的区块链教育平台，让豪萨语受众也能理解复杂的 Web3 主题。",
-        "outcome": "为区块链、Web3 和去中心化技术打造一条可访问的入门通道。",
-        "capabilities": ["Web3 / 区块链"],
-        "stack": ["Web3", "区块链", "内容", "社区"],
-        "caseStudy": false,
-        "githubUrl": "",
-        "liveUrl": "https://www.youtube.com/@CryptoDaHausa"
       },
       {
         "id": "company-website",
@@ -220,8 +242,15 @@
         "role": "全栈工程",
         "description": "为企业客户设计和部署的现代化、专业的企业网站。",
         "outcome": "一个提升了客户数字形象和运营的生产级部署。",
-        "capabilities": ["软件工程", "产品工程"],
-        "stack": ["Next.js", "部署", "性能"],
+        "capabilities": [
+          "软件工程",
+          "产品工程"
+        ],
+        "stack": [
+          "Next.js",
+          "部署",
+          "性能"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": ""
@@ -232,8 +261,15 @@
         "role": "全栈工程",
         "description": "根据企业客户的具体需求量身定制的网站，展示品牌和功能。",
         "outcome": "围绕客户需求打造的具有品牌和功能的网络形象。",
-        "capabilities": ["软件工程", "产品工程"],
-        "stack": ["Next.js", "TypeScript", "UI"],
+        "capabilities": [
+          "软件工程",
+          "产品工程"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "UI"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://maryams-touch-client.vercel.app/"
@@ -283,23 +319,52 @@
     "groups": [
       {
         "title": "前端",
-        "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+        "items": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ]
       },
       {
         "title": "后端与数据",
-        "items": ["Node.js", "API", "Supabase", "PostgreSQL", "IndexedDB"]
+        "items": [
+          "Node.js",
+          "API",
+          "Supabase",
+          "PostgreSQL",
+          "IndexedDB"
+        ]
       },
-{
-    "title": "AI 与自动化",
-    "items": ["Gemini", "Vercel AI SDK", "Together AI", "AI 代理", "多模态", "编排"]
-   },
-   {
-    "title": "安全与基础设施",
-    "items": ["身份验证", "RBAC", "行级安全", "Cloudflare Tunnels", "VPS"]
-   },
+      {
+        "title": "AI 与自动化",
+        "items": [
+          "Gemini",
+          "Vercel AI SDK",
+          "Together AI",
+          "AI 代理",
+          "多模态",
+          "编排"
+        ]
+      },
+      {
+        "title": "安全与基础设施",
+        "items": [
+          "身份验证",
+          "RBAC",
+          "行级安全",
+          "Cloudflare Tunnels",
+          "VPS"
+        ]
+      },
       {
         "title": "Web3 与区块链",
-        "items": ["TON", "智能合约", "Web3"]
+        "items": [
+          "TON",
+          "智能合约",
+          "Web3"
+        ]
       }
     ]
   },
@@ -311,25 +376,41 @@
       {
         "name": "AI Construction & Takeoff",
         "description": "多模态蓝图分析、AI 辅助测算和代理编排。",
-        "topics": ["AI", "Next.js", "代理"],
+        "topics": [
+          "AI",
+          "Next.js",
+          "代理"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "ScribSyntax",
         "description": "由 AI 驱动的视听叙事工作室。",
-        "topics": ["AI", "TypeScript", "媒体"],
+        "topics": [
+          "AI",
+          "TypeScript",
+          "媒体"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "Portfolio Platform",
         "description": "这个由 AI 聊天机器人驱动的多语言作品集本身。",
-        "topics": ["Next.js", "i18n", "Gemini"],
+        "topics": [
+          "Next.js",
+          "i18n",
+          "Gemini"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "Blockchain Research",
         "description": "关于 TON、Web3 和智能合约的笔记与研究。",
-        "topics": ["Web3", "TON", "研究"],
+        "topics": [
+          "Web3",
+          "TON",
+          "研究"
+        ],
         "url": "https://github.com/criptichood"
       }
     ]
@@ -360,15 +441,27 @@
     "title": "让我们一起构建",
     "description": "有产品创意、复杂的构建需求或需要工程设计的系统吗？聊聊吧。",
     "form": {
-      "name": { "label": "姓名", "placeholder": "您的姓名" },
-      "email": { "label": "电子邮件", "placeholder": "your.email@example.com" },
-      "message": { "label": "信息", "placeholder": "告诉我你的项目或创意..." },
+      "name": {
+        "label": "姓名",
+        "placeholder": "您的姓名"
+      },
+      "email": {
+        "label": "电子邮件",
+        "placeholder": "your.email@example.com"
+      },
+      "message": {
+        "label": "信息",
+        "placeholder": "告诉我你的项目或创意..."
+      },
       "button": "发送信息"
     },
     "details": {
-      "title": "联系方式"
+      "title": "联系方式",
+      "emailLabel": "邮箱",
+      "telegramLabel": "Telegram",
+      "telegramHint": "联系我最快的方式。"
     },
-"social": {
+    "social": {
       "title": "连接"
     },
     "toast": {
@@ -385,7 +478,24 @@
   "chatbot": {
     "title": "AI 助手",
     "subtitle": "在线 - 随时为您服务",
-    "greeting": "欢迎。我是 Emmanuel Galadima（AI 全栈软件工程师）的 AI 助手。欢迎随时咨询他的能力、项目，或他如何构建安全、由 AI 驱动的系统。",
-    "placeholder": "询问有关能力、项目的问题..."
+    "greeting": "可以问我做过的项目、技术栈，或者一个产品是怎么做出来的。",
+    "thinking": "正在回复",
+    "placeholder": "询问有关能力、项目的问题...",
+    "gateTitle": "开始之前",
+    "gateBody": "请留下你的姓名和邮箱，然后就可以和助手对话。",
+    "nameLabel": "姓名",
+    "namePlaceholder": "你的姓名",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "you@example.com",
+    "start": "继续",
+    "nameError": "请输入姓名。",
+    "emailError": "请输入有效的邮箱地址。",
+    "launcher": "问问我的工作",
+    "send": "发送",
+    "suggestions": [
+      "你构建什么样的系统？",
+      "介绍一下 GrowencyAI。",
+      "你如何在产品中使用人工智能？"
+    ]
   }
 }

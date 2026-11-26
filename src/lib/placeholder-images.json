@@ -14,15 +14,9 @@
       "imageHint": "construction AI platform"
     },
     {
-      "id": "project-crypto-dahausa",
-      "description": "Thumbnail for CryptoDaHausa project",
-      "imageUrl": "https://res.cloudinary.com/dlbcsvcys/image/upload/v1757887745/Cryptoda2_prghyc.png",
-      "imageHint": "blockchain technology"
-    },
-    {
       "id": "project-scrib-syntax",
-      "description": "Live preview of ScribSyntax, an AI-powered audiovisual studio",
-      "imageUrl": "https://image.thum.io/get/width/800/https://scrib-syntax.vercel.app/",
+      "description": "Thumbnail for ScribSyntax, an AI-powered audiovisual studio",
+      "imageUrl": "",
       "imageHint": "ai audiovisual"
     },
     {
@@ -34,7 +28,7 @@
     {
       "id": "project-personalized-website",
       "description": "Live preview of a personalized business website project",
-      "imageUrl": "https://image.thum.io/get/width/800/https://maryams-touch-client.vercel.app/",
+      "imageUrl": "",
       "imageHint": "ecommerce website"
     },
     {

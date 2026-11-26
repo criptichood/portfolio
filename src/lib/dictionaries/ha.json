@@ -153,8 +153,17 @@
         "role": "Wanda ya kafa & Babban Mai Haɓakawa",
         "description": "GrowencyAI yana taimaka wa kamfanonin sabis su shigar da AI cikin ayyukansu. Muna gina aikace-aikacen AI, shafukan yanar gizo, CRM, da chatbots na musamman, kuma muna taimaka wa kamfanoni su gano abubuwan da za su iya sarrafa ta atomatik.",
         "outcome": "Wurin aiki na ƙungiyar AI 24/7, tare da wakilai na musamman waɗanda ke amsa kira, yin ajiyar ayyuka, bin abokan ciniki, da sarrafa kai tsaye.",
-        "capabilities": ["Injiniyan AI", "Injiniyan Samfura", "Injiniyan Software"],
-        "stack": ["Next.js", "TypeScript", "Wakilan AI", "Sarrafa kai tsaye"],
+        "capabilities": [
+          "Injiniyan AI",
+          "Injiniyan Samfura",
+          "Injiniyan Software"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Wakilan AI",
+          "Sarrafa kai tsaye"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://growency.ai/"
@@ -165,8 +174,15 @@
         "role": "Babban Mai Haɓakawa",
         "description": "Dandalin software na gini inda nake babban mai haɓaka aikace-aikacen a yanayin farkonsa.",
         "outcome": "Daukar dandalin daga ra'ayi zuwa samfuri mai aiki, mallakar gine-gine da ginawa.",
-        "capabilities": ["Injiniyan Software", "Injiniyan Samfura"],
-        "stack": ["Next.js", "TypeScript", "Gine-gine"],
+        "capabilities": [
+          "Injiniyan Software",
+          "Injiniyan Samfura"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Gine-gine"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://app.ibuild3.com/"
@@ -177,9 +193,19 @@
         "role": "Injiniyan full-stack + AI",
         "description": "Dandalin AI na farko wanda ke karanta zane-zane da PDF, yana yin ƙididdigar adadi da AI ke taimakawa, kuma yana sarrafa tsarin ayyukan gini.",
         "outcome": "Sarrafa takardu masu nau'ikan kafofin watsa labarai, tsarawa da wakilan AI, yanayi mai dorewa, da gine-ginen bayanai a cikin tsarin samarwa guda ɗaya.",
-        "capabilities": ["Injiniyan AI", "Injiniyan Software", "Injiniyan Samfura"],
-        "stack": ["Next.js", "TypeScript", "Gemini", "PostgreSQL", "Wakilan AI"],
-        "caseStudy": true,
+        "capabilities": [
+          "Injiniyan AI",
+          "Injiniyan Software",
+          "Injiniyan Samfura"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Gemini",
+          "PostgreSQL",
+          "Wakilan AI"
+        ],
+        "caseStudy": false,
         "githubUrl": "https://github.com/criptichood",
         "liveUrl": ""
       },
@@ -189,23 +215,19 @@
         "role": "Injiniyan aikace-aikacen AI",
         "description": "Studio da AI ke tafiyar da shi don labaran sauti da bidiyo. Yana juya prompts da rubutun zuwa abun ciki na multimedia mai kyau.",
         "outcome": "Tsarin samar da multimedia da AI ke tafiyar da shi tare da mu'amalar gyara mai rikitarwa.",
-        "capabilities": ["Injiniyan AI", "Injiniyan Software"],
-        "stack": ["Next.js", "TypeScript", "AI", "Haɗin API"],
+        "capabilities": [
+          "Injiniyan AI",
+          "Injiniyan Software"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "AI",
+          "Haɗin API"
+        ],
         "caseStudy": false,
         "githubUrl": "https://github.com/criptichood",
         "liveUrl": "https://scrib-syntax.vercel.app/"
-      },
-      {
-        "id": "crypto-dahausa",
-        "title": "CryptoDaHausa",
-        "role": "Ilimin Blockchain & Abun ciki",
-        "description": "Dandalin ilimin blockchain na gida wanda ke sa batutuwan Web3 masu rikitarwa su zama masu sauƙi ga masu sauraron Hausa.",
-        "outcome": "Gina hanyar shiga cikin blockchain, Web3, da fasahar da ba ta tsakiya ba.",
-        "capabilities": ["Web3 / Blockchain"],
-        "stack": ["Web3", "Blockchain", "Abun ciki", "Al'umma"],
-        "caseStudy": false,
-        "githubUrl": "",
-        "liveUrl": "https://www.youtube.com/@CryptoDaHausa"
       },
       {
         "id": "company-website",
@@ -213,8 +235,15 @@
         "role": "Injiniyan full-stack",
         "description": "Shafin kamfani na zamani kuma na ƙwararru wanda aka tsara kuma aka tura don abokin ciniki na kasuwanci.",
         "outcome": "Turawar samarwa wanda ya ɗaukaka matsayin abokin ciniki a intanet da ayyukansa.",
-        "capabilities": ["Injiniyan Software", "Injiniyan Samfura"],
-        "stack": ["Next.js", "Turawa", "Aiki"],
+        "capabilities": [
+          "Injiniyan Software",
+          "Injiniyan Samfura"
+        ],
+        "stack": [
+          "Next.js",
+          "Turawa",
+          "Aiki"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": ""
@@ -225,8 +254,15 @@
         "role": "Injiniyan full-stack",
         "description": "Shafin da aka keɓe don bukatun musamman na abokin ciniki na kasuwanci, yana nuna alama da aiki.",
         "outcome": "Matsayin intanet mai alama da aiki wanda aka gina a kusa da bukatun abokin ciniki.",
-        "capabilities": ["Injiniyan Software", "Injiniyan Samfura"],
-        "stack": ["Next.js", "TypeScript", "UI"],
+        "capabilities": [
+          "Injiniyan Software",
+          "Injiniyan Samfura"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "UI"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://maryams-touch-client.vercel.app/"
@@ -276,23 +312,52 @@
     "groups": [
       {
         "title": "Gaba",
-        "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+        "items": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ]
       },
       {
         "title": "Baya & Bayanai",
-        "items": ["Node.js", "APIs", "Supabase", "PostgreSQL", "IndexedDB"]
+        "items": [
+          "Node.js",
+          "APIs",
+          "Supabase",
+          "PostgreSQL",
+          "IndexedDB"
+        ]
       },
-{
-    "title": "AI & Aiki ta Atomatik",
-    "items": ["Gemini", "Vercel AI SDK", "Together AI", "Wakilan AI", "Multimodal", "Tsarawa"]
-   },
-   {
-    "title": "Tsaro & Ababen More Rayuwa",
-    "items": ["Tabbatarwa", "RBAC", "Tsaron Tsarin Bayanai", "Cloudflare Tunnels", "VPS"]
-   },
+      {
+        "title": "AI & Aiki ta Atomatik",
+        "items": [
+          "Gemini",
+          "Vercel AI SDK",
+          "Together AI",
+          "Wakilan AI",
+          "Multimodal",
+          "Tsarawa"
+        ]
+      },
+      {
+        "title": "Tsaro & Ababen More Rayuwa",
+        "items": [
+          "Tabbatarwa",
+          "RBAC",
+          "Tsaron Tsarin Bayanai",
+          "Cloudflare Tunnels",
+          "VPS"
+        ]
+      },
       {
         "title": "Web3 & Blockchain",
-        "items": ["TON", "Kwangiloli Masu Wayo", "Web3"]
+        "items": [
+          "TON",
+          "Kwangiloli Masu Wayo",
+          "Web3"
+        ]
       }
     ]
   },
@@ -304,25 +369,41 @@
       {
         "name": "AI Construction & Takeoff",
         "description": "Nazarin zane mai multimodal, ƙididdigar adadi da AI ke taimakawa, da tsarawa da wakilai.",
-        "topics": ["AI", "Next.js", "Wakilai"],
+        "topics": [
+          "AI",
+          "Next.js",
+          "Wakilai"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "ScribSyntax",
         "description": "Studio da AI ke tafiyar da shi don labaran sauti da bidiyo.",
-        "topics": ["AI", "TypeScript", "Media"],
+        "topics": [
+          "AI",
+          "TypeScript",
+          "Media"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "Portfolio Platform",
         "description": "Wannan portfolio mai harsuna da yawa wanda chatbot na AI ke tafiyar da shi.",
-        "topics": ["Next.js", "i18n", "Gemini"],
+        "topics": [
+          "Next.js",
+          "i18n",
+          "Gemini"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "Blockchain Research",
         "description": "Rubuce-rubuce da bincike akan TON, Web3, da kwangiloli masu wayo.",
-        "topics": ["Web3", "TON", "Bincike"],
+        "topics": [
+          "Web3",
+          "TON",
+          "Bincike"
+        ],
         "url": "https://github.com/criptichood"
       }
     ]
@@ -353,13 +434,25 @@
     "title": "Mu Gina Wani Abu",
     "description": "Kana da ra'ayin samfuri, gini mai rikitarwa, ko tsarin da ke buƙatar injiniya? Mu yi magana.",
     "form": {
-      "name": { "label": "Suna", "placeholder": "Sunanka" },
-      "email": { "label": "Imel", "placeholder": "your.email@example.com" },
-      "message": { "label": "Saƙo", "placeholder": "Fada mani game da aikinka ko ra'ayinka..." },
+      "name": {
+        "label": "Suna",
+        "placeholder": "Sunanka"
+      },
+      "email": {
+        "label": "Imel",
+        "placeholder": "your.email@example.com"
+      },
+      "message": {
+        "label": "Saƙo",
+        "placeholder": "Fada mani game da aikinka ko ra'ayinka..."
+      },
       "button": "Aika Saƙo"
     },
     "details": {
-      "title": "Bayanin Tuntuɓa"
+      "title": "Bayanin Tuntuɓa",
+      "emailLabel": "Imel",
+      "telegramLabel": "Telegram",
+      "telegramHint": "Hanya mafi sauƙi don tuntuɓe ni."
     },
     "social": {
       "title": "Haɗu"
@@ -378,7 +471,24 @@
   "chatbot": {
     "title": "Mataimakin AI",
     "subtitle": "A kan layi - A shirye don taimakawa",
-    "greeting": "Barka da zuwa. Ni ne mataimakin AI na Emmanuel Galadima, Injiniyan Software na Full-Stack AI. Jin daɗin yin tambaya game da iya aikinsa, ayyukansa, ko yadda yake gina tsarin aminci da AI ke tafiyar da su.",
-    "placeholder": "Yi tambaya game da iya aiki, ayyuka..."
+    "greeting": "Tambaya game da aikin, kayan aiki, ko yadda ake gina samfur.",
+    "thinking": "Ana shirya amsa",
+    "placeholder": "Yi tambaya game da iya aiki, ayyuka...",
+    "gateTitle": "Kafin mu fara",
+    "gateBody": "Bar sunanka da imel dinka. Sannan za ka iya yin magana da mataimakin.",
+    "nameLabel": "Suna",
+    "namePlaceholder": "Sunanka",
+    "emailLabel": "Imel",
+    "emailPlaceholder": "you@example.com",
+    "start": "Ci gaba",
+    "nameError": "Shigar da sunanka.",
+    "emailError": "Shigar da ingantaccen imel.",
+    "launcher": "Tambaya game da aikina",
+    "send": "Aika",
+    "suggestions": [
+      "Wane irin tsarin kake gina?",
+      "Faɗa mini game da GrowencyAI.",
+      "Yaya kake amfani da AI a cikin samfur?"
+    ]
   }
 }

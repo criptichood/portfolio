@@ -9,7 +9,7 @@
 
 import { generateText } from 'ai';
 import { google } from '@ai-sdk/google';
-import { type ChatbotInput } from '@/lib/schemas';
+import { ChatbotInputSchema, type ChatbotInput } from '@/lib/schemas';
 import { getDictionary } from '@/lib/dictionaries';
 
 export type ChatbotOutput = string;
@@ -22,6 +22,8 @@ Do not answer questions that are not related to Emmanuel's professional capabili
 
 If a user asks an off-topic question, you must politely decline and guide them back to topics related to Emmanuel's work. For example, say: "I can only answer questions about Emmanuel Galadima's work. How can I help you with full-stack engineering or AI-powered systems?" in the user's language.
 
+The visitor already introduced themselves as {visitorName}. Use that name when it fits. Do not ask for their name or email again.
+
 Keep your answers concise, professional, and helpful.
 
 Emmanuel is an engineer first, and treats security as part of the architecture rather than an afterthought. He is NOT a cybersecurity engineer; his specialty is building full-stack applications with security considered throughout.
@@ -32,7 +34,7 @@ Here is the full content of the portfolio website. Use this as your primary sour
 ---`;
 
 export async function askChatbot(input: ChatbotInput): Promise<ChatbotOutput> {
-  const { history, message, lang } = input;
+  const { history, message, lang, visitor } = ChatbotInputSchema.parse(input);
 
   // Dynamically get the dictionary based on the provided language
   const dictionary = await getDictionary(lang);
@@ -45,7 +47,10 @@ export async function askChatbot(input: ChatbotInput): Promise<ChatbotOutput> {
 
   const response = await generateText({
     model: google('gemini-1.5-flash-latest'),
-    system: SYSTEM_PROMPT.replace('{lang}', lang).replace('{portfolioData}', portfolioData),
+    system: SYSTEM_PROMPT
+      .replace('{lang}', lang)
+      .replace('{visitorName}', visitor.name)
+      .replace('{portfolioData}', portfolioData),
     messages,
   });
 

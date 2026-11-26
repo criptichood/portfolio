@@ -48,5 +48,5 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring static assets and API routes
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:png|jpg|jpeg|svg|webp|ico|woff2|woff|ttf|eot)).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:png|jpg|jpeg|svg|webp|ico|xml|txt|woff2|woff|ttf|eot)).*)'],
 };

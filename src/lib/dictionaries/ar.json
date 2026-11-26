@@ -160,8 +160,17 @@
         "role": "المؤسس المشارك والمطور الأساسي",
         "description": "يساعد GrowencyAI الشركات الخدمية على دمج الذكاء الاصطناعي في سير عملها. نبني تطبيقات ومواقع وأنظمة CRM وروبوتات محادثة مخصصة مدعومة بالذكاء الاصطناعي، ونساعد الشركات على تحديد الميزات التي يمكن أتمتتها.",
         "outcome": "مساحة عمل لفريق ذكاء اصطناعي متاحة على مدار الساعة، بوكلاء متخصصين يجيبون على المكالمات ويحجزون المواعيد ويتابعون العملاء المحتملين ويديرون الأتمتة.",
-        "capabilities": ["هندسة الذكاء الاصطناعي", "هندسة المنتجات", "هندسة البرمجيات"],
-        "stack": ["Next.js", "TypeScript", "وكلاء الذكاء الاصطناعي", "أتمتة"],
+        "capabilities": [
+          "هندسة الذكاء الاصطناعي",
+          "هندسة المنتجات",
+          "هندسة البرمجيات"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "وكلاء الذكاء الاصطناعي",
+          "أتمتة"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://growency.ai/"
@@ -172,8 +181,15 @@
         "role": "المطور الرئيسي",
         "description": "منصة برمجيات للبناء حيث أتولى دور المطور الرئيسي للتطبيق في مرحلته الأولية.",
         "outcome": "نقل المنصة من الفكرة إلى منتج عملي، مع تولي الهندسة المعمارية والبناء.",
-        "capabilities": ["هندسة البرمجيات", "هندسة المنتجات"],
-        "stack": ["Next.js", "TypeScript", "هندسة معمارية"],
+        "capabilities": [
+          "هندسة البرمجيات",
+          "هندسة المنتجات"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "هندسة معمارية"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://app.ibuild3.com/"
@@ -184,9 +200,19 @@
         "role": "هندسة فول ستاك + ذكاء اصطناعي",
         "description": "منصة ذكاء اصطناعي رائدة تقرأ المخططات وملفات PDF، وتنفذ حسابات كميات مدعومة بالذكاء الاصطناعي، وتدير سير عمل مشاريع البناء.",
         "outcome": "معالجة مستندات متعددة الوسائط، وتنسيق وكلاء الذكاء الاصطناعي، وحالة مستمرة، وهندسة قواعد البيانات في نظام إنتاج واحد.",
-        "capabilities": ["هندسة الذكاء الاصطناعي", "هندسة البرمجيات", "هندسة المنتجات"],
-        "stack": ["Next.js", "TypeScript", "Gemini", "PostgreSQL", "وكلاء الذكاء الاصطناعي"],
-        "caseStudy": true,
+        "capabilities": [
+          "هندسة الذكاء الاصطناعي",
+          "هندسة البرمجيات",
+          "هندسة المنتجات"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "Gemini",
+          "PostgreSQL",
+          "وكلاء الذكاء الاصطناعي"
+        ],
+        "caseStudy": false,
         "githubUrl": "https://github.com/criptichood",
         "liveUrl": ""
       },
@@ -196,23 +222,19 @@
         "role": "هندسة تطبيقات الذكاء الاصطناعي",
         "description": "استوديو مدعوم بالذكاء الاصطناعي للروايات السمعية والبصرية، يحوّل المطالبات والنصوص إلى محتوى وسائط متعددة مصقول.",
         "outcome": "خط أنابيب لتوليد الوسائط مدعوم بالذكاء الاصطناعي مع واجهة تحرير تفاعلية معقدة.",
-        "capabilities": ["هندسة الذكاء الاصطناعي", "هندسة البرمجيات"],
-        "stack": ["Next.js", "TypeScript", "الذكاء الاصطناعي", "تكامل API"],
+        "capabilities": [
+          "هندسة الذكاء الاصطناعي",
+          "هندسة البرمجيات"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "الذكاء الاصطناعي",
+          "تكامل API"
+        ],
         "caseStudy": false,
         "githubUrl": "https://github.com/criptichood",
         "liveUrl": "https://scrib-syntax.vercel.app/"
-      },
-      {
-        "id": "crypto-dahausa",
-        "title": "CryptoDaHausa",
-        "role": "التعليم بالبلوكتشين والمحتوى",
-        "description": "منصة تعليمية محلية عن البلوكتشين تجعل موضوعات Web3 المعقدة في متناول جمهور يتحدث الهوسا.",
-        "outcome": "بناء بوابة دخول ميسورة إلى البلوكتشين وWeb3 والتكنولوجيا اللامركزية.",
-        "capabilities": ["Web3 / البلوكتشين"],
-        "stack": ["Web3", "البلوكتشين", "المحتوى", "المجتمع"],
-        "caseStudy": false,
-        "githubUrl": "",
-        "liveUrl": "https://www.youtube.com/@CryptoDaHausa"
       },
       {
         "id": "company-website",
@@ -220,8 +242,15 @@
         "role": "هندسة فول ستاك",
         "description": "موقع شركة حديث واحترافي مصمم ومنشور لعميل تجاري.",
         "outcome": "نشر إنتاجي رفع الحضور الرقمي والعمليات للعميل.",
-        "capabilities": ["هندسة البرمجيات", "هندسة المنتجات"],
-        "stack": ["Next.js", "النشر", "الأداء"],
+        "capabilities": [
+          "هندسة البرمجيات",
+          "هندسة المنتجات"
+        ],
+        "stack": [
+          "Next.js",
+          "النشر",
+          "الأداء"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": ""
@@ -232,8 +261,15 @@
         "role": "هندسة فول ستاك",
         "description": "موقع ويب مخصص مصمم خصيصًا لتلبية الاحتياجات المحددة لعميل تجاري، مع عرض العلامة التجارية والوظائف.",
         "outcome": "حضور ويب ذو علامة تجارية ووظيفي مبني حول متطلبات العميل.",
-        "capabilities": ["هندسة البرمجيات", "هندسة المنتجات"],
-        "stack": ["Next.js", "TypeScript", "UI"],
+        "capabilities": [
+          "هندسة البرمجيات",
+          "هندسة المنتجات"
+        ],
+        "stack": [
+          "Next.js",
+          "TypeScript",
+          "UI"
+        ],
         "caseStudy": false,
         "githubUrl": "",
         "liveUrl": "https://maryams-touch-client.vercel.app/"
@@ -283,23 +319,52 @@
     "groups": [
       {
         "title": "الواجهة الأمامية",
-        "items": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+        "items": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Framer Motion"
+        ]
       },
       {
         "title": "الواجهة الخلفية والبيانات",
-        "items": ["Node.js", "APIs", "Supabase", "PostgreSQL", "IndexedDB"]
+        "items": [
+          "Node.js",
+          "APIs",
+          "Supabase",
+          "PostgreSQL",
+          "IndexedDB"
+        ]
       },
-{
-    "title": "الذكاء الاصطناعي والأتمتة",
-    "items": ["Gemini", "Vercel AI SDK", "Together AI", "وكلاء الذكاء الاصطناعي", "متعدد الوسائط", "التنسيق"]
-   },
-   {
-    "title": "الأمان والبنية التحتية",
-    "items": ["المصادقة", "RBAC", "الأمان على مستوى الصفوف", "Cloudflare Tunnels", "VPS"]
-   },
+      {
+        "title": "الذكاء الاصطناعي والأتمتة",
+        "items": [
+          "Gemini",
+          "Vercel AI SDK",
+          "Together AI",
+          "وكلاء الذكاء الاصطناعي",
+          "متعدد الوسائط",
+          "التنسيق"
+        ]
+      },
+      {
+        "title": "الأمان والبنية التحتية",
+        "items": [
+          "المصادقة",
+          "RBAC",
+          "الأمان على مستوى الصفوف",
+          "Cloudflare Tunnels",
+          "VPS"
+        ]
+      },
       {
         "title": "Web3 والبلوكتشين",
-        "items": ["TON", "العقود الذكية", "Web3"]
+        "items": [
+          "TON",
+          "العقود الذكية",
+          "Web3"
+        ]
       }
     ]
   },
@@ -311,25 +376,41 @@
       {
         "name": "AI Construction & Takeoff",
         "description": "تحليل مخططات متعدد الوسائط، وحساب كميات مدعوم بالذكاء الاصطناعي، وتنسيق الوكلاء.",
-        "topics": ["الذكاء الاصطناعي", "Next.js", "الوكلاء"],
+        "topics": [
+          "الذكاء الاصطناعي",
+          "Next.js",
+          "الوكلاء"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "ScribSyntax",
         "description": "استوديو مدعوم بالذكاء الاصطناعي للروايات السمعية والبصرية.",
-        "topics": ["الذكاء الاصطناعي", "TypeScript", "الوسائط"],
+        "topics": [
+          "الذكاء الاصطناعي",
+          "TypeScript",
+          "الوسائط"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "Portfolio Platform",
         "description": "هذه المحفظة متعددة اللغات المدعومة بروبوت دردشة ذكاء اصطناعي.",
-        "topics": ["Next.js", "i18n", "Gemini"],
+        "topics": [
+          "Next.js",
+          "i18n",
+          "Gemini"
+        ],
         "url": "https://github.com/criptichood"
       },
       {
         "name": "Blockchain Research",
         "description": "ملاحظات وبحث حول TON وWeb3 والعقود الذكية.",
-        "topics": ["Web3", "TON", "البحث"],
+        "topics": [
+          "Web3",
+          "TON",
+          "البحث"
+        ],
         "url": "https://github.com/criptichood"
       }
     ]
@@ -360,13 +441,25 @@
     "title": "لنبنِ شيئًا ما",
     "description": "لديك فكرة منتج، أو بناء معقد، أو نظام يحتاج إلى هندسة؟ لنتحدث.",
     "form": {
-      "name": { "label": "الاسم", "placeholder": "اسمك" },
-      "email": { "label": "البريد الإلكتروني", "placeholder": "your.email@example.com" },
-      "message": { "label": "الرسالة", "placeholder": "أخبرني عن مشروعك أو فكرتك..." },
+      "name": {
+        "label": "الاسم",
+        "placeholder": "اسمك"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "your.email@example.com"
+      },
+      "message": {
+        "label": "الرسالة",
+        "placeholder": "أخبرني عن مشروعك أو فكرتك..."
+      },
       "button": "إرسال الرسالة"
     },
     "details": {
-      "title": "تفاصيل الاتصال"
+      "title": "تفاصيل الاتصال",
+      "emailLabel": "البريد الإلكتروني",
+      "telegramLabel": "تيليجرام",
+      "telegramHint": "أسرع طريقة للتواصل معي."
     },
     "social": {
       "title": "تواصل"
@@ -385,7 +478,24 @@
   "chatbot": {
     "title": "مساعد ذكاء اصطناعي",
     "subtitle": "متصل - جاهز للمساعدة",
-    "greeting": "مرحباً. أنا المساعد الذكي لإيمانويل غالاديما، مهندس برمجيات فول ستاك للذكاء الاصطناعي. لا تتردد في طرح أسئلة حول قدراته أو مشاريعه أو كيف يبني أنظمة آمنة مدعومة بالذكاء الاصطناعي.",
-    "placeholder": "اسأل عن القدرات، المشاريع..."
+    "greeting": "اسأل عن العمل أو التقنيات أو كيف يُبنى المنتج.",
+    "thinking": "جارٍ إعداد الرد",
+    "placeholder": "اسأل عن القدرات، المشاريع...",
+    "gateTitle": "قبل أن نبدأ",
+    "gateBody": "اترك اسمك وبريدك الإلكتروني، ثم يمكنك التحدث مع المساعد.",
+    "nameLabel": "الاسم",
+    "namePlaceholder": "اسمك",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "you@example.com",
+    "start": "متابعة",
+    "nameError": "أدخل اسمك.",
+    "emailError": "أدخل بريدًا إلكترونيًا صالحًا.",
+    "launcher": "اسأل عن عملي",
+    "send": "إرسال",
+    "suggestions": [
+      "ما نوع الأنظمة التي تبنيها؟",
+      "أخبرني عن GrowencyAI.",
+      "كيف تستخدم الذكاء الاصطناعي في منتج؟"
+    ]
   }
 }

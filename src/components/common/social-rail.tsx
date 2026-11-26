@@ -1,7 +1,7 @@
 "use client";
 
 import { Mail } from "lucide-react";
-import { SOCIAL_LINKS, GITHUB_URL, GithubIcon } from "@/lib/data";
+import { SOCIAL_LINKS, GITHUB_URL, GithubIcon, CONTACT_EMAIL } from "@/lib/data";
 
 export function SocialRail({ lang }: { lang: string }) {
   const items = [
@@ -27,7 +27,7 @@ export function SocialRail({ lang }: { lang: string }) {
         ))}
         <li>
           <a
-            href={`mailto:hello@criptichood.com`}
+            href={`mailto:${CONTACT_EMAIL}`}
             aria-label="Email"
             className="text-on-surface-variant hover:text-primary transition-colors"
           >

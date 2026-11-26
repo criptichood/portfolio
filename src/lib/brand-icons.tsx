@@ -16,6 +16,14 @@ export function LinkedinIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function TelegramIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M11.94 0C5.35 0 0 5.35 0 11.94s5.35 11.94 11.94 11.94 11.94-5.35 11.94-11.94S18.53 0 11.94 0Zm5.8 8.15-1.9 8.96c-.14.64-.52.8-1.05.5l-2.9-2.14-1.4 1.35c-.16.15-.28.28-.58.28l.2-2.96 5.38-4.86c.23-.21-.05-.32-.36-.12l-6.65 4.19-2.87-.9c-.62-.19-.64-.62.13-.92l11.22-4.33c.52-.19.97.12.78.95Z" />
+    </svg>
+  );
+}
+
 export function XTwitterIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
