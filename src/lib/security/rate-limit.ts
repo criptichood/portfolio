@@ -70,6 +70,6 @@ export async function allowContactSubmission(limit = 5) {
   return consumeRateLimit("contact", limit);
 }
 
-export async function allowChatbotRequest(limit = 20) {
+export async function allowChatbotRequest(limit = 12) {
   return consumeRateLimit("chatbot", limit);
 }

@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { CONTACT_EMAIL, SOCIAL_LINKS, TELEGRAM_URL } from "@/lib/data";
 import { sendContactMessage } from "@/ai/flows/contact-flow";
 import { useState } from "react";
-import { ContactFormSchema } from "@/lib/schemas";
+import { ContactFormSchema, INPUT_LIMITS } from "@/lib/schemas";
 import { Loader2 } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import type { Dictionary } from "@/types/dictionary";
@@ -72,7 +72,7 @@ export function Contact({ dictionary }: { dictionary: Dictionary["contact"] }) {
                   <FormItem>
                     <FormLabel>{dictionary.form.name.label}</FormLabel>
                     <FormControl>
-                      <Input placeholder={dictionary.form.name.placeholder} {...field} disabled={isSubmitting} />
+                      <Input placeholder={dictionary.form.name.placeholder} {...field} maxLength={INPUT_LIMITS.name} disabled={isSubmitting} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -85,7 +85,7 @@ export function Contact({ dictionary }: { dictionary: Dictionary["contact"] }) {
                   <FormItem>
                     <FormLabel>{dictionary.form.email.label}</FormLabel>
                     <FormControl>
-                      <Input placeholder={dictionary.form.email.placeholder} {...field} disabled={isSubmitting} />
+                      <Input type="email" placeholder={dictionary.form.email.placeholder} {...field} maxLength={INPUT_LIMITS.email} disabled={isSubmitting} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -98,7 +98,7 @@ export function Contact({ dictionary }: { dictionary: Dictionary["contact"] }) {
                   <FormItem>
                     <FormLabel>{dictionary.form.message.label}</FormLabel>
                     <FormControl>
-                      <Textarea placeholder={dictionary.form.message.placeholder} {...field} rows={5} disabled={isSubmitting} />
+                      <Textarea placeholder={dictionary.form.message.placeholder} {...field} rows={5} maxLength={INPUT_LIMITS.message} disabled={isSubmitting} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

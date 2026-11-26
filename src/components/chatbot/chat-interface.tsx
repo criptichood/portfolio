@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { cn } from '@/lib/utils';
 import { askChatbot } from '@/ai/flows/chatbot-flow';
-import { ChatVisitorSchema, sanitizeVisitorName } from '@/lib/schemas';
+import { ChatbotLocaleSchema, ChatVisitorSchema, INPUT_LIMITS, sanitizeVisitorName } from '@/lib/schemas';
 import { usePathname } from 'next/navigation';
 import type { Dictionary } from '@/types/dictionary';
 
@@ -46,7 +46,8 @@ export function ChatInterface({
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const pathname = usePathname();
 
-  const lang = pathname.split('/')[1] || 'en';
+  const parsedLang = ChatbotLocaleSchema.safeParse(pathname.split('/')[1]);
+  const lang = parsedLang.success ? parsedLang.data : 'en';
   const hasUnread = view === 'home' && messages.at(-1)?.role === 'model';
 
   useEffect(() => {
@@ -260,6 +261,7 @@ export function ChatInterface({
                 onChange={(e) => setName(sanitizeVisitorName(e.target.value))}
                 placeholder={dictionary.namePlaceholder}
                 autoComplete="name"
+                maxLength={INPUT_LIMITS.name}
                 className="text-base"
               />
             </div>
@@ -272,6 +274,7 @@ export function ChatInterface({
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={dictionary.emailPlaceholder}
                 autoComplete="email"
+                maxLength={INPUT_LIMITS.email}
                 className="text-base"
               />
             </div>
@@ -324,6 +327,7 @@ export function ChatInterface({
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleComposerKeyDown}
                 placeholder={dictionary.placeholder}
+                maxLength={INPUT_LIMITS.message}
                 disabled={isLoading}
                 className="min-h-10 w-full flex-1 resize-none overflow-y-hidden rounded-xl border border-input bg-card px-3 py-2 text-base leading-6 text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 dark:bg-surface-container-highest"
               />
