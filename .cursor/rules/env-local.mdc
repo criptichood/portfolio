@@ -1,0 +1,12 @@
+---
+description: Do not read or edit .env.local unless the user explicitly allows it
+alwaysApply: true
+---
+
+# Sensitive env file
+
+`.env.local` is a secrets file. Do not read, search, list, print, or edit it unless the user explicitly asks you to open that file in the current request.
+
+This includes Read, Grep, shell commands such as `Get-Content` or `Select-String`, and any rewrite of the file.
+
+`example.env` is the template. Add new variable names there. Tell the user which names to copy into `.env.local`. Do not copy values out of `.env.local` to fill the example.

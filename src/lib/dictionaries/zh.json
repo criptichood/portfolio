@@ -453,7 +453,10 @@
         "label": "信息",
         "placeholder": "告诉我你的项目或创意..."
       },
-      "button": "发送信息"
+      "button": "发送信息",
+      "sending": "正在发送",
+      "error": "消息发送失败。",
+      "rateLimited": "此连接发送次数过多，请稍后再试。"
     },
     "details": {
       "title": "联系方式",

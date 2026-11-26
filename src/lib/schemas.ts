@@ -1,17 +1,17 @@
 import { z } from "zod";
 
+const VISITOR_NAME = /^[\p{L}]+(?:\s+[\p{L}]+)*$/u;
+
 export const ContactFormSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters."),
-  email: z.string().email("Invalid email address."),
-  message: z.string().min(10, "Message must be at least 10 characters."),
+  name: z.string().trim().min(2).max(80).regex(VISITOR_NAME, "Enter your name using letters."),
+  email: z.string().trim().email("Invalid email address.").max(120),
+  message: z.string().trim().min(10, "Message must be at least 10 characters.").max(2000),
 });
 
 const MessageSchema = z.object({
   role: z.enum(['user', 'model']),
   content: z.string(),
 });
-
-const VISITOR_NAME = /^[\p{L}]+(?:\s+[\p{L}]+)*$/u;
 
 export function sanitizeVisitorName(value: string) {
   return value

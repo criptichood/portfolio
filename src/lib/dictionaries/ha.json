@@ -446,7 +446,10 @@
         "label": "Saƙo",
         "placeholder": "Fada mani game da aikinka ko ra'ayinka..."
       },
-      "button": "Aika Saƙo"
+      "button": "Aika Saƙo",
+      "sending": "Ana aikawa",
+      "error": "Aika saƙon ya gaza.",
+      "rateLimited": "Saƙonni sun yi yawa daga wannan haɗin. Sake gwadawa daga baya."
     },
     "details": {
       "title": "Bayanin Tuntuɓa",
