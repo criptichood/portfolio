@@ -4,10 +4,11 @@ import {
 } from "lucide-react";
 
 import { GithubIcon, LinkedinIcon, TelegramIcon, XTwitterIcon } from "@/lib/brand-icons";
+import type { Dictionary } from "@/types/dictionary";
 
 export { GithubIcon, LinkedinIcon, TelegramIcon, XTwitterIcon };
 
-export const NAV_LINKS = (dictionary: any) => [
+export const NAV_LINKS = (dictionary: Dictionary["nav"]) => [
   { href: "#home", label: dictionary.home },
   { href: "#about", label: dictionary.about },
   { href: "#capabilities", label: dictionary.capabilities },

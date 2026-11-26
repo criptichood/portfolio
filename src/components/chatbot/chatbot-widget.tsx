@@ -5,11 +5,12 @@ import { AnimatePresence } from "framer-motion";
 import { MessageSquare, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ChatInterface } from "./chat-interface";
+import { ChatInterface } from "@/components/chatbot/chat-interface";
+import type { Dictionary } from "@/types/dictionary";
 
 const MOBILE_QUERY = "(max-width: 767px)";
 
-export function ChatbotWidget({ dictionary }: { dictionary: any }) {
+export function ChatbotWidget({ dictionary }: { dictionary: Dictionary["chatbot"] }) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {

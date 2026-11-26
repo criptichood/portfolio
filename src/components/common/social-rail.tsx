@@ -3,7 +3,7 @@
 import { Mail } from "lucide-react";
 import { SOCIAL_LINKS, GITHUB_URL, GithubIcon, CONTACT_EMAIL } from "@/lib/data";
 
-export function SocialRail({ lang }: { lang: string }) {
+export function SocialRail({ lang: _lang }: { lang: string }) {
   const items = [
     ...SOCIAL_LINKS.map(({ name, url, Icon }) => ({ name, url, Icon })),
     { name: "GitHub", url: GITHUB_URL, Icon: GithubIcon },

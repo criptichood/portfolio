@@ -2,12 +2,9 @@
 
 import { motion } from "framer-motion";
 import { Layers } from "lucide-react";
+import type { Dictionary } from "@/types/dictionary";
 
-const GROUP_ICONS: Record<string, typeof Layers> = {
-  Layers,
-};
-
-export function TechStack({ dictionary }: { dictionary: any }) {
+export function TechStack({ dictionary }: { dictionary: Dictionary["techStack"] }) {
   const groups = dictionary.groups;
 
   return (
@@ -26,7 +23,7 @@ export function TechStack({ dictionary }: { dictionary: any }) {
       </motion.header>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6">
-        {groups.map((group: any, index: number) => (
+        {groups.map((group, index: number) => (
           <motion.div
             key={group.title}
             initial={{ opacity: 0, y: 20 }}

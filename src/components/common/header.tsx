@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Code, Menu, Globe, Mail } from "lucide-react";
 import { NAV_LINKS, GithubIcon } from "@/lib/data";
+import type { Dictionary } from "@/types/dictionary";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -25,7 +26,7 @@ const locales = [
   { code: 'ar', name: 'العربية' },
 ];
 
-export function Header({ lang, dictionary }: { lang: string, dictionary: any }) {
+export function Header({ lang, dictionary }: { lang: string; dictionary: Dictionary["nav"] }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("home");

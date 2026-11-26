@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Briefcase, Rocket, Code, MemoryStick } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import type { Dictionary } from "@/types/dictionary";
 
 const STAT_ICONS: Record<string, typeof Briefcase> = {
   Briefcase,
@@ -12,7 +13,7 @@ const STAT_ICONS: Record<string, typeof Briefcase> = {
   MemoryStick,
 };
 
-export function About({ dictionary }: { dictionary: any }) {
+export function About({ dictionary }: { dictionary: Dictionary["about"] }) {
   const profileImage = PlaceHolderImages.find((img) => img.id === "profile-picture");
 
   return (
@@ -50,7 +51,7 @@ export function About({ dictionary }: { dictionary: any }) {
 
           {/* Stats Grid */}
           <div className="grid grid-cols-2 gap-4 mt-4">
-            {dictionary.stats.map((stat: any, index: number) => {
+            {dictionary.stats.map((stat, index: number) => {
               const Icon = STAT_ICONS[stat.icon] ?? Briefcase;
               return (
                 <motion.div

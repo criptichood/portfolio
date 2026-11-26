@@ -3,6 +3,7 @@
 import { useRef, type MouseEvent } from "react";
 import { motion } from "framer-motion";
 import { Terminal, LayoutGrid, Shield, Layers } from "lucide-react";
+import type { Dictionary } from "@/types/dictionary";
 
 const CARD_ICONS: Record<string, typeof Terminal> = {
   Terminal,
@@ -11,7 +12,7 @@ const CARD_ICONS: Record<string, typeof Terminal> = {
   Layers,
 };
 
-export function Capabilities({ dictionary }: { dictionary: any }) {
+export function Capabilities({ dictionary }: { dictionary: Dictionary["capabilities"] }) {
   const items = dictionary.items;
 
   return (
@@ -30,7 +31,7 @@ export function Capabilities({ dictionary }: { dictionary: any }) {
       </motion.header>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
-        {items.map((item: any, index: number) => {
+        {items.map((item, index: number) => {
           const Icon = CARD_ICONS[item.icon] ?? Terminal;
           return (
             <motion.div
@@ -62,7 +63,7 @@ export function Capabilities({ dictionary }: { dictionary: any }) {
   );
 }
 
-function TiltCard({ index, children }: { index: number; children: React.ReactNode }) {
+function TiltCard({ index: _index, children }: { index: number; children: React.ReactNode }) {
   const innerRef = useRef<HTMLDivElement>(null);
   const glowRef = useRef<HTMLDivElement>(null);
 

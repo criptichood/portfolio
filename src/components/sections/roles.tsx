@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import type { Dictionary } from "@/types/dictionary";
 
-export function Roles({ dictionary }: { dictionary: any }) {
+export function Roles({ dictionary }: { dictionary: Dictionary["roles"] }) {
   const items = dictionary.items;
 
   return (
@@ -24,7 +25,7 @@ export function Roles({ dictionary }: { dictionary: any }) {
         viewport={{ once: true }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        {items.map((item: any, index: number) => (
+        {items.map((item) => (
           <a
             key={item.company}
             href={item.url}

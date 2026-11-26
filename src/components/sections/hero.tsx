@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Fragment } from "react";
 import { Clock, FolderOpen, Code, Brain } from "lucide-react";
+import type { Dictionary } from "@/types/dictionary";
 
 const STAT_ICONS: Record<string, typeof Clock> = {
   Clock,
@@ -105,7 +106,7 @@ const TERMINAL_LINES: TermToken[][] = [
   [{ text: "}" }],
 ];
 
-export function Hero({ dictionary, lang }: { dictionary: any, lang: string }) {
+export function Hero({ dictionary, lang }: { dictionary: Dictionary["hero"]; lang: string }) {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Decorative Gradient */}
@@ -144,7 +145,7 @@ export function Hero({ dictionary, lang }: { dictionary: any, lang: string }) {
             </div>
             {/* Stat Chips */}
             <div className="animate-fade-up delay-400 flex flex-nowrap overflow-x-auto sm:flex-wrap gap-3 pb-4 sm:pb-0 hide-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 scroll-smooth snap-x">
-              {dictionary.stats.map((stat: any) => {
+              {dictionary.stats.map((stat) => {
                 const Icon = STAT_ICONS[stat.icon] ?? Clock;
                 return (
                   <div key={stat.label} className="snap-start flex items-center gap-2 px-4 py-2 bg-surface-container-low border border-outline-variant/30 rounded-full whitespace-nowrap shrink-0">
