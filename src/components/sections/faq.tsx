@@ -6,13 +6,14 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import type { Dictionary } from "@/types/dictionary";
 
 type FaqItem = {
   question: string;
   answer: string;
 };
 
-export function FAQ({ dictionary }: { dictionary: any }) {
+export function FAQ({ dictionary }: { dictionary: Dictionary["faq"] }) {
   const faqItems: FaqItem[] = dictionary.items;
 
   return (

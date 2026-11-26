@@ -7,6 +7,9 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { getDictionary } from "@/lib/dictionaries";
 import { OG_IMAGE, localeUrl } from "@/lib/site";
+import type { Dictionary } from "@/types/dictionary";
+
+type CaseStudyKey = keyof Dictionary["caseStudies"];
 
 export function generateStaticParams() {
   return [
@@ -22,7 +25,7 @@ export function generateStaticParams() {
 export async function generateMetadata(props: { params: Promise<{ lang: string, slug: string }> }): Promise<Metadata> {
   const { lang, slug } = await props.params;
   const dictionary = await getDictionary(lang);
-  const caseStudy = dictionary.caseStudies?.[slug];
+  const caseStudy = dictionary.caseStudies?.[slug as CaseStudyKey];
   const title = caseStudy?.title ?? "Work";
   const description = caseStudy?.summary ?? dictionary.metadata.description;
   const canonical = localeUrl(lang, `/work/${slug}`);
@@ -52,8 +55,8 @@ export default async function CaseStudyPage(props: { params: Promise<{ lang: str
   const { lang, slug } = params;
   const dictionary = await getDictionary(lang);
 
-  const project = dictionary.work.projectsData.find((p: any) => p.id === slug);
-  const caseStudy = dictionary.caseStudies?.[slug];
+  const project = dictionary.work.projectsData.find((p) => p.id === slug);
+  const caseStudy = dictionary.caseStudies?.[slug as CaseStudyKey];
 
   if (!project || !caseStudy) {
     return (
@@ -62,7 +65,7 @@ export default async function CaseStudyPage(props: { params: Promise<{ lang: str
         <Button asChild variant="outline">
           <Link href={`/${lang}#work`}>
             <ArrowLeft className="h-4 w-4 mr-2" />
-            {dictionary.caseStudies?.[Object.keys(dictionary.caseStudies)[0]]?.backToWork ?? "Back to Work"}
+            {dictionary.caseStudies?.[Object.keys(dictionary.caseStudies)[0] as CaseStudyKey]?.backToWork ?? "Back to Work"}
           </Link>
         </Button>
       </main>
@@ -110,7 +113,7 @@ export default async function CaseStudyPage(props: { params: Promise<{ lang: str
         </div>
 
         <div className="space-y-8">
-          {sections.map((section: any) => (
+          {sections.map((section) => (
             <Card key={section.title} className="p-6">
               <CardHeader>
                 <CardTitle className="font-headline text-2xl">{section.title}</CardTitle>

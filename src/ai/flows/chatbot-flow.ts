@@ -11,6 +11,7 @@ import { generateText } from 'ai';
 import { google } from '@ai-sdk/google';
 import { ChatbotInputSchema, type ChatbotInput } from '@/lib/schemas';
 import { getDictionary } from '@/lib/dictionaries';
+import { allowChatbotRequest } from '@/lib/security/rate-limit';
 
 export type ChatbotOutput = string;
 
@@ -36,6 +37,11 @@ Here is the full content of the portfolio website. Use this as your primary sour
 
 export async function askChatbot(input: ChatbotInput): Promise<ChatbotOutput> {
   const { history, message, lang, visitor } = ChatbotInputSchema.parse(input);
+
+  const allowed = await allowChatbotRequest();
+  if (!allowed) {
+    return "You've reached the hourly message limit. Please wait a bit or use the contact section below to reach Emmanuel directly.";
+  }
 
   // Dynamically get the dictionary based on the provided language
   const dictionary = await getDictionary(lang);

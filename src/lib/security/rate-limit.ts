@@ -42,13 +42,14 @@ async function clientKeyHash() {
   return createHash("sha256").update(ip).digest("hex");
 }
 
-export async function allowContactSubmission(limit = 5) {
+async function consumeRateLimit(bucket: string, limit: number) {
   const keyHash = await clientKeyHash();
+  const memoryKey = `${bucket}:${keyHash}`;
   const supabase = createSupabaseServerClient();
-  if (!supabase) return consumeInMemory(keyHash, limit);
+  if (!supabase) return consumeInMemory(memoryKey, limit);
 
   const { data, error } = await supabase.rpc("consume_public_rate_limit", {
-    p_bucket: "contact",
+    p_bucket: bucket,
     p_key_hash: keyHash,
     p_limit: limit,
     p_window_seconds: 3600,
@@ -57,10 +58,18 @@ export async function allowContactSubmission(limit = 5) {
   if (error || typeof data !== "boolean") {
     if (!warnedAboutDegradation) {
       warnedAboutDegradation = true;
-      console.warn("[security] contact rate limit fell back to this server instance");
+      console.warn(`[security] ${bucket} rate limit fell back to this server instance`);
     }
-    return consumeInMemory(keyHash, limit);
+    return consumeInMemory(memoryKey, limit);
   }
 
   return data;
+}
+
+export async function allowContactSubmission(limit = 5) {
+  return consumeRateLimit("contact", limit);
+}
+
+export async function allowChatbotRequest(limit = 20) {
+  return consumeRateLimit("chatbot", limit);
 }

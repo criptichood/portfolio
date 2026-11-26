@@ -1,11 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { GITHUB_URL, GithubIcon } from "@/lib/data";
+import type { Dictionary } from "@/types/dictionary";
 
-export function GitHubShowcase({ dictionary }: { dictionary: any }) {
+export function GitHubShowcase({ dictionary }: { dictionary: Dictionary["github"] }) {
   const githubUrl = GITHUB_URL;
   const repos = dictionary.repos;
 
@@ -28,7 +28,7 @@ export function GitHubShowcase({ dictionary }: { dictionary: any }) {
       </motion.header>
 
       <div className="grid md:grid-cols-2 gap-8 lg:gap-6">
-        {repos.map((repo: any, index: number) => (
+        {repos.map((repo, index: number) => (
           <motion.div
             key={repo.name}
             initial={{ opacity: 0, y: 20 }}

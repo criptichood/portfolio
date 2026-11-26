@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils';
 import { askChatbot } from '@/ai/flows/chatbot-flow';
 import { ChatVisitorSchema, sanitizeVisitorName } from '@/lib/schemas';
 import { usePathname } from 'next/navigation';
+import type { Dictionary } from '@/types/dictionary';
 
 type Message = {
   role: 'user' | 'model';
@@ -28,7 +29,7 @@ export function ChatInterface({
   dictionary,
   onClose,
 }: {
-  dictionary: any;
+  dictionary: Dictionary['chatbot'];
   onClose: () => void;
 }) {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -112,7 +113,7 @@ export function ChatInterface({
     const started = Date.now();
 
     try {
-      const history = newMessages.slice(0, -1);
+      const history = newMessages.slice(-21, -1);
       const response = await askChatbot({ history, message, lang, visitor: activeVisitor });
       setMessages((prev) => [...prev, { role: 'model', content: response }]);
     } catch (error) {

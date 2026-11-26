@@ -2,8 +2,9 @@ import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "@/lib/data";
 import { FadeIn } from "@/components/motion/fade-in";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import type { Dictionary } from "@/types/dictionary";
 
-export function Work({ dictionary }: { dictionary: any, lang: string }) {
+export function Work({ dictionary }: { dictionary: Dictionary["work"]; lang: string }) {
   const projects = dictionary.projectsData;
   return (
     <section id="work" className="py-20 md:py-32 bg-surface-container-low">
@@ -15,7 +16,7 @@ export function Work({ dictionary }: { dictionary: any, lang: string }) {
           </p>
         </div>
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-5 md:grid-cols-2">
-          {projects.map((project: any) => {
+          {projects.map((project) => {
             return (
               <Card key={project.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
                 <CardHeader className="pb-3">

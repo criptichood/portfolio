@@ -10,7 +10,7 @@ export const ContactFormSchema = z.object({
 
 const MessageSchema = z.object({
   role: z.enum(['user', 'model']),
-  content: z.string(),
+  content: z.string().max(4000),
 });
 
 export function sanitizeVisitorName(value: string) {
@@ -27,7 +27,7 @@ export const ChatVisitorSchema = z.object({
 });
 
 export const ChatbotInputSchema = z.object({
-  history: z.array(MessageSchema),
+  history: z.array(MessageSchema).max(20),
   message: z.string().trim().min(1).max(2000),
   lang: z.string(),
   visitor: ChatVisitorSchema,

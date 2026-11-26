@@ -16,8 +16,9 @@ import { useState } from "react";
 import { ContactFormSchema } from "@/lib/schemas";
 import { Loader2 } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import type { Dictionary } from "@/types/dictionary";
 
-export function Contact({ dictionary }: { dictionary: any }) {
+export function Contact({ dictionary }: { dictionary: Dictionary["contact"] }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");

@@ -34,7 +34,7 @@ async function getLocale(): Promise<string> {
 
   try {
     return match(languages, locales, defaultLocale);
-  } catch (error) {
+  } catch {
     return defaultLocale;
   }
 }
