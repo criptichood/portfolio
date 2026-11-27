@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, type FormEvent, type KeyboardEvent } from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRight, Home, MessageSquare, Send, X } from 'lucide-react';
+import { ChevronRight, Home, MessageSquare, RotateCcw, Send, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
@@ -24,6 +24,7 @@ type PanelView = 'home' | 'messages';
 const SESSION_STORAGE_KEY = 'chat_history';
 const VISITOR_STORAGE_KEY = 'chat_visitor';
 const VIEW_STORAGE_KEY = 'chat_view';
+const CHAT_TTL_MS = 2 * 60 * 60 * 1000;
 const COMPOSER_MAX_LINES = 6;
 
 type Visitor = { name: string; email: string };
@@ -69,16 +70,27 @@ export function ChatInterface({
   useEffect(() => {
     if (!visitor) return;
     try {
-      const storedMessages = sessionStorage.getItem(SESSION_STORAGE_KEY);
+      const storedRaw = sessionStorage.getItem(SESSION_STORAGE_KEY);
       const storedView = sessionStorage.getItem(VIEW_STORAGE_KEY);
-      if (storedMessages) {
-        const stored = JSON.parse(storedMessages) as Message[];
-        const conversation = stored[0]?.role === 'model' ? stored.slice(1) : stored;
-        setMessages(conversation);
-        if (storedView === 'home' || storedView === 'messages') {
-          setView(storedView);
-        } else if (conversation.length > 0) {
-          setView('messages');
+      if (storedRaw) {
+        const parsed = JSON.parse(storedRaw) as Message[] | { updatedAt?: number; messages?: Message[] };
+        const isExpired =
+          !Array.isArray(parsed) &&
+          typeof parsed.updatedAt === 'number' &&
+          Date.now() - parsed.updatedAt > CHAT_TTL_MS;
+
+        if (isExpired) {
+          sessionStorage.removeItem(SESSION_STORAGE_KEY);
+          setMessages([]);
+        } else {
+          const stored = Array.isArray(parsed) ? parsed : (parsed.messages ?? []);
+          const conversation = stored[0]?.role === 'model' ? stored.slice(1) : stored;
+          setMessages(conversation);
+          if (storedView === 'home' || storedView === 'messages') {
+            setView(storedView);
+          } else if (conversation.length > 0) {
+            setView('messages');
+          }
         }
       } else if (storedView === 'home' || storedView === 'messages') {
         setView(storedView);
@@ -90,9 +102,21 @@ export function ChatInterface({
 
   useEffect(() => {
     if (messages.length > 0) {
-      sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(messages));
+      sessionStorage.setItem(
+        SESSION_STORAGE_KEY,
+        JSON.stringify({ updatedAt: Date.now(), messages })
+      );
     }
   }, [messages]);
+
+  const clearChat = () => {
+    setMessages([]);
+    try {
+      sessionStorage.removeItem(SESSION_STORAGE_KEY);
+    } catch {
+      // ignore storage errors
+    }
+  };
 
   const changeView = (nextView: PanelView) => {
     setView(nextView);
@@ -229,7 +253,18 @@ export function ChatInterface({
       transition={{ duration: 0.2 }}
       className="fixed inset-0 z-50 flex h-dvh w-full flex-col overflow-hidden overscroll-none bg-surface-container-low md:static md:z-auto md:h-[min(36rem,calc(100dvh-7rem))] md:w-[min(24rem,calc(100vw-2rem))] md:rounded-2xl md:border md:shadow-2xl"
     >
-      <div className="flex justify-end px-3 pt-[max(0.75rem,env(safe-area-inset-top))] md:pt-3">
+      <div className="flex items-center justify-end gap-1 px-3 pt-[max(0.75rem,env(safe-area-inset-top))] md:pt-3">
+        {messages.length > 0 && view === 'messages' && (
+          <button
+            type="button"
+            onClick={clearChat}
+            aria-label="Clear chat"
+            title="Clear chat"
+            className="rounded-full p-2 text-muted-foreground hover:bg-card hover:text-foreground"
+          >
+            <RotateCcw className="h-4 w-4" />
+          </button>
+        )}
         <button
           type="button"
           onClick={onClose}
@@ -311,7 +346,7 @@ export function ChatInterface({
           </form>
         ) : (
           <div className="flex h-full flex-col">
-            <ScrollArea className="min-h-0 flex-1" ref={scrollAreaRef}>
+            <ScrollArea className="min-h-0 flex-1 overflow-hidden" ref={scrollAreaRef}>
               <div className="space-y-3 px-4 py-2">
                 {messages.length === 0 && (
                   <p className="px-1 text-sm text-muted-foreground">{dictionary.sendCardBody}</p>
@@ -373,7 +408,7 @@ export function ChatInterface({
                 )}
               </div>
             </ScrollArea>
-            <form onSubmit={handleSubmit} className="flex items-end gap-2 px-3 pb-3">
+            <form onSubmit={handleSubmit} className="flex items-end gap-2 border-t border-border/40 bg-surface-container-low px-3 pb-3 pt-2.5">
               <textarea
                 ref={inputRef}
                 rows={1}
