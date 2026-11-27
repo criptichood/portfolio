@@ -9,18 +9,21 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { cn } from '@/lib/utils';
 import { askChatbot } from '@/ai/flows/chatbot-flow';
 import { ChatbotLocaleSchema, ChatVisitorSchema, INPUT_LIMITS, sanitizeVisitorName } from '@/lib/schemas';
+import { TELEGRAM_URL } from '@/lib/data';
 import { usePathname } from 'next/navigation';
 import type { Dictionary } from '@/types/dictionary';
 
 type Message = {
   role: 'user' | 'model';
   content: string;
+  showContactCta?: boolean;
 };
 
 type PanelView = 'home' | 'messages';
 
 const SESSION_STORAGE_KEY = 'chat_history';
 const VISITOR_STORAGE_KEY = 'chat_visitor';
+const VIEW_STORAGE_KEY = 'chat_view';
 const COMPOSER_MAX_LINES = 6;
 
 type Visitor = { name: string; email: string };
@@ -67,10 +70,18 @@ export function ChatInterface({
     if (!visitor) return;
     try {
       const storedMessages = sessionStorage.getItem(SESSION_STORAGE_KEY);
+      const storedView = sessionStorage.getItem(VIEW_STORAGE_KEY);
       if (storedMessages) {
         const stored = JSON.parse(storedMessages) as Message[];
         const conversation = stored[0]?.role === 'model' ? stored.slice(1) : stored;
         setMessages(conversation);
+        if (storedView === 'home' || storedView === 'messages') {
+          setView(storedView);
+        } else if (conversation.length > 0) {
+          setView('messages');
+        }
+      } else if (storedView === 'home' || storedView === 'messages') {
+        setView(storedView);
       }
     } catch {
       sessionStorage.removeItem(SESSION_STORAGE_KEY);
@@ -82,6 +93,15 @@ export function ChatInterface({
       sessionStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify(messages));
     }
   }, [messages]);
+
+  const changeView = (nextView: PanelView) => {
+    setView(nextView);
+    try {
+      sessionStorage.setItem(VIEW_STORAGE_KEY, nextView);
+    } catch {
+      // ignore storage errors
+    }
+  };
 
   const scrollToBottom = () => {
     if (scrollAreaRef.current) {
@@ -109,21 +129,29 @@ export function ChatInterface({
     const newMessages = [...messages, userMessage];
     setMessages(newMessages);
     setInput('');
-    setView('messages');
+    changeView('messages');
     setIsLoading(true);
     const started = Date.now();
 
     try {
-      const history = newMessages.slice(-21, -1);
+      const history = newMessages.slice(-21, -1).map(({ role, content }) => ({ role, content }));
       const response = await askChatbot({ history, message, lang, visitor: activeVisitor });
-      setMessages((prev) => [...prev, { role: 'model', content: response }]);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: 'model',
+          content: response.text,
+          showContactCta: !response.ok,
+        },
+      ]);
     } catch (error) {
       console.error("Error asking chatbot:", error);
       setMessages((prev) => [
         ...prev,
         {
           role: 'model',
-          content: "Sorry, I'm having trouble connecting right now. Please try again later.",
+          content: "Sorry, I'm having trouble connecting right now. You can reach Emmanuel directly using the options below.",
+          showContactCta: true,
         },
       ]);
     } finally {
@@ -136,7 +164,7 @@ export function ChatInterface({
   };
 
   const openMessages = (question?: string) => {
-    setView('messages');
+    changeView('messages');
     if (!question) return;
     if (visitor) {
       void sendText(question);
@@ -302,6 +330,32 @@ export function ChatInterface({
                       )}
                     >
                       <p className="whitespace-pre-wrap">{message.content}</p>
+                      {message.showContactCta && (
+                        <div className="mt-3 flex flex-wrap gap-2">
+                          <Button
+                            type="button"
+                            size="sm"
+                            variant="secondary"
+                            className="h-8 text-xs"
+                            onClick={() => {
+                              onClose();
+                              const contactEl = document.getElementById('contact');
+                              if (contactEl) {
+                                contactEl.scrollIntoView({ behavior: 'smooth' });
+                              } else {
+                                window.location.assign(`/${lang}#contact`);
+                              }
+                            }}
+                          >
+                            Contact form
+                          </Button>
+                          <Button asChild size="sm" variant="outline" className="h-8 text-xs">
+                            <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+                              Telegram
+                            </a>
+                          </Button>
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -348,7 +402,7 @@ export function ChatInterface({
       <nav className="grid grid-cols-2 gap-2 border-t bg-card px-3 py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
         <button
           type="button"
-          onClick={() => setView('home')}
+          onClick={() => changeView('home')}
           aria-current={view === 'home' ? 'page' : undefined}
           className={cn(
             'flex flex-col items-center gap-1 rounded-xl py-2 text-xs',
@@ -360,7 +414,7 @@ export function ChatInterface({
         </button>
         <button
           type="button"
-          onClick={() => setView('messages')}
+          onClick={() => changeView('messages')}
           aria-current={view === 'messages' ? 'page' : undefined}
           className={cn(
             'relative flex flex-col items-center gap-1 rounded-xl py-2 text-xs',
